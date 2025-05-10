@@ -1,0 +1,4826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles3.css">
+    <title>Ports</title>
+</head>
+<body>
+    <div class="hero-page" id="hero-page">
+        <div class="landing-page">
+          <!-- This is for creating desk-top nav-bar -->
+          <div class="navbar-desktop" id="navbar-desktop">
+             <nav class="desktop-version" id="desktop-version">
+                 <div class="item-1">
+                    <a href="./index.html" class="item1-link">
+                     <div class="sub-item1">
+                         <img src="./asserts/dragon.pic" alt="dragon-pic">
+                     <p class="logo-text">Vesseltracker.com</p>
+                     <p class="logo-sub-text">A Wood Mackenze Business</p>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="item-2">
+                     <a href="./index1.html" class="item1-link1">
+                         <div class="sub-item2">
+                             <p class="logo-text-1">PRODUCTS</p>
+                         </div>
+                     </a>
+                 </div>
+                <a href="./indax2.html" class="item-3">
+                 <p class="logo-text-1">VESSELS</p>
+                </a>
+                <a href="./index3.html" class="item-4">
+                 <p class="logo-text-1">PORTS</p>
+                </a>
+                <a href="./index4.html" class="item-5">
+                 <p class="logo-text-1">NEWS</p>
+                </a>
+                <div class="item-6">
+                 <!-- Example single danger button -->
+               <div class="btn-group btn-one">
+               <button type="button" class="btn  dropdown-toggle  about-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                ABOUT
+               </button>
+               <ul class="dropdown-menu one">
+               <li><a class="dropdown-item drp-item-one" href="./index5.html">ABOUT</a></li>
+               </ul>
+               </div>
+                </div>
+                <a href="./index5.html" class="item-7">
+                 COMMUNITY
+                </a>
+                
+                <div class="search-block" id="search-block">
+                 <i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>
+             </div>
+                <div class="vertical-line"></div>
+                <div class="search-side-block">
+                 <div class="search-realated-block" id="search-realated-block">
+                     <input type="text" placeholder="IMO,MMSI,NAME..." class="input-text">
+                 </div>
+                 <div class="three-in-one" id="three-in-one">
+                     <a href="#" class="login-root">LOG IN</a>
+                 <!-- this is for creating countries droup-down -->
+                     <div class="countries-box">
+                         <div class="cfirst">
+                             <img src="./asserts/indianflag.png" alt="flag-icon" class="flag-icon" id="flag-icon">
+                             <i class="ri-arrow-down-s-fill" id="carent-icon"></i>
+                         </div>
+                         <div class="csecond">
+                             <a href="#" class="countries-item" onclick="indianFlag()">TELUGU</a>
+                             <a href="#" class="countries-item"  onclick="usaFlag()">ENGLISH</a>
+                         </div>
+                     </div>
+                     <!-- this is creating globe--icon  -->
+                     <a href="#" class="glob-block">
+                         <i class="ri-earth-fill" id="globe-icon"></i>
+                     </a>
+                 </div>
+                 </a>
+                </div>
+             </nav>
+         </div>
+         <!-- This is for creating small screens nav-bar -->
+         <div class="small-navbar">
+             <nav class="small-screens-navbar" id="small-screens-navbar">
+                 <div class="hand-burger-toggeler" id="hand-burger-toggeler">
+                  <div class="taggoler-block">
+                      <i class="ri-menu-3-line" id="waves-handburger" onclick="hiddeRightSlider()"></i>
+                  </div>
+                  <div class="right-slider-block end-0">
+                      <div class="rs-first-part">
+                          <p>Learn more about our technology and shipping tools <a href="#" class="rs-subtext">start your free trial now</a></p>
+                      </div>
+                      <div class="rs-second-part">
+                          <div class="rss-first">
+                              <input type="text" placeholder="Search" class="rss-seach-input">
+                              <i class="fa-solid fa-magnifying-glass" id="rss-search-icon"></i>
+                          </div>
+                          <div class="rss-second">
+                              <a href="./index1.html" class="rss-products-link">PRODUCTS</a>
+                          </div>
+                          <div class="rss-three">
+                              <a href="./indax2.html" class="rss-vessels-link">VESSELS</a>
+                          </div>
+                          <div class="rss-four">
+                              <a href="./index3.html" class="rss-ports-link">PORTS</a>
+                          </div>
+                          <div class="rss-five">
+                              <a href="./index4.html" class="rss-news-link">NEWS</a>
+                          </div>
+                          <div class="rss-six">
+                              <div class="rss-about-block" id="rss-about-block">
+                                  <p class="rss-about-text">ABOUT</p>
+                                  <i class="fa-solid fa-caret-down" class="rss-about-carent"></i>
+                              </div>
+                              <div class="rss-about-droupdown" id="rss-about-droupdown">
+                                  <a href="./index5.html" class="rss-about-drp-item">ABOUT</a>
+                              </div>
+                          </div>
+                          <div class="rss-seven">
+                              <a href="./index5.html" class="rss-community-link">COMMUNITY</a>
+                          </div>
+                          <div class="rss-eghit">
+                              <a href="#" class="rss-login-link">LOG IN</a>
+                              <a href="#" class="rss-ende-link">EN/DE</a>
+                          </div>
+                      </div>
+                  </div>
+                 </div>
+                 <!-- ssn: small-screen-navbar -->
+                 <div class="ssn-elements" id="ssn-elements">
+                 <a href="./index.html" style="display: block;"> <img src="./asserts/chota-dragon.png" alt="dragon-pic" class="chota-dragan"></a>
+                  <i class="ri-menu-3-line" id="ssn-water-wave" onclick="showLeftSlider()"></i>
+                 </div>
+               </nav>
+         </div>
+         <!-- this is for dummy -->
+          <div class="dummy"></div>
+          <!-- this is for creating ports-details-block -->
+           <div class="port-details-block">
+            <!-- this is for creating port heading -->
+            <div class="row m-0 ">
+                <div class="port-title p-0">
+                    <h1><span class="pheading">Ports </span> 
+                    <span class="pcount" id="pcount"></span></h1>
+                </div>
+            </div>
+            <!-- this is for creating second-part of port-block -->
+             <div class="row m-0 portsecond-part">
+                <!-- this is for droup-down -->
+                <select class="form-select" aria-label="Default select example" id="custom-droupdown">
+                    <option value="India" selected>India</option>
+                    <option value="UnitedStates">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Japan">Japan</option>
+                    <option value="SouthKorea">South Korea</option>
+                    <option value="UnitedKingdom">United Kingdom</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Russia">Russia</option>
+                    <option value="SouthAfrica">South Africa</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="China">China</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Spain">Spain</option>
+                    <option value="SaudiArabia">Saudi Arabia</option>
+                    <option value="Turkey">Turkey</option>
+                  </select>
+                  <!-- this is the navigation alert message-block -->
+                   <div class="navigation-alert-block p-0">
+                    <span class="alert-text">
+                        <strong>Hint:</strong> You can search for ports by using the search functionality in the main navigation area
+                    </span>
+                   </div>
+             </div>
+             <!-- this is for creating table to show the all countri details -->
+             <div class="result-table-header">
+                <div class="row  m-0">
+                    <div class="col-2 col-md-1 col-lg-1 p-0 "></div>
+                    <div class="d-none d-md-block col-md-2 col-lg-2 p-0 th-country">Country</div>
+                    <div class="col-3 col-md-2 col-lg-2 p-0 th-port">Port</div>
+                    <div class="col-3 col-md-2 col-lg-2 p-0 th-unlocode">UN LOCODE</div>
+                    <div class="col d-none d-md-block col-md-1 col-lg-1 p-0 th-inport">In port</div>
+                    <div class="col d-none d-md-block col-md-2 col-lg-2 p-0 th-expected">Expected</div>
+                    <div class="col d-none d-md-block col-md-2 col-lg-2 p-0 th-coverage">Coverage</div>
+                    <div class="col-4 d-block d-md-none p-0 th-inexp">In port/Expected</div>
+                </div>
+             </div>
+             <!-- this is for creating table-body -->
+              <div class="result-table-body" id="result-table-body">
+              </div>
+
+           </div>
+        </div>
+        <!-- This is for creating footer-part of hero-page -->
+        <div class="footer-part-hero">
+                 <div class="foot-log-block">
+                     <img src="./asserts/footer-log.svg" alt="footer-log" class="footer-log-image">
+                 </div>
+                 <div class="row m-0 footer-cards-block">
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-1 p-0">
+                         <h4 class="fcardf-heading">LOCATION + CONTACT</h4>
+                         <p></p>
+                         <div class="fcf-1-one">Vesseltracker.com GmbH</div>
+                         Rödingsmarkt 20,<br>
+                         20459 Hamburg, Germany <br><br>
+                         +49-(0)40-970786-10 <br>
+                         <a href="#" class="fcf-1-link-one">info@vesseltracker.com</a>
+                         <p></p>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-2 p-0">
+                         <h4 class="fcs-2-heading">ABOUT</h4>
+                         <p></p>
+                         <a href="#" class="fcs-2-link">PRIVACY NOTICE</a><br>
+                         <a href="#" class="fcs-2-link">GENERAL TERMS AND CONDITIONS</a><br>
+                         <a href="#" class="fcs-2-link"> TERMS OF USE</a><br>
+                         <a href="#" class="fcs-2-link">IMPRINT</a><br>
+                         <a href="#" class="fcs-2-link">CONTACT</a>
+                         <p></p>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-3 p-0">
+                         <h4 class="fct-3-heading">EXPLORE</h4>
+                         <p></p>
+                          <a href="#" class="fct-3-link">PRODUCTS</a><br>
+                          <a href="#" class="fct-3-link">VESSELS</a><br>
+                          <a href="#" class="fct-3-link">PORTS</a><br>
+                          <a href="#" class="fct-3-link">NEWS</a><br>
+                          <a href="#" class="fct-3-link">ABOUT</a><br>
+                          <a href="#" class="fct-3-link">COMMUNITY</a>
+                          <P></P>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-4 p-0">
+                         <h4 class="ffc-4-heading">SOCIAL</h4>
+                         <p></p>
+                         <div class="socia-media">
+                             <a href="#" class="fficon twitter"><i class="ri-twitter-fill"></i></a>
+                             <a href="#" class="fficon linkedin"><i class="ri-linkedin-fill"></i></a>
+                             <a href="#" class="fficon facebook"><i class="ri-facebook-fill"></i></a>
+                             <a href="#" class="fficon youtube"><i class="ri-youtube-fill"></i></a>
+                         </div><br>
+                         <a href="#" class="ffc-link">© vesseltracker <script type="text/javascript">document.write(new Date().getFullYear());</script></a>
+                     </div>
+                 </div>
+        </div>
+     </div>
+     <script>
+        // ...........this is for chenging the ountries logos when ever we can cleck that particuler country name............
+        let countryFlag=document.getElementById("flag-icon"); //point out to the country image tag
+        function indianFlag() {
+            countryFlag.src="./asserts/indianflag.png";
+        }
+        function usaFlag() {
+            countryFlag.src="./asserts/usa.png";
+        }
+      //....................completed the image replication by clicking the country name......................... 
+
+      //.........In  this case we can perform when wher click the search icon in desk-top mode then open another block with the place of lodin and countrys droupdown and glob icon...............
+        let searchBlock=document.getElementById("search-block"); //in this way we are targeting search-block becuse when ever click the search icon the  replace the search icon as into-symbol
+        let searchRelatedBlock=document.getElementById("search-realated-block"); //in this way targeting the search related block,becuse when ever click the seaech icon then immediatly show this black based on the logics.
+        let threeInOne=document.getElementById("three-in-one"); //in this way targeting the three-in-one block after search-related block shows parellely shows into icon show when ever click that icon the show three-in-one block.
+        function displaySearchRelatedBlock() {
+            threeInOne.style.display="none";
+            searchRelatedBlock.style.display="flex";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML= `<i class="ri-close-line" onclick="displayThreeInOneBlock()" id="crossIcon"></i>`;
+            document.getElementById("crossIcon").style.color="rgb(244, 129, 49)";
+        }
+        function displayThreeInOneBlock(){
+            threeInOne.style.display="flex";
+            searchRelatedBlock.style.display="none";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML=`<i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>`;
+        }
+    //  this for mobile screen slider-bar droup-down affect for "aout" element
+    let aboutDroupDown=document.getElementById("rss-about-block");
+    let rssValid=true; //this is for using toggeler effect of the rss-about-droupdown like on/off manner
+    aboutDroupDown.addEventListener("click", ()=>{
+        let rssAboutDroupDown=document.getElementById("rss-about-droupdown");
+            if(rssValid){
+                rssAboutDroupDown.style.display="flex";
+                rssValid=false;
+            }
+            else{
+                rssAboutDroupDown.style.display="none";
+                rssValid=true;
+            }
+    });
+
+    // in this way we can build the logic ,  when ever click the water-wave icon then show the right-slider
+      function showLeftSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="none";
+        hanburgerToggeler.style.display="block";
+      }
+    //   this for closing right-slider 
+    function hiddeRightSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="flex";
+        hanburgerToggeler.style.display="none";
+    }
+    // this is for desktop nav-bar with scrolling effect that means when ever scrolle the scroll-bar then nav-bar move top of the page
+    window.addEventListener("scroll",(e)=>{
+        const scrollPosition = window.scrollY;
+        let desktopNavbar=document.getElementById("navbar-desktop");
+        let dskNavbar=document.getElementById("desktop-version");
+        if(scrollPosition > 80){
+            desktopNavbar.style.top="0";
+            desktopNavbar.style.zIndex="10"
+            dskNavbar.style.backgroundColor="#0F2C42";
+        }
+        else{
+            desktopNavbar.style.top="8%";
+            desktopNavbar.style.zIndex="0"
+            dskNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)"
+        }
+        let smallScreenNavbar=document.getElementById("small-screens-navbar");    
+        if(scrollPosition > 15){
+            smallScreenNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)";
+        }
+        else{
+            smallScreenNavbar.style.backgroundColor="transparent";
+        }
+    })
+//    In this way create data base for all droup-down items in json-formate
+// India data set 
+const India = [
+  {
+    portId: 4001,
+    portName: "Mumbai Port",
+    unLocode: "INBOM",
+    country: "India",
+    expected: 7334,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/04",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4002,
+    portName: "Jawaharlal Nehru Port",
+    unLocode: "INNSA",
+    country: "India",
+    expected: 3578,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/04",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4003,
+    portName: "Kandla Port",
+    unLocode: "INIXY",
+    country: "India",
+    expected: 9613,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/04",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4004,
+    portName: "Mormugao Port",
+    unLocode: "INMRM",
+    country: "India",
+    expected: 7591,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/04",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4005,
+    portName: "Chennai Port",
+    unLocode: "INMAA",
+    country: "India",
+    expected: 9611,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/04",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4006,
+    portName: "Ennore Port",
+    unLocode: "INENR",
+    country: "India",
+    expected: 4822,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/04",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 4007,
+    portName: "Kolkata Port",
+    unLocode: "INCCU",
+    country: "India",
+    expected: 9306,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/04",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4008,
+    portName: "Paradip Port",
+    unLocode: "INPDP",
+    country: "India",
+    expected: 8613,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/04",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4009,
+    portName: "Visakhapatnam Port",
+    unLocode: "INVTZ",
+    country: "India",
+    expected: 2833,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/04",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4010,
+    portName: "Cochin Port",
+    unLocode: "INCOK",
+    country: "India",
+    expected: 2948,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/04",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4011,
+    portName: "Tuticorin Port",
+    unLocode: "INTUT",
+    country: "India",
+    expected: 4126,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/04",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 4012,
+    portName: "New Mangalore Port",
+    unLocode: "INIXE",
+    country: "India",
+    expected: 8885,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/04",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4013,
+    portName: "Port Blair",
+    unLocode: "INIXZ",
+    country: "India",
+    expected: 3849,
+    signal: "./asserts/tavar-image.png",
+    inexp: "22/04",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4014,
+    portName: "Hazira Port",
+    unLocode: "INHZA",
+    country: "India",
+    expected: 6740,
+    signal: "./asserts/tavar-image.png",
+    inexp: "23/04",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4015,
+    portName: "Mundra Port",
+    unLocode: "INMUN",
+    country: "India",
+    expected: 6777,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/04",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4016,
+    portName: "Dahej Port",
+    unLocode: "INDHJ",
+    country: "India",
+    expected: 9059,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/04",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 4017,
+    portName: "Dhamra Port",
+    unLocode: "INDMA",
+    country: "India",
+    expected: 3626,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/04",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4018,
+    portName: "Krishnapatnam Port",
+    unLocode: "INKRI",
+    country: "India",
+    expected: 3685,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/04",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4019,
+    portName: "Gangavaram Port",
+    unLocode: "INGVM",
+    country: "India",
+    expected: 6971,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/04",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4020,
+    portName: "Karaikal Port",
+    unLocode: "INKIK",
+    country: "India",
+    expected: 8793,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/04",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for UK data set
+const UnitedStates = [
+  {
+    portId: 4021,
+    portName: "Los Angeles Port",
+    unLocode: "US001",
+    country: "United States",
+    expected: 9983,
+    signal: "./asserts/tavar-image.png",
+    inexp: "30/04",
+    flag: "./asserts/flag-10.png",
+    class: "odd"
+  },
+  {
+    portId: 4022,
+    portName: "Long Beach Port",
+    unLocode: "US002",
+    country: "United States",
+    expected: 3781,
+    signal: "./asserts/wifi-image.png",
+    inexp: "01/05",
+    flag: "./asserts/flag-7.png",
+    class: "even"
+  },
+  {
+    portId: 4023,
+    portName: "New York Port",
+    unLocode: "US003",
+    country: "United States",
+    expected: 6331,
+    signal: "./asserts/wifi-image.png",
+    inexp: "02/05",
+    flag: "./asserts/flag-20.png",
+    class: "odd"
+  },
+  {
+    portId: 4024,
+    portName: "Savannah Port",
+    unLocode: "US004",
+    country: "United States",
+    expected: 4146,
+    signal: "./asserts/tavar-image.png",
+    inexp: "03/05",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4025,
+    portName: "Houston Port",
+    unLocode: "US005",
+    country: "United States",
+    expected: 9987,
+    signal: "./asserts/wifi-image.png",
+    inexp: "04/05",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4026,
+    portName: "Seattle Port",
+    unLocode: "US006",
+    country: "United States",
+    expected: 8536,
+    signal: "./asserts/tavar-image.png",
+    inexp: "05/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4027,
+    portName: "Oakland Port",
+    unLocode: "US007",
+    country: "United States",
+    expected: 6640,
+    signal: "./asserts/wifi-image.png",
+    inexp: "06/05",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4028,
+    portName: "Norfolk Port",
+    unLocode: "US008",
+    country: "United States",
+    expected: 4830,
+    signal: "./asserts/tavar-image.png",
+    inexp: "07/05",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4029,
+    portName: "Charleston Port",
+    unLocode: "US009",
+    country: "United States",
+    expected: 7703,
+    signal: "./asserts/wifi-image.png",
+    inexp: "08/05",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 4030,
+    portName: "Miami Port",
+    unLocode: "US010",
+    country: "United States",
+    expected: 3580,
+    signal: "./asserts/wifi-image.png",
+    inexp: "09/05",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4031,
+    portName: "Baltimore Port",
+    unLocode: "US011",
+    country: "United States",
+    expected: 9227,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4032,
+    portName: "Tacoma Port",
+    unLocode: "US012",
+    country: "United States",
+    expected: 4576,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 4033,
+    portName: "Portland Port",
+    unLocode: "US013",
+    country: "United States",
+    expected: 8210,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 4034,
+    portName: "Philadelphia Port",
+    unLocode: "US014",
+    country: "United States",
+    expected: 4655,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 4035,
+    portName: "San Diego Port",
+    unLocode: "US015",
+    country: "United States",
+    expected: 8302,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4036,
+    portName: "Honolulu Port",
+    unLocode: "US016",
+    country: "United States",
+    expected: 2835,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  },
+  {
+    portId: 4037,
+    portName: "Boston Port",
+    unLocode: "US017",
+    country: "United States",
+    expected: 4424,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4038,
+    portName: "Jacksonville Port",
+    unLocode: "US018",
+    country: "United States",
+    expected: 3836,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4039,
+    portName: "Mobile Port",
+    unLocode: "US019",
+    country: "United States",
+    expected: 4840,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4040,
+    portName: "Anchorage Port",
+    unLocode: "US020",
+    country: "United States",
+    expected: 9669,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  }
+];
+// this is for Canada data set 
+let Canada = [
+  {
+    "portId": 4041,
+    "portName": "Vancouver Port",
+    "unLocode": "CA001",
+    "country": "Canada",
+    "expected": 4984,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "20/05",
+    "flag": "./asserts/flag-15.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4042,
+    "portName": "Montreal Port",
+    "unLocode": "CA002",
+    "country": "Canada",
+    "expected": 5783,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "21/05",
+    "flag": "./asserts/flag-12.png",
+    "class": "even"
+  },
+  {
+    "portId": 4043,
+    "portName": "Prince Rupert Port",
+    "unLocode": "CA003",
+    "country": "Canada",
+    "expected": 9561,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "22/05",
+    "flag": "./asserts/flag-11.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4044,
+    "portName": "Halifax Port",
+    "unLocode": "CA004",
+    "country": "Canada",
+    "expected": 6698,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "23/05",
+    "flag": "./asserts/flag-10.png",
+    "class": "even"
+  },
+  {
+    "portId": 4045,
+    "portName": "Quebec Port",
+    "unLocode": "CA005",
+    "country": "Canada",
+    "expected": 9594,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "24/05",
+    "flag": "./asserts/flag-6.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4046,
+    "portName": "Toronto Port",
+    "unLocode": "CA006",
+    "country": "Canada",
+    "expected": 2472,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "25/05",
+    "flag": "./asserts/flag-1.png",
+    "class": "even"
+  },
+  {
+    "portId": 4047,
+    "portName": "Saint John Port",
+    "unLocode": "CA007",
+    "country": "Canada",
+    "expected": 3868,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "26/05",
+    "flag": "./asserts/flag-8.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4048,
+    "portName": "Hamilton Port",
+    "unLocode": "CA008",
+    "country": "Canada",
+    "expected": 3503,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "27/05",
+    "flag": "./asserts/flag-13.png",
+    "class": "even"
+  },
+  {
+    "portId": 4049,
+    "portName": "Thunder Bay Port",
+    "unLocode": "CA009",
+    "country": "Canada",
+    "expected": 6155,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "28/05",
+    "flag": "./asserts/flag-5.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4050,
+    "portName": "Windsor Port",
+    "unLocode": "CA010",
+    "country": "Canada",
+    "expected": 2125,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "29/05",
+    "flag": "./asserts/flag-19.png",
+    "class": "even"
+  },
+  {
+    "portId": 4051,
+    "portName": "Trois-Rivières Port",
+    "unLocode": "CA011",
+    "country": "Canada",
+    "expected": 8694,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "30/05",
+    "flag": "./asserts/flag-7.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4052,
+    "portName": "Sept-Îles Port",
+    "unLocode": "CA012",
+    "country": "Canada",
+    "expected": 7407,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "31/05",
+    "flag": "./asserts/flag-20.png",
+    "class": "even"
+  },
+  {
+    "portId": 4053,
+    "portName": "Corner Brook Port",
+    "unLocode": "CA013",
+    "country": "Canada",
+    "expected": 8121,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "01/06",
+    "flag": "./asserts/flag-3.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4054,
+    "portName": "Baie-Comeau Port",
+    "unLocode": "CA014",
+    "country": "Canada",
+    "expected": 3903,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "02/06",
+    "flag": "./asserts/flag-2.png",
+    "class": "even"
+  },
+  {
+    "portId": 4055,
+    "portName": "Port Alberni Port",
+    "unLocode": "CA015",
+    "country": "Canada",
+    "expected": 9767,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "03/06",
+    "flag": "./asserts/flag-16.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4056,
+    "portName": "Kitimat Port",
+    "unLocode": "CA016",
+    "country": "Canada",
+    "expected": 3557,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "04/06",
+    "flag": "./asserts/flag-18.png",
+    "class": "even"
+  },
+  {
+    "portId": 4057,
+    "portName": "Nanaimo Port",
+    "unLocode": "CA017",
+    "country": "Canada",
+    "expected": 2004,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "05/06",
+    "flag": "./asserts/flag-4.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4058,
+    "portName": "Belledune Port",
+    "unLocode": "CA018",
+    "country": "Canada",
+    "expected": 9066,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "06/06",
+    "flag": "./asserts/flag-9.png",
+    "class": "even"
+  },
+  {
+    "portId": 4059,
+    "portName": "Sorel Port",
+    "unLocode": "CA019",
+    "country": "Canada",
+    "expected": 8127,
+    "signal": "./asserts/wifi-image.png",
+    "inexp": "07/06",
+    "flag": "./asserts/flag-14.png",
+    "class": "odd"
+  },
+  {
+    "portId": 4060,
+    "portName": "Port-Cartier Port",
+    "unLocode": "CA020",
+    "country": "Canada",
+    "expected": 7504,
+    "signal": "./asserts/tavar-image.png",
+    "inexp": "08/06",
+    "flag": "./asserts/flag-17.png",
+    "class": "even"
+  }
+];
+// this is for Australia data set
+const Australia = [
+  {
+    portId: 4061,
+    portName: "Port of Sydney",
+    unLocode: "AUSYD",
+    country: "Australia",
+    expected: 7812,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4062,
+    portName: "Port of Melbourne",
+    unLocode: "AUMEL",
+    country: "Australia",
+    expected: 9347,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4063,
+    portName: "Port of Brisbane",
+    unLocode: "AUBNE",
+    country: "Australia",
+    expected: 5094,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4064,
+    portName: "Port of Fremantle",
+    unLocode: "AUFRE",
+    country: "Australia",
+    expected: 8673,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4065,
+    portName: "Port of Adelaide",
+    unLocode: "AUADL",
+    country: "Australia",
+    expected: 6721,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4066,
+    portName: "Port of Townsville",
+    unLocode: "AUTSV",
+    country: "Australia",
+    expected: 3920,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 4067,
+    portName: "Port Hedland",
+    unLocode: "AUPHE",
+    country: "Australia",
+    expected: 5782,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4068,
+    portName: "Port of Darwin",
+    unLocode: "AUDRW",
+    country: "Australia",
+    expected: 8045,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4069,
+    portName: "Port Kembla",
+    unLocode: "AUPKA",
+    country: "Australia",
+    expected: 6224,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4070,
+    portName: "Port of Geelong",
+    unLocode: "AUGEX",
+    country: "Australia",
+    expected: 4798,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4071,
+    portName: "Port of Newcastle",
+    unLocode: "AUNTL",
+    country: "Australia",
+    expected: 9653,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/05",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 4072,
+    portName: "Port of Geraldton",
+    unLocode: "AUGRN",
+    country: "Australia",
+    expected: 6812,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/05",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4073,
+    portName: "Port of Mackay",
+    unLocode: "AUMKY",
+    country: "Australia",
+    expected: 7189,
+    signal: "./asserts/tavar-image.png",
+    inexp: "22/05",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4074,
+    portName: "Port of Broome",
+    unLocode: "AUBME",
+    country: "Australia",
+    expected: 8567,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/05",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4075,
+    portName: "Port of Burnie",
+    unLocode: "AUBWT",
+    country: "Australia",
+    expected: 4372,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4076,
+    portName: "Port of Hobart",
+    unLocode: "AUHBA",
+    country: "Australia",
+    expected: 9250,
+    signal: "./asserts/tavar-image.png",
+    inexp: "25/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 4077,
+    portName: "Port of Bell Bay",
+    unLocode: "AUBEL",
+    country: "Australia",
+    expected: 6938,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/05",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4078,
+    portName: "Port of Albany",
+    unLocode: "AUALH",
+    country: "Australia",
+    expected: 3794,
+    signal: "./asserts/tavar-image.png",
+    inexp: "27/05",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4079,
+    portName: "Port of Cairns",
+    unLocode: "AUCNS",
+    country: "Australia",
+    expected: 8901,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/05",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4080,
+    portName: "Port of Esperance",
+    unLocode: "AUESP",
+    country: "Australia",
+    expected: 5046,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/05",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for  Germany detaset
+const Germany = [
+  {
+    portId: 4081,
+    portName: "Port of Hamburg",
+    unLocode: "DEHAM",
+    country: "Germany",
+    expected: 7142,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/06",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4082,
+    portName: "Port of Bremerhaven",
+    unLocode: "DEBRV",
+    country: "Germany",
+    expected: 5380,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/06",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4083,
+    portName: "Port of Wilhelmshaven",
+    unLocode: "DEWVN",
+    country: "Germany",
+    expected: 6895,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/06",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4084,
+    portName: "Port of Kiel",
+    unLocode: "DEKEL",
+    country: "Germany",
+    expected: 8721,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/06",
+    flag: "./asserts/flag-15.png",
+    class: "even"
+  },
+  {
+    portId: 4085,
+    portName: "Port of Rostock",
+    unLocode: "DERSK",
+    country: "Germany",
+    expected: 4296,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/06",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4086,
+    portName: "Port of Lübeck",
+    unLocode: "DELBC",
+    country: "Germany",
+    expected: 9510,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/06",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4087,
+    portName: "Port of Emden",
+    unLocode: "DEEMD",
+    country: "Germany",
+    expected: 6243,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/06",
+    flag: "./asserts/flag-18.png",
+    class: "odd"
+  },
+  {
+    portId: 4088,
+    portName: "Port of Cuxhaven",
+    unLocode: "DECUX",
+    country: "Germany",
+    expected: 7882,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/06",
+    flag: "./asserts/flag-9.png",
+    class: "even"
+  },
+  {
+    portId: 4089,
+    portName: "Port of Wismar",
+    unLocode: "DEWSM",
+    country: "Germany",
+    expected: 3460,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/06",
+    flag: "./asserts/flag-10.png",
+    class: "odd"
+  },
+  {
+    portId: 4090,
+    portName: "Port of Nordenham",
+    unLocode: "DENHA",
+    country: "Germany",
+    expected: 8953,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/06",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4091,
+    portName: "Port of Sassnitz",
+    unLocode: "DESAS",
+    country: "Germany",
+    expected: 5197,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/06",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4092,
+    portName: "Port of Stade",
+    unLocode: "DESTA",
+    country: "Germany",
+    expected: 7841,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/06",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 4093,
+    portName: "Port of Brunsbüttel",
+    unLocode: "DEBRB",
+    country: "Germany",
+    expected: 9342,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/06",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 4094,
+    portName: "Port of Leer",
+    unLocode: "DELER",
+    country: "Germany",
+    expected: 6046,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/06",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  },
+  {
+    portId: 4095,
+    portName: "Port of Papenburg",
+    unLocode: "DEPBG",
+    country: "Germany",
+    expected: 7218,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/06",
+    flag: "./asserts/flag-20.png",
+    class: "odd"
+  },
+  {
+    portId: 4096,
+    portName: "Port of Stralsund",
+    unLocode: "DESTR",
+    country: "Germany",
+    expected: 5531,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/06",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 4097,
+    portName: "Port of Greifswald",
+    unLocode: "DEGRW",
+    country: "Germany",
+    expected: 6409,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/06",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4098,
+    portName: "Port of Bützfleth",
+    unLocode: "DEBUF",
+    country: "Germany",
+    expected: 4837,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/06",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 4099,
+    portName: "Port of Husum",
+    unLocode: "DEHUS",
+    country: "Germany",
+    expected: 8907,
+    signal: "./asserts/tavar-image.png",
+    inexp: "28/06",
+    flag: "./asserts/flag-14.png",
+    class: "odd"
+  },
+  {
+    portId: 4100,
+    portName: "Port of Tönning",
+    unLocode: "DETNG",
+    country: "Germany",
+    expected: 4396,
+    signal: "./asserts/wifi-image.png",
+    inexp: "29/06",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  }
+];
+// this is for  France dataset
+const France = [
+  {
+    portId: 4101,
+    portName: "Port of Marseille",
+    unLocode: "FRMRS",
+    country: "France",
+    expected: 7940,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/07",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4102,
+    portName: "Port of Le Havre",
+    unLocode: "FRLEH",
+    country: "France",
+    expected: 5392,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/07",
+    flag: "./asserts/flag-3.png",
+    class: "even"
+  },
+  {
+    portId: 4103,
+    portName: "Port of Dunkirk",
+    unLocode: "FRDKK",
+    country: "France",
+    expected: 8697,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/07",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4104,
+    portName: "Port of Nantes",
+    unLocode: "FRNTE",
+    country: "France",
+    expected: 6403,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/07",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  },
+  {
+    portId: 4105,
+    portName: "Port of Bordeaux",
+    unLocode: "FRBOD",
+    country: "France",
+    expected: 9326,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/07",
+    flag: "./asserts/flag-8.png",
+    class: "odd"
+  },
+  {
+    portId: 4106,
+    portName: "Port of Rouen",
+    unLocode: "FRURO",
+    country: "France",
+    expected: 6911,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/07",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 4107,
+    portName: "Port of Toulon",
+    unLocode: "FRTLN",
+    country: "France",
+    expected: 4620,
+    signal: "./asserts/tavar-image.png",
+    inexp: "16/07",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4108,
+    portName: "Port of La Rochelle",
+    unLocode: "FRLRO",
+    country: "France",
+    expected: 7095,
+    signal: "./asserts/wifi-image.png",
+    inexp: "17/07",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4109,
+    portName: "Port of Sète",
+    unLocode: "FRSET",
+    country: "France",
+    expected: 8793,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/07",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 4110,
+    portName: "Port of Calais",
+    unLocode: "FRCAL",
+    country: "France",
+    expected: 8234,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/07",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4111,
+    portName: "Port of Bayonne",
+    unLocode: "FRBAY",
+    country: "France",
+    expected: 5388,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/07",
+    flag: "./asserts/flag-18.png",
+    class: "odd"
+  },
+  {
+    portId: 4112,
+    portName: "Port of Dieppe",
+    unLocode: "FRDIE",
+    country: "France",
+    expected: 7831,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/07",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4113,
+    portName: "Port of Saint-Malo",
+    unLocode: "FRSML",
+    country: "France",
+    expected: 4673,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/07",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4114,
+    portName: "Port of Brest",
+    unLocode: "FRBES",
+    country: "France",
+    expected: 9182,
+    signal: "./asserts/tavar-image.png",
+    inexp: "23/07",
+    flag: "./asserts/flag-15.png",
+    class: "even"
+  },
+  {
+    portId: 4115,
+    portName: "Port of Cherbourg",
+    unLocode: "FRCHB",
+    country: "France",
+    expected: 6213,
+    signal: "./asserts/tavar-image.png",
+    inexp: "24/07",
+    flag: "./asserts/flag-14.png",
+    class: "odd"
+  },
+  {
+    portId: 4116,
+    portName: "Port of Lorient",
+    unLocode: "FRLRT",
+    country: "France",
+    expected: 4836,
+    signal: "./asserts/tavar-image.png",
+    inexp: "25/07",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  },
+  {
+    portId: 4117,
+    portName: "Port of Granville",
+    unLocode: "FRGRV",
+    country: "France",
+    expected: 7699,
+    signal: "./asserts/tavar-image.png",
+    inexp: "26/07",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 4118,
+    portName: "Port of Saint-Nazaire",
+    unLocode: "FRSNR",
+    country: "France",
+    expected: 8964,
+    signal: "./asserts/tavar-image.png",
+    inexp: "27/07",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 4119,
+    portName: "Port of Port-Vendres",
+    unLocode: "FRPDV",
+    country: "France",
+    expected: 3575,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/07",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 4120,
+    portName: "Port of Boulogne-sur-Mer",
+    unLocode: "FRBOL",
+    country: "France",
+    expected: 6540,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/07",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  }
+];
+// this is for Brazil dataset
+const Brazil = [
+  {
+    portId: 4121,
+    portName: "Port of Santos",
+    unLocode: "BRSSZ",
+    country: "Brazil",
+    expected: 9034,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/08",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4122,
+    portName: "Port of Rio de Janeiro",
+    unLocode: "BRRIO",
+    country: "Brazil",
+    expected: 7681,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/08",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4123,
+    portName: "Port of Paranaguá",
+    unLocode: "BRPNG",
+    country: "Brazil",
+    expected: 3542,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/08",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 4124,
+    portName: "Port of Itajaí",
+    unLocode: "BRITJ",
+    country: "Brazil",
+    expected: 5810,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/08",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 4125,
+    portName: "Port of Vitória",
+    unLocode: "BRVIT",
+    country: "Brazil",
+    expected: 7329,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/08",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 4126,
+    portName: "Port of Recife",
+    unLocode: "BRREC",
+    country: "Brazil",
+    expected: 6185,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/08",
+    flag: "./asserts/flag-9.png",
+    class: "even"
+  },
+  {
+    portId: 4127,
+    portName: "Port of São Francisco do Sul",
+    unLocode: "BRSFS",
+    country: "Brazil",
+    expected: 9604,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/08",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 4128,
+    portName: "Port of Natal",
+    unLocode: "BRNAT",
+    country: "Brazil",
+    expected: 4279,
+    signal: "./asserts/wifi-image.png",
+    inexp: "17/08",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  },
+  {
+    portId: 4129,
+    portName: "Port of Salvador",
+    unLocode: "BRSAV",
+    country: "Brazil",
+    expected: 6892,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/08",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4130,
+    portName: "Port of Suape",
+    unLocode: "BRSAP",
+    country: "Brazil",
+    expected: 8233,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/08",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4131,
+    portName: "Port of São Luís",
+    unLocode: "BRSLZ",
+    country: "Brazil",
+    expected: 9920,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/08",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4132,
+    portName: "Port of Manaus",
+    unLocode: "BRMAO",
+    country: "Brazil",
+    expected: 8307,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/08",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 4133,
+    portName: "Port of Rio Grande",
+    unLocode: "BRRGN",
+    country: "Brazil",
+    expected: 4874,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/08",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4134,
+    portName: "Port of São Sebastião",
+    unLocode: "BRSSB",
+    country: "Brazil",
+    expected: 7512,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/08",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  },
+  {
+    portId: 4135,
+    portName: "Port of Belém",
+    unLocode: "BRBEL",
+    country: "Brazil",
+    expected: 8145,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/08",
+    flag: "./asserts/flag-18.png",
+    class: "odd"
+  },
+  {
+    portId: 4136,
+    portName: "Port of Aratu",
+    unLocode: "BRARU",
+    country: "Brazil",
+    expected: 3961,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/08",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4137,
+    portName: "Port of Guarujá",
+    unLocode: "BRGUA",
+    country: "Brazil",
+    expected: 7604,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/08",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4138,
+    portName: "Port of São Vicente",
+    unLocode: "BRVIC",
+    country: "Brazil",
+    expected: 5136,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/08",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4139,
+    portName: "Port of Itaqui",
+    unLocode: "BRITQ",
+    country: "Brazil",
+    expected: 6490,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/08",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 4140,
+    portName: "Port of Pecém",
+    unLocode: "BRPEC",
+    country: "Brazil",
+    expected: 4018,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/08",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Japan dataset
+const Japan = [
+  {
+    portId: 4141,
+    portName: "Port of Tokyo",
+    unLocode: "JPTOY",
+    country: "Japan",
+    expected: 5623,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/09",
+    flag: "./asserts/flag-8.png",
+    class: "odd"
+  },
+  {
+    portId: 4142,
+    portName: "Port of Yokohama",
+    unLocode: "JPYOK",
+    country: "Japan",
+    expected: 7462,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/09",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 4143,
+    portName: "Port of Kobe",
+    unLocode: "JPKOB",
+    country: "Japan",
+    expected: 8427,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/09",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4144,
+    portName: "Port of Osaka",
+    unLocode: "JPOSA",
+    country: "Japan",
+    expected: 6314,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/09",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4145,
+    portName: "Port of Nagoya",
+    unLocode: "JPNGO",
+    country: "Japan",
+    expected: 3941,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/09",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4146,
+    portName: "Port of Hakata",
+    unLocode: "JPHKT",
+    country: "Japan",
+    expected: 5283,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/09",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4147,
+    portName: "Port of Chiba",
+    unLocode: "JPCHB",
+    country: "Japan",
+    expected: 6129,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/09",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4148,
+    portName: "Port of Shimizu",
+    unLocode: "JPSHM",
+    country: "Japan",
+    expected: 4672,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/09",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4149,
+    portName: "Port of Kitakyushu",
+    unLocode: "JPKKY",
+    country: "Japan",
+    expected: 8395,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/09",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 4150,
+    portName: "Port of Sapporo",
+    unLocode: "JPSAP",
+    country: "Japan",
+    expected: 2733,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/09",
+    flag: "./asserts/flag-9.png",
+    class: "even"
+  },
+  {
+    portId: 4151,
+    portName: "Port of Sendai",
+    unLocode: "JPSEN",
+    country: "Japan",
+    expected: 7535,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/09",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 4152,
+    portName: "Port of Oarai",
+    unLocode: "JPOAR",
+    country: "Japan",
+    expected: 6897,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/09",
+    flag: "./asserts/flag-7.png",
+    class: "even"
+  },
+  {
+    portId: 4153,
+    portName: "Port of Ube",
+    unLocode: "JPUBE",
+    country: "Japan",
+    expected: 8011,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/09",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4154,
+    portName: "Port of Niigata",
+    unLocode: "JPNII",
+    country: "Japan",
+    expected: 8920,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/09",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4155,
+    portName: "Port of Hokkaido",
+    unLocode: "JPHOK",
+    country: "Japan",
+    expected: 3764,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/09",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 4156,
+    portName: "Port of Fukuoka",
+    unLocode: "JPFUK",
+    country: "Japan",
+    expected: 7124,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/09",
+    flag: "./asserts/flag-15.png",
+    class: "even"
+  },
+  {
+    portId: 4157,
+    portName: "Port of Yokosuka",
+    unLocode: "JPYOK",
+    country: "Japan",
+    expected: 5923,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/09",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 4158,
+    portName: "Port of Nagasaki",
+    unLocode: "JPNGS",
+    country: "Japan",
+    expected: 7425,
+    signal: "./asserts/tavar-image.png",
+    inexp: "27/09",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4159,
+    portName: "Port of Akita",
+    unLocode: "JPAKI",
+    country: "Japan",
+    expected: 8326,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/09",
+    flag: "./asserts/flag-20.png",
+    class: "odd"
+  },
+  {
+    portId: 4160,
+    portName: "Port of Tokuyama",
+    unLocode: "JPTOK",
+    country: "Japan",
+    expected: 9513,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/09",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  }
+];
+// this is for South Korea dataset
+const SouthKorea = [
+  {
+    portId: 4161,
+    portName: "Port of Busan",
+    unLocode: "KRPUS",
+    country: "South Korea",
+    expected: 8735,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/09",
+    flag: "./asserts/flag-8.png",
+    class: "odd"
+  },
+  {
+    portId: 4162,
+    portName: "Port of Incheon",
+    unLocode: "KRINC",
+    country: "South Korea",
+    expected: 7621,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/09",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4163,
+    portName: "Port of Gwangyang",
+    unLocode: "KRGYN",
+    country: "South Korea",
+    expected: 9501,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/09",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4164,
+    portName: "Port of Ulsan",
+    unLocode: "KRULS",
+    country: "South Korea",
+    expected: 7214,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/09",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4165,
+    portName: "Port of Pohang",
+    unLocode: "KRPOH",
+    country: "South Korea",
+    expected: 8820,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/09",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4166,
+    portName: "Port of Daesan",
+    unLocode: "KRDSN",
+    country: "South Korea",
+    expected: 5312,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/09",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4167,
+    portName: "Port of Gunsan",
+    unLocode: "KRGUN",
+    country: "South Korea",
+    expected: 6714,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/09",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4168,
+    portName: "Port of Jeju",
+    unLocode: "KRJEJ",
+    country: "South Korea",
+    expected: 5439,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/09",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 4169,
+    portName: "Port of Changwon",
+    unLocode: "KRCHW",
+    country: "South Korea",
+    expected: 8284,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/09",
+    flag: "./asserts/flag-14.png",
+    class: "odd"
+  },
+  {
+    portId: 4170,
+    portName: "Port of Mokpo",
+    unLocode: "KRMKP",
+    country: "South Korea",
+    expected: 6218,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/09",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4171,
+    portName: "Port of Masan",
+    unLocode: "KRMSN",
+    country: "South Korea",
+    expected: 9142,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/09",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4172,
+    portName: "Port of Busan New Port",
+    unLocode: "KRBNP",
+    country: "South Korea",
+    expected: 6315,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/09",
+    flag: "./asserts/flag-7.png",
+    class: "even"
+  },
+  {
+    portId: 4173,
+    portName: "Port of Gwangju",
+    unLocode: "KRGWA",
+    country: "South Korea",
+    expected: 8654,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/09",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 4174,
+    portName: "Port of Pyeongtaek",
+    unLocode: "KRPTK",
+    country: "South Korea",
+    expected: 7349,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/09",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  },
+  {
+    portId: 4175,
+    portName: "Port of Samcheok",
+    unLocode: "KRSAM",
+    country: "South Korea",
+    expected: 7862,
+    signal: "./asserts/tavar-image.png",
+    inexp: "24/09",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 4176,
+    portName: "Port of Yeosu",
+    unLocode: "KRYEO",
+    country: "South Korea",
+    expected: 4583,
+    signal: "./asserts/tavar-image.png",
+    inexp: "25/09",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 4177,
+    portName: "Port of Jeonju",
+    unLocode: "KRJEJ",
+    country: "South Korea",
+    expected: 8321,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/09",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 4178,
+    portName: "Port of Daegu",
+    unLocode: "KRDAE",
+    country: "South Korea",
+    expected: 7453,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/09",
+    flag: "./asserts/flag-15.png",
+    class: "even"
+  },
+  {
+    portId: 4179,
+    portName: "Port of Gangneung",
+    unLocode: "KRGAU",
+    country: "South Korea",
+    expected: 6721,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/09",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4180,
+    portName: "Port of Uljin",
+    unLocode: "KRULJ",
+    country: "South Korea",
+    expected: 5319,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/09",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for United Kingdom dataset
+const UnitedKingdom = [
+  {
+    portId: 4181,
+    portName: "Port of London",
+    unLocode: "GBLON",
+    country: "United Kingdom",
+    expected: 8412,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/10",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4182,
+    portName: "Port of Felixstowe",
+    unLocode: "GBFEL",
+    country: "United Kingdom",
+    expected: 9123,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/10",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4183,
+    portName: "Port of Southampton",
+    unLocode: "GBSOU",
+    country: "United Kingdom",
+    expected: 7512,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/10",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4184,
+    portName: "Port of Liverpool",
+    unLocode: "GBLIV",
+    country: "United Kingdom",
+    expected: 6842,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/10",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4185,
+    portName: "Port of Glasgow",
+    unLocode: "GBGLA",
+    country: "United Kingdom",
+    expected: 9276,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/10",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4186,
+    portName: "Port of Teesport",
+    unLocode: "GBTEE",
+    country: "United Kingdom",
+    expected: 6372,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/10",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 4187,
+    portName: "Port of Dover",
+    unLocode: "GBDOV",
+    country: "United Kingdom",
+    expected: 7329,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/10",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4188,
+    portName: "Port of Plymouth",
+    unLocode: "GBPLY",
+    country: "United Kingdom",
+    expected: 8345,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/10",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4189,
+    portName: "Port of Hull",
+    unLocode: "GBHUL",
+    country: "United Kingdom",
+    expected: 5412,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/10",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4190,
+    portName: "Port of Harwich",
+    unLocode: "GBHRW",
+    country: "United Kingdom",
+    expected: 7168,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/10",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4191,
+    portName: "Port of Immingham",
+    unLocode: "GBIMM",
+    country: "United Kingdom",
+    expected: 8935,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/10",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 4192,
+    portName: "Port of Sunderland",
+    unLocode: "GBSUN",
+    country: "United Kingdom",
+    expected: 8024,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/10",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4193,
+    portName: "Port of Aberdeen",
+    unLocode: "GBABD",
+    country: "United Kingdom",
+    expected: 6217,
+    signal: "./asserts/tavar-image.png",
+    inexp: "22/10",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4194,
+    portName: "Port of Newcastle",
+    unLocode: "GBNEW",
+    country: "United Kingdom",
+    expected: 8321,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/10",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4195,
+    portName: "Port of Cardiff",
+    unLocode: "GBCDF",
+    country: "United Kingdom",
+    expected: 6749,
+    signal: "./asserts/tavar-image.png",
+    inexp: "24/10",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4196,
+    portName: "Port of Felixstowe South",
+    unLocode: "GBFES",
+    country: "United Kingdom",
+    expected: 8713,
+    signal: "./asserts/tavar-image.png",
+    inexp: "25/10",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 4197,
+    portName: "Port of London Gateway",
+    unLocode: "GBLDG",
+    country: "United Kingdom",
+    expected: 9231,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/10",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4198,
+    portName: "Port of Weymouth",
+    unLocode: "GBWYT",
+    country: "United Kingdom",
+    expected: 6304,
+    signal: "./asserts/tavar-image.png",
+    inexp: "27/10",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4199,
+    portName: "Port of Medway",
+    unLocode: "GBMED",
+    country: "United Kingdom",
+    expected: 7214,
+    signal: "./asserts/tavar-image.png",
+    inexp: "28/10",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4200,
+    portName: "Port of Belfast",
+    unLocode: "GBBFS",
+    country: "United Kingdom",
+    expected: 8249,
+    signal: "./asserts/wifi-image.png",
+    inexp: "29/10",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Italy dataset
+const Italy = [
+  {
+    portId: 4201,
+    portName: "Port of Genoa",
+    unLocode: "ITGOA",
+    country: "Italy",
+    expected: 7423,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/11",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 4202,
+    portName: "Port of Trieste",
+    unLocode: "ITTRS",
+    country: "Italy",
+    expected: 9324,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/11",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 4203,
+    portName: "Port of Naples",
+    unLocode: "ITNAP",
+    country: "Italy",
+    expected: 8453,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/11",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 4204,
+    portName: "Port of Livorno",
+    unLocode: "ITLIV",
+    country: "Italy",
+    expected: 7251,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/11",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 4205,
+    portName: "Port of Civitavecchia",
+    unLocode: "ITCVV",
+    country: "Italy",
+    expected: 6198,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/11",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 4206,
+    portName: "Port of Venice",
+    unLocode: "ITVCE",
+    country: "Italy",
+    expected: 8546,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/11",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 4207,
+    portName: "Port of Savona",
+    unLocode: "ITSAV",
+    country: "Italy",
+    expected: 9475,
+    signal: "./asserts/tavar-image.png",
+    inexp: "16/11",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 4208,
+    portName: "Port of Palermo",
+    unLocode: "ITPAO",
+    country: "Italy",
+    expected: 8321,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/11",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 4209,
+    portName: "Port of Bari",
+    unLocode: "ITBAR",
+    country: "Italy",
+    expected: 6453,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/11",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 4210,
+    portName: "Port of Ancona",
+    unLocode: "ITANC",
+    country: "Italy",
+    expected: 7634,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/11",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 4211,
+    portName: "Port of Reggio Calabria",
+    unLocode: "ITREG",
+    country: "Italy",
+    expected: 6948,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/11",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 4212,
+    portName: "Port of La Spezia",
+    unLocode: "ITLSP",
+    country: "Italy",
+    expected: 7359,
+    signal: "./asserts/tavar-image.png",
+    inexp: "21/11",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 4213,
+    portName: "Port of Taranto",
+    unLocode: "ITTAO",
+    country: "Italy",
+    expected: 8923,
+    signal: "./asserts/tavar-image.png",
+    inexp: "22/11",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 4214,
+    portName: "Port of Chioggia",
+    unLocode: "ITCHG",
+    country: "Italy",
+    expected: 9134,
+    signal: "./asserts/tavar-image.png",
+    inexp: "23/11",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 4215,
+    portName: "Port of Brindisi",
+    unLocode: "ITBRI",
+    country: "Italy",
+    expected: 7846,
+    signal: "./asserts/tavar-image.png",
+    inexp: "24/11",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 4216,
+    portName: "Port of Messina",
+    unLocode: "ITMES",
+    country: "Italy",
+    expected: 7014,
+    signal: "./asserts/tavar-image.png",
+    inexp: "25/11",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 4217,
+    portName: "Port of La Maddalena",
+    unLocode: "ITLMM",
+    country: "Italy",
+    expected: 8342,
+    signal: "./asserts/tavar-image.png",
+    inexp: "26/11",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 4218,
+    portName: "Port of Porto Torres",
+    unLocode: "ITPTT",
+    country: "Italy",
+    expected: 9276,
+    signal: "./asserts/tavar-image.png",
+    inexp: "27/11",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 4219,
+    portName: "Port of Porto Empedocle",
+    unLocode: "ITPEM",
+    country: "Italy",
+    expected: 8743,
+    signal: "./asserts/tavar-image.png",
+    inexp: "28/11",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 4220,
+    portName: "Port of La Rochelle",
+    unLocode: "ITLRC",
+    country: "Italy",
+    expected: 6184,
+    signal: "./asserts/tavar-image.png",
+    inexp: "29/11",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Russia dataset
+const Russia = [
+  {
+    portId: 5201,
+    portName: "Port of Saint Petersburg",
+    unLocode: "RULED",
+    country: "Russia",
+    expected: 7812,
+    signal: "./asserts/tavar-image.png",
+    inexp: "01/12",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 5202,
+    portName: "Port of Novorossiysk",
+    unLocode: "RUNVS",
+    country: "Russia",
+    expected: 8345,
+    signal: "./asserts/tavar-image.png",
+    inexp: "02/12",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 5203,
+    portName: "Port of Vladivostok",
+    unLocode: "RUVVO",
+    country: "Russia",
+    expected: 9021,
+    signal: "./asserts/tavar-image.png",
+    inexp: "03/12",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 5204,
+    portName: "Port of Kaliningrad",
+    unLocode: "RUKGD",
+    country: "Russia",
+    expected: 6734,
+    signal: "./asserts/tavar-image.png",
+    inexp: "04/12",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 5205,
+    portName: "Port of Murmansk",
+    unLocode: "RUMMK",
+    country: "Russia",
+    expected: 7893,
+    signal: "./asserts/tavar-image.png",
+    inexp: "05/12",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 5206,
+    portName: "Port of Arkhangelsk",
+    unLocode: "RUARH",
+    country: "Russia",
+    expected: 6123,
+    signal: "./asserts/tavar-image.png",
+    inexp: "06/12",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 5207,
+    portName: "Port of Ust-Luga",
+    unLocode: "RUULU",
+    country: "Russia",
+    expected: 9254,
+    signal: "./asserts/tavar-image.png",
+    inexp: "07/12",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 5208,
+    portName: "Port of Tuapse",
+    unLocode: "RUTUA",
+    country: "Russia",
+    expected: 8412,
+    signal: "./asserts/tavar-image.png",
+    inexp: "08/12",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 5209,
+    portName: "Port of Taganrog",
+    unLocode: "RUTAG",
+    country: "Russia",
+    expected: 7541,
+    signal: "./asserts/tavar-image.png",
+    inexp: "09/12",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 5210,
+    portName: "Port of Nakhodka",
+    unLocode: "RUNAK",
+    country: "Russia",
+    expected: 6982,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/12",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 5211,
+    portName: "Port of Korsakov",
+    unLocode: "RUKOR",
+    country: "Russia",
+    expected: 6348,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/12",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 5212,
+    portName: "Port of Pevek",
+    unLocode: "RUPEE",
+    country: "Russia",
+    expected: 5591,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/12",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 5213,
+    portName: "Port of Sevastopol",
+    unLocode: "RUSEV",
+    country: "Russia",
+    expected: 7439,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/12",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 5214,
+    portName: "Port of Magadan",
+    unLocode: "RUMAG",
+    country: "Russia",
+    expected: 6187,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/12",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 5215,
+    portName: "Port of Sochi",
+    unLocode: "RUSOC",
+    country: "Russia",
+    expected: 7896,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/12",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 5216,
+    portName: "Port of Vostochny",
+    unLocode: "RUVYP",
+    country: "Russia",
+    expected: 8701,
+    signal: "./asserts/tavar-image.png",
+    inexp: "16/12",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 5217,
+    portName: "Port of Baltiysk",
+    unLocode: "RUBAL",
+    country: "Russia",
+    expected: 6942,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/12",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 5218,
+    portName: "Port of Anadyr",
+    unLocode: "RUANA",
+    country: "Russia",
+    expected: 5134,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/12",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 5219,
+    portName: "Port of Derbent",
+    unLocode: "RUDER",
+    country: "Russia",
+    expected: 6129,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/12",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 5220,
+    portName: "Port of Temryuk",
+    unLocode: "RUTEM",
+    country: "Russia",
+    expected: 6871,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/12",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for South Africa dataset
+const SouthAfrica = [
+  {
+    portId: 5201,
+    portName: "Port of Cape Town",
+    unLocode: "ZACPT",
+    country: "South Africa",
+    expected: 8123,
+    signal: "./asserts/tavar-image.png",
+    inexp: "01/12",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 5202,
+    portName: "Port of Durban",
+    unLocode: "ZADUR",
+    country: "South Africa",
+    expected: 9341,
+    signal: "./asserts/tavar-image.png",
+    inexp: "02/12",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 5203,
+    portName: "Port of Port Elizabeth",
+    unLocode: "ZAPLZ",
+    country: "South Africa",
+    expected: 7452,
+    signal: "./asserts/tavar-image.png",
+    inexp: "03/12",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 5204,
+    portName: "Port of East London",
+    unLocode: "ZAELS",
+    country: "South Africa",
+    expected: 6891,
+    signal: "./asserts/tavar-image.png",
+    inexp: "04/12",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 5205,
+    portName: "Port of Richards Bay",
+    unLocode: "ZARCB",
+    country: "South Africa",
+    expected: 9124,
+    signal: "./asserts/tavar-image.png",
+    inexp: "05/12",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 5206,
+    portName: "Port of Mossel Bay",
+    unLocode: "ZAMBY",
+    country: "South Africa",
+    expected: 6643,
+    signal: "./asserts/tavar-image.png",
+    inexp: "06/12",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 5207,
+    portName: "Port of Saldanha Bay",
+    unLocode: "ZASDB",
+    country: "South Africa",
+    expected: 8075,
+    signal: "./asserts/tavar-image.png",
+    inexp: "07/12",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 5208,
+    portName: "Port of Ngqura",
+    unLocode: "ZANGQ",
+    country: "South Africa",
+    expected: 8992,
+    signal: "./asserts/tavar-image.png",
+    inexp: "08/12",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 5209,
+    portName: "Port of Simon's Town",
+    unLocode: "ZASMT",
+    country: "South Africa",
+    expected: 7346,
+    signal: "./asserts/tavar-image.png",
+    inexp: "09/12",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 5210,
+    portName: "Port of Knysna",
+    unLocode: "ZAKNY",
+    country: "South Africa",
+    expected: 6221,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/12",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 5211,
+    portName: "Port of Port St Johns",
+    unLocode: "ZAPSJ",
+    country: "South Africa",
+    expected: 6784,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/12",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 5212,
+    portName: "Port of Hout Bay",
+    unLocode: "ZAHBY",
+    country: "South Africa",
+    expected: 7412,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/12",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 5213,
+    portName: "Port of Gordon's Bay",
+    unLocode: "ZAGBY",
+    country: "South Africa",
+    expected: 8019,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/12",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 5214,
+    portName: "Port of False Bay",
+    unLocode: "ZAFBY",
+    country: "South Africa",
+    expected: 8531,
+    signal: "./asserts/tavar-image.png",
+    inexp: "14/12",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 5215,
+    portName: "Port of St Francis",
+    unLocode: "ZASFR",
+    country: "South Africa",
+    expected: 7264,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/12",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 5216,
+    portName: "Port of Lambert's Bay",
+    unLocode: "ZALBY",
+    country: "South Africa",
+    expected: 6135,
+    signal: "./asserts/tavar-image.png",
+    inexp: "16/12",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 5217,
+    portName: "Port of Gansbaai",
+    unLocode: "ZAGAN",
+    country: "South Africa",
+    expected: 8492,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/12",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 5218,
+    portName: "Port of Hermanus",
+    unLocode: "ZAHER",
+    country: "South Africa",
+    expected: 7881,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/12",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 5219,
+    portName: "Port of Stilbaai",
+    unLocode: "ZASTB",
+    country: "South Africa",
+    expected: 6954,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/12",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 5220,
+    portName: "Port of Yzerfontein",
+    unLocode: "ZAYZF",
+    country: "South Africa",
+    expected: 6789,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/12",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Mexico dataset
+const Mexico = [
+  {
+    portId: 5001,
+    portName: "Port of Veracruz",
+    unLocode: "MXVER",
+    country: "Mexico",
+    expected: 8123,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 5002,
+    portName: "Port of Altamira",
+    unLocode: "MXATM",
+    country: "Mexico",
+    expected: 6245,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 5003,
+    portName: "Port of Manzanillo",
+    unLocode: "MXZLO",
+    country: "Mexico",
+    expected: 7421,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 5004,
+    portName: "Port of Lazaro Cardenas",
+    unLocode: "MXLZC",
+    country: "Mexico",
+    expected: 8930,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 5005,
+    portName: "Port of Ensenada",
+    unLocode: "MXESE",
+    country: "Mexico",
+    expected: 5231,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 5006,
+    portName: "Port of Progreso",
+    unLocode: "MXPGO",
+    country: "Mexico",
+    expected: 4678,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 5007,
+    portName: "Port of Mazatlán",
+    unLocode: "MXMZT",
+    country: "Mexico",
+    expected: 7154,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 5008,
+    portName: "Port of Guaymas",
+    unLocode: "MXGYM",
+    country: "Mexico",
+    expected: 5992,
+    signal: "./asserts/wifi-image.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 5009,
+    portName: "Port of Coatzacoalcos",
+    unLocode: "MXCOA",
+    country: "Mexico",
+    expected: 6320,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 5010,
+    portName: "Port of Salina Cruz",
+    unLocode: "MXSCX",
+    country: "Mexico",
+    expected: 7885,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 5011,
+    portName: "Port of Puerto Morelos",
+    unLocode: "MXPMO",
+    country: "Mexico",
+    expected: 5741,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/05",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 5012,
+    portName: "Port of Topolobampo",
+    unLocode: "MXTPB",
+    country: "Mexico",
+    expected: 6869,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/05",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 5013,
+    portName: "Port of Tuxpan",
+    unLocode: "MXTUX",
+    country: "Mexico",
+    expected: 5213,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/05",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 5014,
+    portName: "Port of Ciudad del Carmen",
+    unLocode: "MXCDC",
+    country: "Mexico",
+    expected: 6044,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/05",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 5015,
+    portName: "Port of Dos Bocas",
+    unLocode: "MXDOB",
+    country: "Mexico",
+    expected: 7756,
+    signal: "./asserts/wifi-image.png",
+    inexp: "24/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 5016,
+    portName: "Port of Puerto Vallarta",
+    unLocode: "MXPVR",
+    country: "Mexico",
+    expected: 4981,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 5017,
+    portName: "Port of La Paz",
+    unLocode: "MXLAP",
+    country: "Mexico",
+    expected: 6110,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/05",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 5018,
+    portName: "Port of Isla Mujeres",
+    unLocode: "MXISJ",
+    country: "Mexico",
+    expected: 4837,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/05",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 5019,
+    portName: "Port of Cabo San Lucas",
+    unLocode: "MXCSL",
+    country: "Mexico",
+    expected: 7300,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/05",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 5020,
+    portName: "Port of Playa del Carmen",
+    unLocode: "MXPDC",
+    country: "Mexico",
+    expected: 5505,
+    signal: "./asserts/wifi-image.png",
+    inexp: "29/05",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for  China dataset
+const China = [
+  {
+    portId: 6001,
+    portName: "Port of Shanghai",
+    unLocode: "CNSHA",
+    country: "China",
+    expected: 11235,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 6002,
+    portName: "Port of Shenzhen",
+    unLocode: "CNSNZ",
+    country: "China",
+    expected: 10421,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 6003,
+    portName: "Port of Ningbo-Zhoushan",
+    unLocode: "CNNGB",
+    country: "China",
+    expected: 9984,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 6004,
+    portName: "Port of Guangzhou",
+    unLocode: "CNGZP",
+    country: "China",
+    expected: 8701,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 6005,
+    portName: "Port of Qingdao",
+    unLocode: "CNTAO",
+    country: "China",
+    expected: 8123,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-5.png",
+    class: "odd"
+  },
+  {
+    portId: 6006,
+    portName: "Port of Tianjin",
+    unLocode: "CNTNJ",
+    country: "China",
+    expected: 7655,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 6007,
+    portName: "Port of Dalian",
+    unLocode: "CNDLC",
+    country: "China",
+    expected: 6532,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 6008,
+    portName: "Port of Xiamen",
+    unLocode: "CNXMN",
+    country: "China",
+    expected: 6881,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 6009,
+    portName: "Port of Yingkou",
+    unLocode: "CNYIK",
+    country: "China",
+    expected: 5993,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 6010,
+    portName: "Port of Lianyungang",
+    unLocode: "CNLYG",
+    country: "China",
+    expected: 6892,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 6011,
+    portName: "Port of Zhanjiang",
+    unLocode: "CNZHA",
+    country: "China",
+    expected: 5743,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "20/05",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 6012,
+    portName: "Port of Fuzhou",
+    unLocode: "CNFOC",
+    country: "China",
+    expected: 6122,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "21/05",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 6013,
+    portName: "Port of Haikou",
+    unLocode: "CNHAK",
+    country: "China",
+    expected: 4888,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/05",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 6014,
+    portName: "Port of Beihai",
+    unLocode: "CNBHY",
+    country: "China",
+    expected: 5209,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "23/05",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 6015,
+    portName: "Port of Shantou",
+    unLocode: "CNSWA",
+    country: "China",
+    expected: 4957,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "24/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 6016,
+    portName: "Port of Weihai",
+    unLocode: "CNWEH",
+    country: "China",
+    expected: 4781,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "25/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 6017,
+    portName: "Port of Rizhao",
+    unLocode: "CNRZH",
+    country: "China",
+    expected: 5333,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "26/05",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 6018,
+    portName: "Port of Yantai",
+    unLocode: "CNYNT",
+    country: "China",
+    expected: 6002,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "27/05",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 6019,
+    portName: "Port of Zhuhai",
+    unLocode: "CNZUH",
+    country: "China",
+    expected: 5630,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/05",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 6020,
+    portName: "Port of Sanya",
+    unLocode: "CNSYX",
+    country: "China",
+    expected: 4554,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "29/05",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Argentina dataset
+const Argentina = [
+  {
+    portId: 7001,
+    portName: "Port of Buenos Aires",
+    unLocode: "ARBUE",
+    country: "Argentina",
+    expected: 6821,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-18.png",
+    class: "odd"
+  },
+  {
+    portId: 7002,
+    portName: "Port of Rosario",
+    unLocode: "ARRSA",
+    country: "Argentina",
+    expected: 5940,
+    signal: "./asserts/wifi-image.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 7003,
+    portName: "Port of Bahia Blanca",
+    unLocode: "ARBHI",
+    country: "Argentina",
+    expected: 5320,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-14.png",
+    class: "odd"
+  },
+  {
+    portId: 7004,
+    portName: "Port of La Plata",
+    unLocode: "ARLPG",
+    country: "Argentina",
+    expected: 4488,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 7005,
+    portName: "Port of Quequén",
+    unLocode: "ARQUE",
+    country: "Argentina",
+    expected: 5111,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 7006,
+    portName: "Port of Campana",
+    unLocode: "ARCMP",
+    country: "Argentina",
+    expected: 4780,
+    signal1: "./asserts/wifi-image.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  },
+  {
+    portId: 7007,
+    portName: "Port of San Lorenzo",
+    unLocode: "ARSLO",
+    country: "Argentina",
+    expected: 5695,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 7008,
+    portName: "Port of Ushuaia",
+    unLocode: "ARUSH",
+    country: "Argentina",
+    expected: 3902,
+    signal: "./asserts/wifi-image.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 7009,
+    portName: "Port of Mar del Plata",
+    unLocode: "ARMAR",
+    country: "Argentina",
+    expected: 4544,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 7010,
+    portName: "Port of San Nicolas",
+    unLocode: "ARSNN",
+    country: "Argentina",
+    expected: 4130,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 7011,
+    portName: "Port of Santa Fe",
+    unLocode: "ARSFE",
+    country: "Argentina",
+    expected: 4402,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "20/05",
+    flag: "./asserts/flag-8.png",
+    class: "odd"
+  },
+  {
+    portId: 7012,
+    portName: "Port of Zarate",
+    unLocode: "ARZTE",
+    country: "Argentina",
+    expected: 4765,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/05",
+    flag: "./asserts/flag-12.png",
+    class: "even"
+  },
+  {
+    portId: 7013,
+    portName: "Port of Puerto Madryn",
+    unLocode: "ARPMY",
+    country: "Argentina",
+    expected: 3823,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "22/05",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 7014,
+    portName: "Port of Comodoro Rivadavia",
+    unLocode: "ARCOQ",
+    country: "Argentina",
+    expected: 4001,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/05",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 7015,
+    portName: "Port of Rio Gallegos",
+    unLocode: "ARRGL",
+    country: "Argentina",
+    expected: 3592,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "24/05",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 7016,
+    portName: "Port of Neuquen",
+    unLocode: "ARNEU",
+    country: "Argentina",
+    expected: 3728,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 7017,
+    portName: "Port of Bahia Blanca Oil Terminal",
+    unLocode: "ARBOT",
+    country: "Argentina",
+    expected: 3901,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "26/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 7018,
+    portName: "Port of Ensenada",
+    unLocode: "ARENS",
+    country: "Argentina",
+    expected: 3776,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/05",
+    flag: "./asserts/flag-9.png",
+    class: "even"
+  },
+  {
+    portId: 7019,
+    portName: "Port of Caleta Olivia",
+    unLocode: "ARCLO",
+    country: "Argentina",
+    expected: 3420,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "28/05",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 7020,
+    portName: "Port of Rio Grande",
+    unLocode: "ARRGA",
+    country: "Argentina",
+    expected: 3699,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "29/05",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+// this is for Indonesia dataset
+const Indonesia = [
+  {
+    portId: 8001,
+    portName: "Port of Jakarta",
+    unLocode: "IDJKT",
+    country: "Indonesia",
+    expected: 6784,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/05",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 8002,
+    portName: "Port of Surabaya",
+    unLocode: "IDSUB",
+    country: "Indonesia",
+    expected: 5912,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "11/05",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 8003,
+    portName: "Port of Belawan",
+    unLocode: "IDBLW",
+    country: "Indonesia",
+    expected: 5489,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/05",
+    flag: "./asserts/flag-2.png",
+    class: "odd"
+  },
+  {
+    portId: 8004,
+    portName: "Port of Makassar",
+    unLocode: "IDMAK",
+    country: "Indonesia",
+    expected: 4670,
+    signal: "./asserts/wifi-image.png",
+    inexp: "13/05",
+    flag: "./asserts/flag-16.png",
+    class: "even"
+  },
+  {
+    portId: 8005,
+    portName: "Port of Semarang",
+    unLocode: "IDSRG",
+    country: "Indonesia",
+    expected: 5010,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/05",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 8006,
+    portName: "Port of Pontianak",
+    unLocode: "IDPNK",
+    country: "Indonesia",
+    expected: 4331,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/05",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 8007,
+    portName: "Port of Dumai",
+    unLocode: "IDDUM",
+    country: "Indonesia",
+    expected: 4982,
+    signal: "./asserts/wifi-image.png",
+    inexp: "16/05",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 8008,
+    portName: "Port of Balikpapan",
+    unLocode: "IDBPN",
+    country: "Indonesia",
+    expected: 4893,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "17/05",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 8009,
+    portName: "Port of Banjarmasin",
+    unLocode: "IDBDJ",
+    country: "Indonesia",
+    expected: 4455,
+    signal: "./asserts/wifi-image.png",
+    inexp: "18/05",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 8010,
+    portName: "Port of Palembang",
+    unLocode: "IDPLM",
+    country: "Indonesia",
+    expected: 4754,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "19/05",
+    flag: "./asserts/flag-13.png",
+    class: "even"
+  },
+  {
+    portId: 8011,
+    portName: "Port of Bitung",
+    unLocode: "IDBIT",
+    country: "Indonesia",
+    expected: 4203,
+    signal: "./asserts/wifi-image.png",
+    inexp: "20/05",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 8012,
+    portName: "Port of Cirebon",
+    unLocode: "IDCBN",
+    country: "Indonesia",
+    expected: 4382,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/05",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 8013,
+    portName: "Port of Tanjung Priok",
+    unLocode: "IDTPK",
+    country: "Indonesia",
+    expected: 5992,
+    signal: "./asserts/wifi-image.png",
+    inexp: "22/05",
+    flag: "./asserts/flag-10.png",
+    class: "odd"
+  },
+  {
+    portId: 8014,
+    portName: "Port of Tanjung Perak",
+    unLocode: "IDTPE",
+    country: "Indonesia",
+    expected: 5624,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/05",
+    flag: "./asserts/flag-3.png",
+    class: "even"
+  },
+  {
+    portId: 8015,
+    portName: "Port of Tanjung Emas",
+    unLocode: "IDTJE",
+    country: "Indonesia",
+    expected: 4890,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "24/05",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 8016,
+    portName: "Port of Merak",
+    unLocode: "IDMER",
+    country: "Indonesia",
+    expected: 4477,
+    signal: "./asserts/wifi-image.png",
+    inexp: "25/05",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  },
+  {
+    portId: 8017,
+    portName: "Port of Jayapura",
+    unLocode: "IDJAP",
+    country: "Indonesia",
+    expected: 4066,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "26/05",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 8018,
+    portName: "Port of Kupang",
+    unLocode: "IDKPG",
+    country: "Indonesia",
+    expected: 4210,
+    signal: "./asserts/wifi-image.png",
+    inexp: "27/05",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  },
+  {
+    portId: 8019,
+    portName: "Port of Manado",
+    unLocode: "IDMND",
+    country: "Indonesia",
+    expected: 4335,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/05",
+    flag: "./asserts/flag-8.png",
+    class: "odd"
+  },
+  {
+    portId: 8020,
+    portName: "Port of Padang",
+    unLocode: "IDPDG",
+    country: "Indonesia",
+    expected: 4587,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "29/05",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  }
+];
+// this is for Spain dataset
+const Spain = [
+  {
+    portId: 9001,
+    portName: "Port of Barcelona",
+    unLocode: "ESBCN",
+    country: "Spain",
+    expected: 8032,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/06",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 9002,
+    portName: "Port of Valencia",
+    unLocode: "ESVLC",
+    country: "Spain",
+    expected: 6724,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "11/06",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 9003,
+    portName: "Port of Algeciras",
+    unLocode: "ESALG",
+    country: "Spain",
+    expected: 5412,
+    signal: "./asserts/wifi-image.png",
+    inexp: "12/06",
+    flag: "./asserts/flag-18.png",
+    class: "odd"
+  },
+  {
+    portId: 9004,
+    portName: "Port of Tarragona",
+    unLocode: "ESTGN",
+    country: "Spain",
+    expected: 5624,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "13/06",
+    flag: "./asserts/flag-6.png",
+    class: "even"
+  },
+  {
+    portId: 9005,
+    portName: "Port of Bilbao",
+    unLocode: "ESBIO",
+    country: "Spain",
+    expected: 3892,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "14/06",
+    flag: "./asserts/flag-15.png",
+    class: "odd"
+  },
+  {
+    portId: 9006,
+    portName: "Port of Las Palmas",
+    unLocode: "ESLPA",
+    country: "Spain",
+    expected: 4873,
+    signal: "./asserts/wifi-image.png",
+    inexp: "15/06",
+    flag: "./asserts/flag-4.png",
+    class: "even"
+  },
+  {
+    portId: 9007,
+    portName: "Port of Cadiz",
+    unLocode: "ESCAD",
+    country: "Spain",
+    expected: 5145,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "16/06",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 9008,
+    portName: "Port of Valencia",
+    unLocode: "ESVLC",
+    country: "Spain",
+    expected: 5892,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "17/06",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  },
+  {
+    portId: 9009,
+    portName: "Port of La Coruna",
+    unLocode: "ESLCO",
+    country: "Spain",
+    expected: 6157,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "18/06",
+    flag: "./asserts/flag-11.png",
+    class: "odd"
+  },
+  {
+    portId: 9010,
+    portName: "Port of Gijón",
+    unLocode: "ESGJN",
+    country: "Spain",
+    expected: 4231,
+    signal: "./asserts/wifi-image.png",
+    inexp: "19/06",
+    flag: "./asserts/flag-3.png",
+    class: "even"
+  },
+  {
+    portId: 9011,
+    portName: "Port of Huelva",
+    unLocode: "ESHVA",
+    country: "Spain",
+    expected: 4789,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "20/06",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 9012,
+    portName: "Port of Santa Cruz de Tenerife",
+    unLocode: "ESSCT",
+    country: "Spain",
+    expected: 3324,
+    signal: "./asserts/wifi-image.png",
+    inexp: "21/06",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 9013,
+    portName: "Port of Palma de Mallorca",
+    unLocode: "ESPMI",
+    country: "Spain",
+    expected: 5623,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "22/06",
+    flag: "./asserts/flag-13.png",
+    class: "odd"
+  },
+  {
+    portId: 9014,
+    portName: "Port of Ibiza",
+    unLocode: "ESIBZ",
+    country: "Spain",
+    expected: 4216,
+    signal: "./asserts/wifi-image.png",
+    inexp: "23/06",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 9015,
+    portName: "Port of Melilla",
+    unLocode: "ESMLL",
+    country: "Spain",
+    expected: 3148,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "24/06",
+    flag: "./asserts/flag-2.png",
+    class: "odd"
+  },
+  {
+    portId: 9016,
+    portName: "Port of Cartagena",
+    unLocode: "ESCAT",
+    country: "Spain",
+    expected: 4526,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "25/06",
+    flag: "./asserts/flag-17.png",
+    class: "even"
+  },
+  {
+    portId: 9017,
+    portName: "Port of Las Palmas",
+    unLocode: "ESLPA",
+    country: "Spain",
+    expected: 6724,
+    signal: "./asserts/wifi-image.png",
+    inexp: "26/06",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 9018,
+    portName: "Port of Santander",
+    unLocode: "ESSDT",
+    country: "Spain",
+    expected: 4783,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "27/06",
+    flag: "./asserts/flag-14.png",
+    class: "even"
+  },
+  {
+    portId: 9019,
+    portName: "Port of Vigo",
+    unLocode: "ESVGO",
+    country: "Spain",
+    expected: 5231,
+    signal: "./asserts/wifi-image.png",
+    inexp: "28/06",
+    flag: "./asserts/flag-1.png",
+    class: "odd"
+  },
+  {
+    portId: 9020,
+    portName: "Port of Alicante",
+    unLocode: "ESALC",
+    country: "Spain",
+    expected: 4156,
+    signal: "./asserts/wifi-image-2.png",
+    inexp: "29/06",
+    flag: "./asserts/flag-19.png",
+    class: "even"
+  }
+];
+// this is for Saudi Arabia dataset
+const SaudiArabia = [
+  {
+    portId: 1001,
+    portName: "Port of Jeddah",
+    unLocode: "SAJED",
+    country: "Saudi Arabia",
+    expected: 3123,
+    signal: "./asserts/wifi-image.png",
+    inexp: "01/07",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 1002,
+    portName: "Port of Dammam",
+    unLocode: "SADMM",
+    country: "Saudi Arabia",
+    expected: 4872,
+    signal: "./asserts/tavar-image.png",
+    inexp: "02/07",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 1003,
+    portName: "Port of King Abdullah",
+    unLocode: "SAKAU",
+    country: "Saudi Arabia",
+    expected: 5231,
+    signal: "./asserts/wifi-image.png",
+    inexp: "03/07",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 1004,
+    portName: "Port of Rabigh",
+    unLocode: "SARBG",
+    country: "Saudi Arabia",
+    expected: 4653,
+    signal: "./asserts/tavar-image.png",
+    inexp: "04/07",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 1005,
+    portName: "Port of Jubail",
+    unLocode: "SAJUB",
+    country: "Saudi Arabia",
+    expected: 5267,
+    signal: "./asserts/tavar-image.png",
+    inexp: "05/07",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 1006,
+    portName: "Port of Yanbu",
+    unLocode: "SAYNB",
+    country: "Saudi Arabia",
+    expected: 4935,
+    signal: "./asserts/wifi-image.png",
+    inexp: "06/07",
+    flag: "./asserts/flag-7.png",
+    class: "even"
+  },
+  {
+    portId: 1007,
+    portName: "Port of Jizan",
+    unLocode: "SAJIZ",
+    country: "Saudi Arabia",
+    expected: 3478,
+    signal: "./asserts/wifi-image.png",
+    inexp: "07/07",
+    flag: "./asserts/flag-2.png",
+    class: "odd"
+  },
+  {
+    portId: 1008,
+    portName: "Port of Ras Al Khair",
+    unLocode: "SARKK",
+    country: "Saudi Arabia",
+    expected: 3967,
+    signal: "./asserts/tavar-image.png",
+    inexp: "08/07",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 1009,
+    portName: "Port of Shuqaiq",
+    unLocode: "SASQG",
+    country: "Saudi Arabia",
+    expected: 3759,
+    signal: "./asserts/wifi-image.png",
+    inexp: "09/07",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 1010,
+    portName: "Port of Dhiba",
+    unLocode: "SADHI",
+    country: "Saudi Arabia",
+    expected: 2945,
+    signal: "./asserts/tavar-image.png",
+    inexp: "10/07",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  }
+];
+// this is for Turkey dataset
+const Turkey = [
+  {
+    portId: 1101,
+    portName: "Port of Istanbul",
+    unLocode: "TRIST",
+    country: "Turkey",
+    expected: 5387,
+    signal: "./asserts/wifi-image.png",
+    inexp: "01/08",
+    flag: "./asserts/flag-9.png",
+    class: "odd"
+  },
+  {
+    portId: 1102,
+    portName: "Port of Izmir",
+    unLocode: "TRIZM",
+    country: "Turkey",
+    expected: 4672,
+    signal: "./asserts/tavar-image.png",
+    inexp: "02/08",
+    flag: "./asserts/flag-5.png",
+    class: "even"
+  },
+  {
+    portId: 1103,
+    portName: "Port of Mersin",
+    unLocode: "TRMER",
+    country: "Turkey",
+    expected: 2923,
+    signal: "./asserts/tavar-image.png",
+    inexp: "03/08",
+    flag: "./asserts/flag-7.png",
+    class: "odd"
+  },
+  {
+    portId: 1104,
+    portName: "Port of Ambarli",
+    unLocode: "TRAMB",
+    country: "Turkey",
+    expected: 3249,
+    signal: "./asserts/tavar-image.png",
+    inexp: "04/08",
+    flag: "./asserts/flag-1.png",
+    class: "even"
+  },
+  {
+    portId: 1105,
+    portName: "Port of Samsun",
+    unLocode: "TRSAM",
+    country: "Turkey",
+    expected: 4583,
+    signal: "./asserts/tavar-image.png",
+    inexp: "05/08",
+    flag: "./asserts/flag-3.png",
+    class: "odd"
+  },
+  {
+    portId: 1106,
+    portName: "Port of Trabzon",
+    unLocode: "TRTBZ",
+    country: "Turkey",
+    expected: 3147,
+    signal: "./asserts/tavar-image.png",
+    inexp: "06/08",
+    flag: "./asserts/flag-10.png",
+    class: "even"
+  },
+  {
+    portId: 1107,
+    portName: "Port of Derince",
+    unLocode: "TRDER",
+    country: "Turkey",
+    expected: 4138,
+    signal: "./asserts/tavar-image.png",
+    inexp: "07/08",
+    flag: "./asserts/flag-6.png",
+    class: "odd"
+  },
+  {
+    portId: 1108,
+    portName: "Port of Eregli",
+    unLocode: "TRERG",
+    country: "Turkey",
+    expected: 4562,
+    signal: "./asserts/tavar-image.png",
+    inexp: "08/08",
+    flag: "./asserts/flag-8.png",
+    class: "even"
+  },
+  {
+    portId: 1109,
+    portName: "Port of Aliaga",
+    unLocode: "TRALY",
+    country: "Turkey",
+    expected: 5193,
+    signal: "./asserts/tavar-image.png",
+    inexp: "09/08",
+    flag: "./asserts/flag-4.png",
+    class: "odd"
+  },
+  {
+    portId: 1110,
+    portName: "Port of Iskenderun",
+    unLocode: "TRISK",
+    country: "Turkey",
+    expected: 3324,
+    signal: "./asserts/wifi-image.png",
+    inexp: "10/08",
+    flag: "./asserts/flag-2.png",
+    class: "even"
+  },
+  {
+    portId: 1111,
+    portName: "Port of Tekirdag",
+    unLocode: "TRTEK",
+    country: "Turkey",
+    expected: 2765,
+    signal: "./asserts/tavar-image.png",
+    inexp: "11/08",
+    flag: "./asserts/flag-12.png",
+    class: "odd"
+  },
+  {
+    portId: 1112,
+    portName: "Port of Golcuk",
+    unLocode: "TRGOL",
+    country: "Turkey",
+    expected: 4520,
+    signal: "./asserts/tavar-image.png",
+    inexp: "12/08",
+    flag: "./asserts/flag-11.png",
+    class: "even"
+  },
+  {
+    portId: 1113,
+    portName: "Port of Canakkale",
+    unLocode: "TRCAN",
+    country: "Turkey",
+    expected: 3896,
+    signal: "./asserts/tavar-image.png",
+    inexp: "13/08",
+    flag: "./asserts/flag-14.png",
+    class: "odd"
+  },
+  {
+    portId: 1114,
+    portName: "Port of Marmara",
+    unLocode: "TRMAM",
+    country: "Turkey",
+    expected: 4763,
+    signal: "./asserts/wifi-image.png",
+    inexp: "14/08",
+    flag: "./asserts/flag-13.png",
+    class: "even"
+  },
+  {
+    portId: 1115,
+    portName: "Port of Hatay",
+    unLocode: "TRHAT",
+    country: "Turkey",
+    expected: 3987,
+    signal: "./asserts/tavar-image.png",
+    inexp: "15/08",
+    flag: "./asserts/flag-16.png",
+    class: "odd"
+  },
+  {
+    portId: 1116,
+    portName: "Port of Ceyhan",
+    unLocode: "TRCEY",
+    country: "Turkey",
+    expected: 5011,
+    signal: "./asserts/tavar-image.png",
+    inexp: "16/08",
+    flag: "./asserts/flag-15.png",
+    class: "even"
+  },
+  {
+    portId: 1117,
+    portName: "Port of Izmit",
+    unLocode: "TRIZT",
+    country: "Turkey",
+    expected: 5333,
+    signal: "./asserts/tavar-image.png",
+    inexp: "17/08",
+    flag: "./asserts/flag-17.png",
+    class: "odd"
+  },
+  {
+    portId: 1118,
+    portName: "Port of Bandirma",
+    unLocode: "TRBAN",
+    country: "Turkey",
+    expected: 4674,
+    signal: "./asserts/tavar-image.png",
+    inexp: "18/08",
+    flag: "./asserts/flag-18.png",
+    class: "even"
+  },
+  {
+    portId: 1119,
+    portName: "Port of Soke",
+    unLocode: "TRSOK",
+    country: "Turkey",
+    expected: 2945,
+    signal: "./asserts/tavar-image.png",
+    inexp: "19/08",
+    flag: "./asserts/flag-19.png",
+    class: "odd"
+  },
+  {
+    portId: 1120,
+    portName: "Port of Trabzon",
+    unLocode: "TRTBZ",
+    country: "Turkey",
+    expected: 3012,
+    signal: "./asserts/tavar-image.png",
+    inexp: "20/08",
+    flag: "./asserts/flag-20.png",
+    class: "even"
+  }
+];
+let countryDetails=[...India];
+// this is for creating render function in showing all details for the countrys and port details
+function renderPortDetails() {
+let data=document.getElementById("result-table-body");
+let portId=document.getElementById("pcount");
+portId.innerText="";
+ data.innerHTML="";
+ countryDetails.forEach(item =>{
+  data.innerHTML +=` <div class="row m-0 ${item.class}">
+                    <div class="col-2 col-md-1 col-lg-1 p-0  flag"> <img src="${item.flag}" class="re-flag-image"></div>
+                    <div class="d-none d-md-block col-md-2 col-lg-2 p-0 re-country">${item.country}</div>
+                    <div class="col-3 col-md-2 col-lg-2 p-0 re-port"><a href="#" class="re-port-link">${item.portName}</a></div>
+                    <div class="col-3 col-md-2 col-lg-2 p-0 re-unlocode">${item.unLocode}</div>
+                    <div class="col d-none d-md-block col-md-1 col-lg-1 p-0 re-inport">${item.portId}</div>
+                    <div class="col d-none d-md-block col-md-2 col-lg-2 p-0 re-expected">${item.expected}</div>
+                    <div class="col d-none d-md-block col-md-2 col-lg-2 p-0 re-coverage"><img src="${item.signal}"  class="signal-images"></div>
+                    <div class="col-4 d-block d-md-none p-0 re-inexp">${item.inexp}</div>
+                </div>`;
+                portId.innerText=`(${item.portId})`;
+ }); 
+}
+renderPortDetails();
+// this is for showing all port details based on the droupdown 
+document.getElementById("custom-droupdown").addEventListener("change", function (event) {
+  // const selectedValue = this.value;
+  const selectedValue = event.target.value;
+  switch (selectedValue) {
+    case "India":
+    countryDetails.length=0;
+    countryDetails=[...India];
+    renderPortDetails();
+      break;
+    case "UnitedStates":
+    countryDetails.length=0;
+    countryDetails=[...UnitedStates];
+    renderPortDetails();
+      break;
+    case "Canada":
+    countryDetails.length=0;
+    countryDetails=[...Canada];
+    renderPortDetails();
+      break;
+    case "Australia":
+    countryDetails.length=0;
+    countryDetails=[...Australia];
+    renderPortDetails();
+      break;
+    case "Germany":
+    countryDetails.length=0;
+    countryDetails=[...Germany];
+    renderPortDetails();
+      break;
+    case "France":
+    countryDetails.length=0;
+    countryDetails=[...France];
+    renderPortDetails();
+      break;
+    case "Brazil":
+    countryDetails.length=0;
+    countryDetails=[...Brazil];
+    renderPortDetails();
+      break;
+    case "Japan":
+    countryDetails.length=0;
+    countryDetails=[...Japan];
+    renderPortDetails();
+      break;
+    case "SouthKorea":
+    countryDetails.length=0;
+    countryDetails=[...SouthKorea];
+    renderPortDetails();
+      break;
+    case "UnitedKingdom":
+    countryDetails.length=0;
+    countryDetails=[...UnitedKingdom];
+    renderPortDetails();
+      break;
+    case "Italy":
+    countryDetails.length=0;
+    countryDetails=[...Italy   ];
+    renderPortDetails();
+      break;
+    case "Russia":
+    countryDetails.length=0;
+    countryDetails=[...Russia];
+    renderPortDetails();
+      break;
+    case "SouthAfrica":
+    countryDetails.length=0;
+    countryDetails=[...SouthAfrica];
+    renderPortDetails();
+      break;
+    case "Mexico":
+    countryDetails.length=0;
+    countryDetails=[...Mexico];
+    renderPortDetails();
+      break;
+    case "China":
+    countryDetails.length=0;
+    countryDetails=[...China];
+    renderPortDetails();
+      break;
+    case "Argentina":
+    countryDetails.length=0;
+    countryDetails=[...Argentina];
+    renderPortDetails();
+      break;
+    case "Indonesia":
+    countryDetails.length=0;
+    countryDetails=[...Indonesia];
+    renderPortDetails();
+      break;
+    case "Spain":
+    countryDetails.length=0;
+    countryDetails=[...Spain];
+    renderPortDetails();
+      break;
+    case "SaudiArabia":
+    countryDetails.length=0;
+    countryDetails=[...SaudiArabia];
+    renderPortDetails();
+      break;
+    case "Turkey":
+    countryDetails.length=0;
+    countryDetails=[...Turkey];
+    renderPortDetails();
+      break;
+    default:
+      console.log("Invalid selection");
+  }
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

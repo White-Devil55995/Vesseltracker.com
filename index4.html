@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles4.css">
+    <title>News</title>
+</head>
+<body>
+    <div class="hero-page" id="hero-page">
+        <div class="landing-page">
+          <!-- This is for creating desk-top nav-bar -->
+          <div class="navbar-desktop" id="navbar-desktop">
+             <nav class="desktop-version" id="desktop-version">
+                 <div class="item-1">
+                    <a href="./index.html" class="item1-link">
+                     <div class="sub-item1">
+                         <img src="./asserts/dragon.pic" alt="dragon-pic">
+                     <p class="logo-text">Vesseltracker.com</p>
+                     <p class="logo-sub-text">A Wood Mackenze Business</p>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="item-2">
+                     <a href="./index1.html" class="item1-link1">
+                         <div class="sub-item2">
+                             <p class="logo-text-1">PRODUCTS</p>
+                         </div>
+                     </a>
+                 </div>
+                <a href="./indax2.html" class="item-3">
+                 <p class="logo-text-1">VESSELS</p>
+                </a>
+                <a href="./index3.html" class="item-4">
+                 <p class="logo-text-1">PORTS</p>
+                </a>
+                <a href="./index4.html" class="item-5">
+                 <p class="logo-text-1">NEWS</p>
+                </a>
+                <div class="item-6">
+                 <!-- Example single danger button -->
+               <div class="btn-group btn-one">
+               <button type="button" class="btn  dropdown-toggle  about-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                ABOUT
+               </button>
+               <ul class="dropdown-menu one">
+               <li><a class="dropdown-item drp-item-one" href="./index5.html">ABOUT</a></li>
+               </ul>
+               </div>
+                </div>
+                <a href="./index5.html" class="item-7">
+                 COMMUNITY
+                </a>
+                
+                <div class="search-block" id="search-block">
+                 <i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>
+             </div>
+                <div class="vertical-line"></div>
+                <div class="search-side-block">
+                 <div class="search-realated-block" id="search-realated-block">
+                     <input type="text" placeholder="IMO,MMSI,NAME..." class="input-text">
+                 </div>
+                 <div class="three-in-one" id="three-in-one">
+                     <a href="#" class="login-root">LOG IN</a>
+                 <!-- this is for creating countries droup-down -->
+                     <div class="countries-box">
+                         <div class="cfirst">
+                             <img src="./asserts/indianflag.png" alt="flag-icon" class="flag-icon" id="flag-icon">
+                             <i class="ri-arrow-down-s-fill" id="carent-icon"></i>
+                         </div>
+                         <div class="csecond">
+                             <a href="#" class="countries-item" onclick="indianFlag()">TELUGU</a>
+                             <a href="#" class="countries-item"  onclick="usaFlag()">ENGLISH</a>
+                         </div>
+                     </div>
+                     <!-- this is creating globe--icon  -->
+                     <a href="#" class="glob-block">
+                         <i class="ri-earth-fill" id="globe-icon"></i>
+                     </a>
+                 </div>
+                 </a>
+                </div>
+             </nav>
+         </div>
+         <!-- This is for creating small screens nav-bar -->
+         <div class="small-navbar">
+             <nav class="small-screens-navbar" id="small-screens-navbar">
+                 <div class="hand-burger-toggeler" id="hand-burger-toggeler">
+                  <div class="taggoler-block">
+                      <i class="ri-menu-3-line" id="waves-handburger" onclick="hiddeRightSlider()"></i>
+                  </div>
+                  <div class="right-slider-block end-0">
+                      <div class="rs-first-part">
+                          <p>Learn more about our technology and shipping tools <a href="#" class="rs-subtext">start your free trial now</a></p>
+                      </div>
+                      <div class="rs-second-part">
+                          <div class="rss-first">
+                              <input type="text" placeholder="Search" class="rss-seach-input">
+                              <i class="fa-solid fa-magnifying-glass" id="rss-search-icon"></i>
+                          </div>
+                          <div class="rss-second">
+                              <a href="./index1.html" class="rss-products-link">PRODUCTS</a>
+                          </div>
+                          <div class="rss-three">
+                              <a href="./indax2.html" class="rss-vessels-link">VESSELS</a>
+                          </div>
+                          <div class="rss-four">
+                              <a href="./index3.html" class="rss-ports-link">PORTS</a>
+                          </div>
+                          <div class="rss-five">
+                              <a href="./index4.html" class="rss-news-link">NEWS</a>
+                          </div>
+                          <div class="rss-six">
+                              <div class="rss-about-block" id="rss-about-block">
+                                  <p class="rss-about-text">ABOUT</p>
+                                  <i class="fa-solid fa-caret-down" class="rss-about-carent"></i>
+                              </div>
+                              <div class="rss-about-droupdown" id="rss-about-droupdown">
+                                  <a href="./index5.html" class="rss-about-drp-item">ABOUT</a>
+                              </div>
+                          </div>
+                          <div class="rss-seven">
+                              <a href="./index5.html" class="rss-community-link">COMMUNITY</a>
+                          </div>
+                          <div class="rss-eghit">
+                              <a href="#" class="rss-login-link">LOG IN</a>
+                              <a href="#" class="rss-ende-link">EN/DE</a>
+                          </div>
+                      </div>
+                  </div>
+                 </div>
+                 <!-- ssn: small-screen-navbar -->
+                 <div class="ssn-elements" id="ssn-elements">
+                  <a href="./index.html" style="display: block;"><img src="./asserts/chota-dragon.png" alt="dragon-pic" class="chota-dragan"></a>
+                  <i class="ri-menu-3-line" id="ssn-water-wave" onclick="showLeftSlider()"></i>
+                 </div>
+               </nav>
+         </div>
+         <div class="dummy"></div>
+        <!-- this is for creating news block -->
+         <div class="news-block">
+             <!-- this is for creating News heading -->
+          <div class="news-heading">
+            <h1 class="news-text">News</h1>
+          </div>
+          <div class="news-tabs">
+            <div class="first-news" onclick="setActive1(this)">
+                <a href="#" class="news-link">
+                    <span class="news-icon"><i class="ri-sailboat-line"></i></span>
+                    <span class="d-none d-md-block nwes-description">Products updates</span>
+                </a>
+            </div>
+            <div class="second-news active" onclick="setActive1(this)">
+                <a href="#" class="news-link">
+                    <span class="news-icon"><i class="ri-ship-fill"></i></span>
+                    <span class="d-none d-md-block nwes-description">News</span>
+                </a>
+            </div>
+            <div class="thierd-news" onclick="setActive1(this)">
+                <a href="#" class="news-link">
+                    <span class="news-icon"><i class="ri-train-fill"></i></span>
+                    <span class="d-none d-md-block nwes-description"> Vessel News</span>
+                </a>
+            </div>
+            <div class="fourth-news" onclick="setActive1(this)">
+                <a href="#" class="news-link">
+                    <span class="news-icon"><i class="ri-anchor-line"></i></span>
+                    <span class="d-none d-md-block nwes-description"> Port News</span>
+                </a>
+            </div>
+          </div>
+          <!-- this is for map reprasentation block -->
+          <div class="news-thierd-part">
+             <div class="map-creation-block">
+                <div id="map-container" class="map-block">
+                    <div id="map"></div>
+                    <div class="zoom-controls">
+                      <button id="zoom-in">+</button>
+                      <button id="zoom-out">-</button>
+                    </div>
+                  </div>
+                 <div class="map-text-block">
+                    <h2 class="category-section">CATEGORY
+                        <span class="bottam-border-setup"></span>
+                    </h2>
+                    <div class="list-group">
+                        <a href="#" class="list-links">
+                            <span class="list-text">Accident/Casuality</span>
+                            <span class="list-increment">(4567)</span>
+                        </a>
+                        <a href="#" class="list-links">
+                            <span class="list-text">Mics. for Ports and Vessels</span>
+                            <span class="list-increment">(6789)</span>
+                        </a>
+                        <a href="#" class="list-links">
+                            <span class="list-text">Scrapped/Beached/Broken Up</span>
+                            <span class="list-increment">(2345)</span>
+                        </a>
+                        <a href="#" class="list-links">
+                            <span class="list-text">Sold/Decommisioned</span>
+                            <span class="list-increment">(5678)</span>
+                        </a>
+                        <a href="#" class="list-links">
+                            <span class="list-text">Charter Changed</span>
+                            <span class="list-increment">(4567)</span>
+                        </a>
+                        <a href="#" class="list-links">
+                            <span class="list-text">Pirate Attacks</span>
+                            <span class="list-increment">(1897)</span>
+                        </a>
+                    </div>
+                 </div>
+               </div>
+               <!-- this is for creating news cards -->
+               <div class="news-cards" id="news-cards">
+                 <!-- this is 1st row -->
+                 <div class="m-0 first-row killer" id="first-row-card">
+                    <div class="p-0 card-1 card-news junnu">
+                        <img src="https://blog.boats.com/files/sunset-1024x769.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">GLYVURSNES</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 card-2 card-news junnu">
+                        <img src="https://www.marineinsight.com/wp-content/uploads/2020/11/Ship-and-boat-1.png" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">MYRA ECKSTEIN</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 card-3 card-news junnu">
+                        <img src="https://cdn.offshorewind.biz/wp-content/uploads/sites/6/2024/11/19093048/1-1.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">GLYVURSNES</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content" id="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- this is 2nd row -->
+                <div class="m-0  first-row killer"  id="second-row-card" >
+                    <div class="p-0 card-1 card-news junnu">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/disney-adventure-ship.jpg?c=original" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">GRATE ZHOU</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 card-2 card-news junnu">
+                        <img src="https://media.istockphoto.com/id/1416040835/photo/aerial-view-of-a-large-loaded-container-cargo-ship-in-motion.jpg?s=612x612&w=0&k=20&c=ZP5DjN5ctgeefdvOBTHhx0h39gSsr2POQ4iw5ZuZRIU=" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">RICKEY HUGHES</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 card-3 card-news junnu">
+                        <img src="https://t3.ftcdn.net/jpg/04/54/40/96/360_F_454409639_SIsGJEefJK2MtCnlD7wyf1RgdWWTAUj3.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">MYRA ECKSTEIN</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- this is 3rd row -->
+                <div class="m-0  first-row killer"  id="thierd-row-card">
+                    <div class="junnu p-0 card-1 card-news ">
+                        <img src="https://aclmedia-prod-e6bccuf2bnd0hsdz.a03.azurefd.net/cmsmedia/libraries/acl/images/ships/american-pioneer/carousel/acl_website_700x500_american-pioneer.jpg?ext=.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">HODEIDAH</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="junnu p-0 card-2 card-news">
+                        <img src="https://www.pocruises.com/content/dam/po/marketing-assets/excel-class-ships---new/arvia/ArviaShipAtSea.jpg.1688460616148.image.686.560.low.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">PORT SUDAN</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="junnu p-0 card-3 card-news">
+                        <img src="https://disneyparksblog.com/app/uploads/2024/11/2024-dcl-disney-treasure-1620x1080.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">BANDAR  ABBAS</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- this 4th row -->
+                <div class="m-0  first-row killer" id="fourth-row-card">
+                    <div class="junnu p-0 card-1 card-news ">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Cargo_Ship_Puerto_Cortes.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">HOUSTON</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="junnu p-0 card-2 card-news">
+                        <img src="https://cdn.vesseltracker.com/midres/728187.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">RAS  ISA</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="junnu p-0 card-3 card-news">
+                        <img src="https://disneyparksblog.com/app/uploads/2024/11/2024-dcl-disney-treasure-1620x1080.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">JUNNU_VS_JUNNU</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-0 first-row killer" id="fifth-row-card">
+                    <div class="junnu p-0 card-2 card-news">
+                        <img src="https://www.pocruises.com/content/dam/po/marketing-assets/excel-class-ships---new/arvia/ArviaShipAtSea.jpg.1688460616148.image.686.560.low.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">PORT SUDAN</a>
+                           <i class="ri-train-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-0 card-3 card-news junnu">
+                        <img src="https://cdn.offshorewind.biz/wp-content/uploads/sites/6/2024/11/19093048/1-1.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">GLYVURSNES</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content" id="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="junnu p-0 card-1 card-news ">
+                        <img src="https://aclmedia-prod-e6bccuf2bnd0hsdz.a03.azurefd.net/cmsmedia/libraries/acl/images/ships/american-pioneer/carousel/acl_website_700x500_american-pioneer.jpg?ext=.jpg" alt="boat-1" class="card-image-1">
+                        <div class="header-part">
+                           <a href="#" class="card-heading">HODEIDAH</a>
+                           <i class="ri-anchor-fill" id="card-icon"></i>
+                        </div>
+                        <div class="category-block">Casuality</div>
+                        <div class="artical-body">
+                            <p class="artical-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit omnis iure officia laudantium corporis a, quisquam at quam consectetur tenetur adipisci asperiores excepturi culpa eos, officiis corrupti? Deleniti, libero? Perferendis, quidem? Officia recusandae, dolorem corporis itaque, dolorum voluptatibus, velit ipsa libero accusantium esse aperiam ratione debitis natus culpa illum assumenda animi voluptatem accusamus asperiores aliquid veritatis maxime neque. Illum esse quisquam reprehenderit dolore suscipit voluptas voluptatem at architecto eius? Impedit, nihil. Quae enim excepturi dicta assumenda omnis minima blanditiis sed ad nulla possimus debitis dolor illo quidem, dignissimos ipsa at. Expedita aperiam, minus voluptatem ullam quidem, inventore labore rerum quos ab excepturi ut ex debitis consequatur porro non tempora quibusdam! Nobis quisquam consectetur sed mollitia deserunt ullam, iusto facilis, pariatur rem perferendis architecto voluptates explicabo, quo illo ad esse! Itaque commodi eveniet aut adipisci nesciunt consequatur! Omnis aliquam cum dignissimos repellendus assumenda cumque soluta voluptatum eius ut quam! Nulla, a?</p>
+                        </div>
+                        <div class="profile-block">
+                            <img src="https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?w=360" alt="profile" class="profile-image">
+                            <div class="info">
+                                <span class="info-text">Junnu</span><br>
+                                <span id="current-date"><script>
+                                    document.write(new Date().toLocaleDateString('en-GB'));
+                                  </script></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+          </div>
+          <!-- this is for creating pagination block -->
+          <div class="pagenation-block">
+            <nav aria-label="Page navigation example m-0 p-0" class="pagination pg-block">
+                <ul class="pagination m-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true" onclick="showAll();setActive(1)">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link color-blue" href="#" onclick="showtwth();setActive(this)" id="move-1">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#" onclick="showffive();setActive(this)">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#" onclick="showone();setActive(this)" id="move-3">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true" onclick="showthree();setActive(3)">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+         </div>
+        </div>
+        <!-- This is for creating footer-part of hero-page -->
+        <div class="footer-part-hero">
+                 <div class="foot-log-block">
+                     <img src="./asserts/footer-log.svg" alt="footer-log" class="footer-log-image">
+                 </div>
+                 <div class="row m-0 footer-cards-block">
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-1 p-0">
+                         <h4 class="fcardf-heading">LOCATION + CONTACT</h4>
+                         <p></p>
+                         <div class="fcf-1-one">Vesseltracker.com GmbH</div>
+                         Rödingsmarkt 20,<br>
+                         20459 Hamburg, Germany <br><br>
+                         +49-(0)40-970786-10 <br>
+                         <a href="#" class="fcf-1-link-one">info@vesseltracker.com</a>
+                         <p></p>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-2 p-0">
+                         <h4 class="fcs-2-heading">ABOUT</h4>
+                         <p></p>
+                         <a href="#" class="fcs-2-link">PRIVACY NOTICE</a><br>
+                         <a href="#" class="fcs-2-link">GENERAL TERMS AND CONDITIONS</a><br>
+                         <a href="#" class="fcs-2-link"> TERMS OF USE</a><br>
+                         <a href="#" class="fcs-2-link">IMPRINT</a><br>
+                         <a href="#" class="fcs-2-link">CONTACT</a>
+                         <p></p>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-3 p-0">
+                         <h4 class="fct-3-heading">EXPLORE</h4>
+                         <p></p>
+                          <a href="#" class="fct-3-link">PRODUCTS</a><br>
+                          <a href="#" class="fct-3-link">VESSELS</a><br>
+                          <a href="#" class="fct-3-link">PORTS</a><br>
+                          <a href="#" class="fct-3-link">NEWS</a><br>
+                          <a href="#" class="fct-3-link">ABOUT</a><br>
+                          <a href="#" class="fct-3-link">COMMUNITY</a>
+                          <P></P>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-4 p-0">
+                         <h4 class="ffc-4-heading">SOCIAL</h4>
+                         <p></p>
+                         <div class="socia-media">
+                             <a href="#" class="fficon twitter"><i class="ri-twitter-fill"></i></a>
+                             <a href="#" class="fficon linkedin"><i class="ri-linkedin-fill"></i></a>
+                             <a href="#" class="fficon facebook"><i class="ri-facebook-fill"></i></a>
+                             <a href="#" class="fficon youtube"><i class="ri-youtube-fill"></i></a>
+                         </div><br>
+                         <a href="#" class="ffc-link">© vesseltracker <script type="text/javascript">document.write(new Date().getFullYear());</script></a>
+                     </div>
+                 </div>
+        </div>
+     </div>
+     <script>
+        // ...........this is for chenging the ountries logos when ever we can cleck that particuler country name............
+        let countryFlag=document.getElementById("flag-icon"); //point out to the country image tag
+        function indianFlag() {
+            countryFlag.src="./asserts/indianflag.png";
+        }
+        function usaFlag() {
+            countryFlag.src="./asserts/usa.png";
+        }
+      //....................completed the image replication by clicking the country name......................... 
+
+      //.........In  this case we can perform when wher click the search icon in desk-top mode then open another block with the place of lodin and countrys droupdown and glob icon...............
+        let searchBlock=document.getElementById("search-block"); //in this way we are targeting search-block becuse when ever click the search icon the  replace the search icon as into-symbol
+        let searchRelatedBlock=document.getElementById("search-realated-block"); //in this way targeting the search related block,becuse when ever click the seaech icon then immediatly show this black based on the logics.
+        let threeInOne=document.getElementById("three-in-one"); //in this way targeting the three-in-one block after search-related block shows parellely shows into icon show when ever click that icon the show three-in-one block.
+        function displaySearchRelatedBlock() {
+            threeInOne.style.display="none";
+            searchRelatedBlock.style.display="flex";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML= `<i class="ri-close-line" onclick="displayThreeInOneBlock()" id="crossIcon"></i>`;
+            document.getElementById("crossIcon").style.color="rgb(244, 129, 49)";
+        }
+        function displayThreeInOneBlock(){
+            threeInOne.style.display="flex";
+            searchRelatedBlock.style.display="none";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML=`<i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>`;
+        }
+    //  this for mobile screen slider-bar droup-down affect for "aout" element
+    let aboutDroupDown=document.getElementById("rss-about-block");
+    let rssValid=true; //this is for using toggeler effect of the rss-about-droupdown like on/off manner
+    aboutDroupDown.addEventListener("click", ()=>{
+        let rssAboutDroupDown=document.getElementById("rss-about-droupdown");
+            if(rssValid){
+                rssAboutDroupDown.style.display="flex";
+                rssValid=false;
+            }
+            else{
+                rssAboutDroupDown.style.display="none";
+                rssValid=true;
+            }
+    });
+
+    // in this way we can build the logic ,  when ever click the water-wave icon then show the right-slider
+      function showLeftSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="none";
+        hanburgerToggeler.style.display="block";
+      }
+    //   this for closing right-slider 
+    function hiddeRightSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="flex";
+        hanburgerToggeler.style.display="none";
+    }
+    // this is for desktop nav-bar with scrolling effect that means when ever scrolle the scroll-bar then nav-bar move top of the page
+    window.addEventListener("scroll",(e)=>{
+        const scrollPosition = window.scrollY;
+        let desktopNavbar=document.getElementById("navbar-desktop");
+        let dskNavbar=document.getElementById("desktop-version");
+        if(scrollPosition > 80){
+            desktopNavbar.style.top="0";
+            desktopNavbar.style.zIndex="10"
+            dskNavbar.style.backgroundColor="#0F2C42";
+        }
+        else{
+            desktopNavbar.style.top="8%";
+            desktopNavbar.style.zIndex="0"
+            dskNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)"
+        }
+        let smallScreenNavbar=document.getElementById("small-screens-navbar");    
+        if(scrollPosition > 15){
+            smallScreenNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)";
+        }
+        else{
+            smallScreenNavbar.style.backgroundColor="transparent";
+        }
+    })
+    // this is for add and remove the active class in news-tab items
+   function  setActive1(clickedDiv) {
+  const allItems = document.querySelectorAll(".news-tabs > div");
+  allItems.forEach(item => {
+    item.classList.remove("active");
+  });
+  clickedDiv.classList.add("active");
+}
+
+// this is for reprasenting map-integration 
+// Initialize the map
+const map = L.map('map').setView([17.385044, 78.486671], 10); // Coordinates for Hyderabad
+// Add OpenStreetMap tile layer
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+// Handle zoom in
+document.getElementById('zoom-in').addEventListener('click', () => {
+  map.zoomIn();
+});
+
+// Handle zoom out
+document.getElementById('zoom-out').addEventListener('click', () => {
+  map.zoomOut();
+});
+
+//this is for date formate
+  const dateElement = document.getElementById("current-date");
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+  const year = today.getFullYear();
+  const formattedDate = `${day}/${month}/${year}`;
+  dateElement.textContent = formattedDate;
+//   this for pagination purpose 
+// featch  fist row card
+let firstRow =document.getElementById("first-row-card");
+let secondRow=document.getElementById("second-row-card");
+let thierdRow=document.getElementById("thierd-row-card");
+let fourthRow=document.getElementById("fourth-row-card");
+let fifthRow=document.getElementById("fifth-row-card");
+// this is for  featching news-cards block 
+let newsCardsBlock=document.getElementById("news-cards");
+// this is for showing all cards click the left-shaveron
+function showAll() {
+    newsCardsBlock.innerHTML="";
+    newsCardsBlock.append(firstRow,secondRow);
+    // document.getElementById("move-1").style.backgroundColor="#2ab7e7";
+}
+newsCardsBlock.innerHTML="";
+showtwth();
+// this is for showing card-2,3 when ever clicking the "1"
+function showtwth() {
+    newsCardsBlock.innerHTML="";
+    newsCardsBlock.append(firstRow,secondRow);
+}
+
+// this is for showing card-4,5 when ever clicking the "2"
+function showffive() {
+    newsCardsBlock.innerHTML="";
+    newsCardsBlock.append(secondRow,thierdRow);
+}
+// this is for showing card-one
+function showone() {
+    newsCardsBlock.innerHTML="";
+    newsCardsBlock.append(fourthRow,fifthRow);
+
+}
+// this is for showing cards-5,3,1 when ever clicking the right-shaveron
+function showthree() {
+    newsCardsBlock.innerHTML="";
+    newsCardsBlock.append(fourthRow,fifthRow);
+}
+// this is the logic for pagination purpose
+function setActive(clickedLi) {
+  const allItems = document.querySelectorAll(".pagination li a");
+  // Remove 'color-blue' from all page links
+  allItems.forEach(item => item.classList.remove("color-blue"));
+  if (typeof clickedLi === "number") {
+    // If clickedLi is a number, get the corresponding element by ID
+    const target = document.getElementById(`move-${clickedLi}`);
+    if (target) {
+      target.classList.add("color-blue");
+    }
+  } else {
+    clickedLi.classList.add("color-blue");
+  }
+}
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

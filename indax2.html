@@ -1,0 +1,6477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/7120e9a3de.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles2.css">
+    <title>Vessel</title>
+</head>
+<body>
+    <div class="hero-page" id="hero-page">
+        <div class="landing-page">
+             <!-- This is for creating desk-top nav-bar -->
+          <div class="navbar-desktop" id="navbar-desktop">
+            <nav class="desktop-version" id="desktop-version">
+                <div class="item-1">
+                   <a href="./index.html" class="item1-link">
+                    <div class="sub-item1">
+                        <img src="./asserts/dragon.pic" alt="dragon-pic">
+                    <p class="logo-text">Vesseltracker.com</p>
+                    <p class="logo-sub-text">A Wood Mackenze Business</p>
+                    </div>
+                   </a>
+                </div>
+                <div class="item-2">
+                    <a href="./index1.html" class="item1-link1">
+                        <div class="sub-item2">
+                            <p class="logo-text-1">PRODUCTS</p>
+                        </div>
+                    </a>
+                </div>
+               <a href="./indax2.html" class="item-3">
+                <p class="logo-text-1">VESSELS</p>
+               </a>
+               <a href="./index3.html" class="item-4">
+                <p class="logo-text-1">PORTS</p>
+               </a>
+               <a href="./index4.html" class="item-5">
+                <p class="logo-text-1">NEWS</p>
+               </a>
+               <div class="item-6">
+                <!-- Example single danger button -->
+              <div class="btn-group btn-one">
+              <button type="button" class="btn  dropdown-toggle  about-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+               ABOUT
+              </button>
+              <ul class="dropdown-menu one">
+              <li><a class="dropdown-item drp-item-one" href="./index5.html">ABOUT</a></li>
+              </ul>
+              </div>
+               </div>
+               <a href="./index5.html" class="item-7">
+                COMMUNITY
+               </a>
+               
+               <div class="search-block" id="search-block">
+                <i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>
+            </div>
+               <div class="vertical-line"></div>
+               <div class="search-side-block">
+                <div class="search-realated-block" id="search-realated-block">
+                    <input type="text" placeholder="IMO,MMSI,NAME..." class="input-text">
+                </div>
+                <div class="three-in-one" id="three-in-one">
+                    <a href="#" class="login-root">LOG IN</a>
+                <!-- this is for creating countries droup-down -->
+                    <div class="countries-box">
+                        <div class="cfirst">
+                            <img src="./asserts/indianflag.png" alt="flag-icon" class="flag-icon" id="flag-icon">
+                            <i class="ri-arrow-down-s-fill" id="carent-icon"></i>
+                        </div>
+                        <div class="csecond">
+                            <a href="#" class="countries-item" onclick="indianFlag()">TELUGU</a>
+                            <a href="#" class="countries-item"  onclick="usaFlag()">ENGLISH</a>
+                        </div>
+                    </div>
+                    <!-- this is creating globe--icon  -->
+                    <a href="#" class="glob-block">
+                        <i class="ri-earth-fill" id="globe-icon"></i>
+                    </a>
+                </div>
+                </a>
+               </div>
+            </nav>
+        </div>
+        <!-- This is for creating small screens nav-bar -->
+        <div class="small-navbar">
+            <nav class="small-screens-navbar" id="small-screens-navbar">
+                <div class="hand-burger-toggeler" id="hand-burger-toggeler">
+                 <div class="taggoler-block">
+                     <i class="ri-menu-3-line" id="waves-handburger" onclick="hiddeRightSlider()"></i>
+                 </div>
+                 <div class="right-slider-block end-0">
+                     <div class="rs-first-part">
+                         <p>Learn more about our technology and shipping tools <a href="#" class="rs-subtext">start your free trial now</a></p>
+                     </div>
+                     <div class="rs-second-part">
+                         <div class="rss-first">
+                             <input type="text" placeholder="Search" class="rss-seach-input">
+                             <i class="fa-solid fa-magnifying-glass" id="rss-search-icon"></i>
+                         </div>
+                         <div class="rss-second">
+                             <a href="./index1.html" class="rss-products-link">PRODUCTS</a>
+                         </div>
+                         <div class="rss-three">
+                             <a href="./indax2.html" class="rss-vessels-link">VESSELS</a>
+                         </div>
+                         <div class="rss-four">
+                             <a href="./index3.html" class="rss-ports-link">PORTS</a>
+                         </div>
+                         <div class="rss-five">
+                             <a href="./index4.html" class="rss-news-link">NEWS</a>
+                         </div>
+                         <div class="rss-six">
+                             <div class="rss-about-block" id="rss-about-block">
+                                 <p class="rss-about-text">ABOUT</p>
+                                 <i class="fa-solid fa-caret-down" class="rss-about-carent"></i>
+                             </div>
+                             <div class="rss-about-droupdown" id="rss-about-droupdown">
+                                 <a href="./index5.html" class="rss-about-drp-item">ABOUT</a>
+                             </div>
+                         </div>
+                         <div class="rss-seven">
+                             <a href="./index5.html" class="rss-community-link">COMMUNITY</a>
+                         </div>
+                         <div class="rss-eghit">
+                             <a href="#" class="rss-login-link">LOG IN</a>
+                             <a href="#" class="rss-ende-link">EN/DE</a>
+                         </div>
+                     </div>
+                 </div>
+                </div>
+                <!-- ssn: small-screen-navbar -->
+                <div class="ssn-elements" id="ssn-elements">
+                 <a href="./index.html" style="display: block;"><img src="./asserts/chota-dragon.png" alt="dragon-pic" class="chota-dragan"></a>
+                 <i class="ri-menu-3-line" id="ssn-water-wave" onclick="showLeftSlider()"></i>
+                </div>
+              </nav>
+        </div>
+        <!-- this is for creating dummy-block -->
+        <div class="dummy-container"></div>
+        <!-- this is for creating main-parts of the vessel-menu -->
+        <div class="vessel-part">
+            <!-- this is for creating vessel heading block only -->
+             <div class="row m-0">
+                <div class="col-12 vessel-heading p-0">Vessels</div>
+             </div>
+             <!-- this is for creating alphabete filtering block -->
+              <div class="alphabate-filtering">
+                <ul class="leter-pagination p-0 m-0">
+                    <li class="active"  onclick=" setActive(this);showAshipDetails()">
+                        <a href="#">A</a>
+                    </li>
+                    <li onclick="setActive(this);showBshipDetails()" ><a href="#">B</a></li>
+                    <li onclick="setActive(this);showCshipDetails()"><a href="#">C</a></li>
+                    <li onclick="setActive(this);showDshipDetails()"><a href="#">D</a></li>
+                    <li onclick="setActive(this);showEshipDetails()"><a href="#">E</a></li>
+                    <li onclick="setActive(this);showFshipDetails()"><a href="#">F</a></li>
+                    <li onclick="setActive(this);showGshipDetails()"><a href="#">G</a></li>
+                    <li onclick="setActive(this);showHshipDetails()"><a href="#">H</a></li>
+                    <li onclick="setActive(this);showIshipDetails()"><a href="#">I</a></li>
+                    <li onclick="setActive(this);showJshipDetails()"><a href="#">J</a></li>
+                    <li onclick="setActive(this);showKshipDetails()"><a href="#">K</a></li>
+                    <li onclick="setActive(this);showLshipDetails()"><a href="#">L</a></li>
+                    <li onclick="setActive(this);showMshipDetails()"><a href="#">M</a></li>
+                    <li onclick="setActive(this);showNshipDetails()"><a href="#">N</a></li>
+                    <li onclick="setActive(this);showOshipDetails()"><a href="#">O</a></li>
+                    <li onclick="setActive(this);showPshipDetails()"><a href="#">P</a></li>
+                    <li onclick="setActive(this);showQshipDetails()"><a href="#">Q</a></li>
+                    <li onclick="setActive(this);showRshipDetails()"><a href="#">R</a></li>
+                    <li onclick="setActive(this);showSshipDetails()"><a href="#">S</a></li>
+                    <li onclick="setActive(this);showTshipDetails()"><a href="#">T</a></li>
+                    <li onclick="setActive(this);showUshipDetails()"><a href="#">U</a></li>
+                    <li onclick="setActive(this);showVshipDetails()"><a href="#">V</a></li>
+                    <li onclick="setActive(this);showWshipDetails()"><a href="#">W</a></li>
+                    <li onclick="setActive(this);showXshipDetails()"><a href="#">X</a></li>
+                    <li onclick="setActive(this);showYshipDetails()"><a href="#">Y</a></li>
+                    <li onclick="setActive(this);showZshipDetails()"><a href="#">Z</a></li>
+                </ul>
+              </div>
+              <!-- this is for creating boad dash-bord -->
+               <div class="boat-dash-board">
+                <div class="dash-board-header">
+                    <div class="row m-0">
+                        <div class="d-none d-md-block col-md-1 col-lg-1 p-0"></div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 p-0 dash-board-name">Name</div>
+                        <div class="col-4 col-sm-4 col-md-1 col-lg-1 p-0 dash-board-IMO">IMO</div>
+                        <div class="col-4 col-sm-4 col-md-1 col-lg-1 p-0 dash-board-callsing">Callsing</div>
+                        <div class=" d-none d-md-block  col-md-2 col-lg-2 p-0 dash-board-MMSI">MMSI</div>
+                        <div class=" d-none d-md-block col-md-2 col-lg-2 p-0 dash-board-len-wdth">lgth x width(m)</div>
+                        <div class=" d-none d-md-block col-md-1 col-lg-1 p-0 dash-board-Area">Area</div>
+                        <div class=" d-none d-md-block col-md-2 col-lg-2 p-0 dash-board-last-seen">Last seen</div>
+                    </div>
+                </div>
+                <div class="ship-details-block">
+                    <div class="ships-block" id="ships-block">
+                    </div>
+                    <div class="buttons-block">
+                      <button onclick="moveBackword()" class="backword" id="backword">Previous</button>
+                      <button onclick="moveForword()" class="forword" id="forword">Next</button>
+                    </div>
+                </div>
+               </div>
+        </div>
+        </div>
+        <!-- This is for creating footer-part of hero-page -->
+        <div class="footer-part-hero">
+                 <div class="foot-log-block">
+                     <img src="./asserts/footer-log.svg" alt="footer-log" class="footer-log-image">
+                 </div>
+                 <div class="row m-0 footer-cards-block">
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-1 p-0">
+                         <h4 class="fcardf-heading">LOCATION + CONTACT</h4>
+                         <p></p>
+                         <div class="fcf-1-one">Vesseltracker.com GmbH</div>
+                         Rödingsmarkt 20,<br>
+                         20459 Hamburg, Germany <br><br>
+                         +49-(0)40-970786-10 <br>
+                         <a href="#" class="fcf-1-link-one">info@vesseltracker.com</a>
+                         <p></p>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-2 p-0">
+                         <h4 class="fcs-2-heading">ABOUT</h4>
+                         <p></p>
+                         <a href="#" class="fcs-2-link">PRIVACY NOTICE</a><br>
+                         <a href="#" class="fcs-2-link">GENERAL TERMS AND CONDITIONS</a><br>
+                         <a href="#" class="fcs-2-link"> TERMS OF USE</a><br>
+                         <a href="#" class="fcs-2-link">IMPRINT</a><br>
+                         <a href="#" class="fcs-2-link">CONTACT</a>
+                         <p></p>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-3 p-0">
+                         <h4 class="fct-3-heading">EXPLORE</h4>
+                         <p></p>
+                          <a href="#" class="fct-3-link">PRODUCTS</a><br>
+                          <a href="#" class="fct-3-link">VESSELS</a><br>
+                          <a href="#" class="fct-3-link">PORTS</a><br>
+                          <a href="#" class="fct-3-link">NEWS</a><br>
+                          <a href="#" class="fct-3-link">ABOUT</a><br>
+                          <a href="#" class="fct-3-link">COMMUNITY</a>
+                          <P></P>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-4 p-0">
+                         <h4 class="ffc-4-heading">SOCIAL</h4>
+                         <p></p>
+                         <div class="socia-media">
+                             <a href="#" class="fficon twitter"><i class="ri-twitter-fill"></i></a>
+                             <a href="#" class="fficon linkedin"><i class="ri-linkedin-fill"></i></a>
+                             <a href="#" class="fficon facebook"><i class="ri-facebook-fill"></i></a>
+                             <a href="#" class="fficon youtube"><i class="ri-youtube-fill"></i></a>
+                         </div><br>
+                         <a href="#" class="ffc-link">© vesseltracker <script type="text/javascript">document.write(new Date().getFullYear());</script></a>
+                     </div>
+                 </div>
+        </div>
+     </div>
+     <script>
+        // ...........this is for chenging the ountries logos when ever we can cleck that particuler country name............
+        let countryFlag=document.getElementById("flag-icon"); //point out to the country image tag
+        function indianFlag() {
+            countryFlag.src="./asserts/indianflag.png";
+        }
+        function usaFlag() {
+            countryFlag.src="./asserts/usa.png";
+        }
+      //....................completed the image replication by clicking the country name......................... 
+
+      //.........In  this case we can perform when wher click the search icon in desk-top mode then open another block with the place of lodin and countrys droupdown and glob icon...............
+        let searchBlock=document.getElementById("search-block"); //in this way we are targeting search-block becuse when ever click the search icon the  replace the search icon as into-symbol
+        let searchRelatedBlock=document.getElementById("search-realated-block"); //in this way targeting the search related block,becuse when ever click the seaech icon then immediatly show this black based on the logics.
+        let threeInOne=document.getElementById("three-in-one"); //in this way targeting the three-in-one block after search-related block shows parellely shows into icon show when ever click that icon the show three-in-one block.
+        function displaySearchRelatedBlock() {
+            threeInOne.style.display="none";
+            searchRelatedBlock.style.display="flex";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML= `<i class="ri-close-line" onclick="displayThreeInOneBlock()" id="crossIcon"></i>`;
+            document.getElementById("crossIcon").style.color="rgb(244, 129, 49)";
+        }
+        function displayThreeInOneBlock(){
+            threeInOne.style.display="flex";
+            searchRelatedBlock.style.display="none";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML=`<i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>`;
+        }
+    //  this for mobile screen slider-bar droup-down affect for "about" element
+    let aboutDroupDown=document.getElementById("rss-about-block");
+    let rssValid=true; //this is for using toggeler effect of the rss-about-droupdown like on/off manner
+    aboutDroupDown.addEventListener("click", ()=>{
+        let rssAboutDroupDown=document.getElementById("rss-about-droupdown");
+            if(rssValid){
+                rssAboutDroupDown.style.display="flex";
+                rssValid=false;
+            }
+            else{
+                rssAboutDroupDown.style.display="none";
+                rssValid=true;
+            }
+    });
+
+    // in this way we can build the logic ,  when ever click the water-wave icon then show the right-slider
+      function showLeftSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="none";
+        hanburgerToggeler.style.display="block";
+      }
+    //   this for closing right-slider 
+    function hiddeRightSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="flex";
+        hanburgerToggeler.style.display="none";
+    }
+    // this is for desktop nav-bar with scrolling effect that means when ever scrolle the scroll-bar then nav-bar move top of the page
+    window.addEventListener("scroll",(e)=>{
+        const scrollPosition = window.scrollY;
+        let desktopNavbar=document.getElementById("navbar-desktop");
+        let dskNavbar=document.getElementById("desktop-version");
+        if(scrollPosition > 80){
+            desktopNavbar.style.top="0";
+            desktopNavbar.style.zIndex="10"
+            dskNavbar.style.backgroundColor="#0F2C42";
+        }
+        else{
+            desktopNavbar.style.top="6%";
+            desktopNavbar.style.zIndex="0"
+            dskNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)"
+        }
+        let smallScreenNavbar=document.getElementById("small-screens-navbar");    
+        if(scrollPosition > 15){
+            smallScreenNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)";
+        }
+        else{
+            smallScreenNavbar.style.backgroundColor="transparent";
+        }
+    })
+    //    this is for creating  'A' data base 
+    let aDataBase=[
+    {
+     class :"odd",  
+    name: "A2B Leader",
+    shipType: "Container Ship",
+    imo: "9113733",
+    callSign: "PDVC",
+    mmsi: "244850004",
+    lengthWidth: "101.0 x 18.2",
+    area: "North Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class:"even",
+    name: "A2B Ambition",
+    shipType: "Bulk Carrier",
+    imo: "9113745",
+    callSign: "PDXA",
+    mmsi: "244850000",
+    lengthWidth: "102.5 x 19.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class :"odd",  
+    name: "A2B Comfort",
+    shipType: "Tanker",
+    imo: "9183415",
+    callSign: "PDXB",
+    mmsi: "244850001",
+    lengthWidth: "100.0 x 17.5",
+    area: "North Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class :"even",
+    name: "A2B Energy",
+    shipType: "LNG Tanker",
+    imo: "9183427",
+    callSign: "PDXC",
+    mmsi: "244850002",
+    lengthWidth: "200.0 x 35.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class :"odd",
+    name: "A2B Future",
+    shipType: "LPG Tanker",
+    imo: "9122241",
+    callSign: "PDXD",
+    mmsi: "244850003",
+    lengthWidth: "150.0 x 25.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class :"even",
+    name: "Atlantic Dream",
+    shipType: "Chemical Tanker",
+    imo: "9123456",
+    callSign: "ADMC",
+    mmsi: "211224455",
+    lengthWidth: "130.0 x 20.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class :"odd",
+  name: "Arctic Rose",
+  shipType: "Ro-Ro Cargo",
+  imo: "9087765",
+  callSign: "ARRC",
+  mmsi: "245677889",
+  lengthWidth: "89.0 x 18.0",
+  area: "Arctic Ocean",
+  image: "./asserts/ship-image-7.jpeg"
+},
+{
+    class :"even",
+  name: "Aqua Majesty",
+  shipType: "Icebreaker",
+  imo: "9133987",
+  callSign: "QMZT",
+  mmsi: "218889900",
+  lengthWidth: "95.0 x 19.0",
+  area: "Black Sea",
+  image: "./asserts/ship-image-8.jpg"
+},
+{
+    class :"odd",
+  name: "Arctic Commander",
+  shipType: "Research Vessel",
+  imo: "9034567",
+  callSign: "ARCM",
+  mmsi: "219876543",
+  lengthWidth: "100.0 x 20.0",
+  area: "Greenland Sea",
+  image: "./asserts/ship-image-9.jpg"
+},
+{
+    class :"even",
+  name: "Aqua Queen",
+  shipType: "Cruise Ship",
+  imo: "9001234",
+  callSign: "AQDN",
+  mmsi: "267890234",
+  lengthWidth: "290.0 x 36.0",
+  area: "Caribbean Sea",
+  image: "./asserts/ship-image-10.jpg"
+},
+{
+    class :"odd",
+  name: "Azure Horizon",
+  shipType: "Passenger Ferry",
+  imo: "9205678",
+  callSign: "AZHR",
+  mmsi: "230112233",
+  lengthWidth: "300.0 x 45.0",
+  area: "South China Sea",
+  image: "./asserts/ship-image-11.jpg"
+},
+{
+    class :"even",
+  name: "Aurora Explorer",
+  shipType: "Vehicle Carrier",
+  imo: "9306789",
+  callSign: "AOEX",
+  mmsi: "231234567",
+  lengthWidth: "210.0 x 32.0",
+  area: "Indian Ocean",
+  image: "./asserts/ship-image-12.jpg"
+},
+{
+    class :"odd",
+  name: "Admiral Grace",
+  shipType: "Oil Products Tanker",
+  imo: "9407890",
+  callSign: "AGRK",
+  mmsi: "232198712",
+  lengthWidth: "220.0 x 40.0",
+  area: "Pacific Ocean",
+  image: "./asserts/ship-image-13.jpg"
+},
+{
+    class :"even",
+  name: "Alpha Trader",
+  shipType: "General Cargo",
+  imo: "9508901",
+  callSign: "ALTR",
+  mmsi: "234444322",
+  lengthWidth: "250.0 x 44.0",
+  area: "Mediterranean Sea",
+  image: "./asserts/ship-image-14.jpg"
+},
+{
+    class :"odd",
+  name: "Armada Voyager",
+  shipType: "Heavy Load Carrier",
+  imo: "9609012",
+  callSign: "AMVG",
+  mmsi: "234567891",
+  lengthWidth: "310.0 x 48.0",
+  area: "Arabian Gulf",
+  image: "./asserts/ship-image-15.jpg"
+},
+{
+    class :"even",
+  name: "Apex Endeavour",
+  shipType: "Container Ship",
+  imo: "9700123",
+  callSign: "APED",
+  mmsi: "215487960",
+  lengthWidth: "190.0 x 32.0",
+  area: "Baltic Sea",
+  image: "./asserts/ship-image-16.jpg"
+},
+{
+    class :"odd",
+  name: "Atlantic Spirit",
+  shipType: "Bulk Carrier",
+  imo: "9801234",
+  callSign: "AOSP",
+  mmsi: "238900123",
+  lengthWidth: "170.0 x 28.0",
+  area: "Red Sea",
+  image: "./asserts/ship-image-17.jpg"
+},
+{
+    class :"even",
+  name: "Arctic Wind",
+  shipType: "Tanker",
+  imo: "9902345",
+  callSign: "AWND",
+  mmsi: "203457891",
+  lengthWidth: "190.0 x 30.0",
+  area: "Black Sea",
+  image: "./asserts/ship-image-18.jpg"
+},
+{
+    class :"odd",
+  name: "Azure Wave",
+  shipType: "LNG Tanker",
+  imo: "9903456",
+  callSign: "AZWV",
+  mmsi: "243789101",
+  lengthWidth: "275.0 x 42.0",
+  area: "South Pacific",
+  image: "./asserts/ship-image-19.jpg"
+},
+{
+    class :"even",
+  name: "Aquamarine",
+  shipType: "LPG Tanker",
+  imo: "9004567",
+  callSign: "AQUA",
+  mmsi: "221334455",
+  lengthWidth: "180.0 x 28.0",
+  area: "Tasman Sea",
+  image: "./asserts/ship-image-20.jpg"
+}
+    ]
+    // this is for creating 'B' data base
+    let bDataBase = [
+  {
+    class: "odd",
+    name: "Baltic Star",
+    shipType: "LNG Tanker",
+    imo: "9889557",
+    callSign: "MHUG",
+    mmsi: "263748768",
+    lengthWidth: "170.0 x 44.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Blue Horizon",
+    shipType: "LNG Tanker",
+    imo: "9295873",
+    callSign: "AWEE",
+    mmsi: "230209474",
+    lengthWidth: "218.0 x 44.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Bright Sailor",
+    shipType: "Ro-Ro Cargo",
+    imo: "9665677",
+    callSign: "CTHR",
+    mmsi: "249480249",
+    lengthWidth: "135.0 x 29.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Brave Voyager",
+    shipType: "Cruise Ship",
+    imo: "9613723",
+    callSign: "NWCJ",
+    mmsi: "253719414",
+    lengthWidth: "254.0 x 40.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Beacon Glory",
+    shipType: "Vehicle Carrier",
+    imo: "9758442",
+    callSign: "ZEBP",
+    mmsi: "273261882",
+    lengthWidth: "164.0 x 33.0",
+    area: "Arabian Gulf",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Bliss Mariner",
+    shipType: "Chemical Tanker",
+    imo: "9038292",
+    callSign: "GXOM",
+    mmsi: "243599045",
+    lengthWidth: "285.0 x 26.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Bold Wave",
+    shipType: "Oil Products Tanker",
+    imo: "9820456",
+    callSign: "UCFA",
+    mmsi: "210315842",
+    lengthWidth: "193.0 x 41.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Boreal Spirit",
+    shipType: "Container Ship",
+    imo: "9248845",
+    callSign: "PRDJ",
+    mmsi: "295716589",
+    lengthWidth: "185.0 x 35.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Brilliant Pearl",
+    shipType: "Tanker",
+    imo: "9511234",
+    callSign: "HYIV",
+    mmsi: "229508479",
+    lengthWidth: "203.0 x 38.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Blue Ocean",
+    shipType: "Passenger Ferry",
+    imo: "9857321",
+    callSign: "XKPN",
+    mmsi: "209885733",
+    lengthWidth: "175.0 x 30.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Breeze Explorer",
+    shipType: "Heavy Load Carrier",
+    imo: "9794123",
+    callSign: "ZULQ",
+    mmsi: "296734218",
+    lengthWidth: "312.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Black Tide",
+    shipType: "Bulk Carrier",
+    imo: "9873021",
+    callSign: "IGVR",
+    mmsi: "228404300",
+    lengthWidth: "155.0 x 29.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Bounty Carrier",
+    shipType: "General Cargo",
+    imo: "9112094",
+    callSign: "FNKY",
+    mmsi: "265600123",
+    lengthWidth: "160.0 x 31.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Brisk Runner",
+    shipType: "Research Vessel",
+    imo: "9278292",
+    callSign: "PLWM",
+    mmsi: "267319823",
+    lengthWidth: "128.0 x 21.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Blizzard Dawn",
+    shipType: "Icebreaker",
+    imo: "9363457",
+    callSign: "TTYU",
+    mmsi: "260800999",
+    lengthWidth: "99.0 x 24.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Blue Fin",
+    shipType: "Oil Products Tanker",
+    imo: "9233425",
+    callSign: "BCVA",
+    mmsi: "292120004",
+    lengthWidth: "182.0 x 32.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Brave Titan",
+    shipType: "Container Ship",
+    imo: "9701223",
+    callSign: "RXCL",
+    mmsi: "290220998",
+    lengthWidth: "210.0 x 36.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Borealis Queen",
+    shipType: "Tanker",
+    imo: "9593728",
+    callSign: "EMKT",
+    mmsi: "282444999",
+    lengthWidth: "201.0 x 35.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Bay Guardian",
+    shipType: "LPG Tanker",
+    imo: "9462834",
+    callSign: "VBBM",
+    mmsi: "243887732",
+    lengthWidth: "175.0 x 29.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Bright Comet",
+    shipType: "Cruise Ship",
+    imo: "9021349",
+    callSign: "XJOP",
+    mmsi: "235321456",
+    lengthWidth: "298.0 x 39.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  }
+];
+// this is for creating "C" data base
+     let cDataBase = [
+  {
+    class: "odd",
+    name: "Calypso Queen",
+    shipType: "Cruise Ship",
+    imo: "9011234",
+    callSign: "CQDN",
+    mmsi: "267890345",
+    lengthWidth: "285.0 x 35.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Coral Dream",
+    shipType: "Container Ship",
+    imo: "9112234",
+    callSign: "CDRM",
+    mmsi: "244850005",
+    lengthWidth: "200.0 x 32.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Celtic Horizon",
+    shipType: "Bulk Carrier",
+    imo: "9123345",
+    callSign: "CHZN",
+    mmsi: "244850006",
+    lengthWidth: "175.0 x 30.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Caspian Wind",
+    shipType: "Tanker",
+    imo: "9134456",
+    callSign: "CWND",
+    mmsi: "244850007",
+    lengthWidth: "190.0 x 28.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Crystal Tide",
+    shipType: "LNG Tanker",
+    imo: "9145567",
+    callSign: "CTDE",
+    mmsi: "244850008",
+    lengthWidth: "265.0 x 41.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Crown Voyager",
+    shipType: "LPG Tanker",
+    imo: "9156678",
+    callSign: "CVYR",
+    mmsi: "244850009",
+    lengthWidth: "185.0 x 30.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Columbia Pride",
+    shipType: "Oil Products Tanker",
+    imo: "9167789",
+    callSign: "CLPR",
+    mmsi: "244850010",
+    lengthWidth: "225.0 x 38.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Cape Horizon",
+    shipType: "Chemical Tanker",
+    imo: "9178890",
+    callSign: "CPHR",
+    mmsi: "244850011",
+    lengthWidth: "140.0 x 20.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Coral Explorer",
+    shipType: "Research Vessel",
+    imo: "9189901",
+    callSign: "CREX",
+    mmsi: "244850012",
+    lengthWidth: "100.0 x 20.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Crystal Voyager",
+    shipType: "Vehicle Carrier",
+    imo: "9191012",
+    callSign: "CVYR",
+    mmsi: "244850013",
+    lengthWidth: "215.0 x 32.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Cascade Spirit",
+    shipType: "Passenger Ferry",
+    imo: "9192023",
+    callSign: "CSSP",
+    mmsi: "244850014",
+    lengthWidth: "260.0 x 36.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Cobalt Legend",
+    shipType: "Heavy Load Carrier",
+    imo: "9193034",
+    callSign: "CBLG",
+    mmsi: "244850015",
+    lengthWidth: "300.0 x 45.0",
+    area: "Arabian Gulf",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Celestial Sky",
+    shipType: "General Cargo",
+    imo: "9194045",
+    callSign: "CLSK",
+    mmsi: "244850016",
+    lengthWidth: "240.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Canyon Explorer",
+    shipType: "Icebreaker",
+    imo: "9195056",
+    callSign: "CNXP",
+    mmsi: "244850017",
+    lengthWidth: "130.0 x 20.0",
+    area: "Southern Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Copper Seaway",
+    shipType: "Ro-Ro Cargo",
+    imo: "9196067",
+    callSign: "CPWY",
+    mmsi: "244850018",
+    lengthWidth: "120.0 x 22.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Crystal Spirit",
+    shipType: "Cruise Ship",
+    imo: "9197078",
+    callSign: "CRSP",
+    mmsi: "244850019",
+    lengthWidth: "295.0 x 35.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Celeste Carrier",
+    shipType: "Vehicle Carrier",
+    imo: "9198089",
+    callSign: "CLCR",
+    mmsi: "244850020",
+    lengthWidth: "210.0 x 33.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Comet Horizon",
+    shipType: "Oil Products Tanker",
+    imo: "9199090",
+    callSign: "CMHR",
+    mmsi: "244850021",
+    lengthWidth: "230.0 x 36.0",
+    area: "Gulf of Mexico",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Canyon Queen",
+    shipType: "LNG Tanker",
+    imo: "9200101",
+    callSign: "CYQN",
+    mmsi: "244850022",
+    lengthWidth: "270.0 x 42.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Cedar Breeze",
+    shipType: "Bulk Carrier",
+    imo: "9201112",
+    callSign: "CDBZ",
+    mmsi: "244850023",
+    lengthWidth: "180.0 x 28.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-17.jpg"
+  }
+];
+// this is for creating "D" data base
+     let dDataBase = [
+  {
+    class: "odd",
+    name: "Desert Voyager",
+    shipType: "Container Ship",
+    imo: "9200001",
+    callSign: "DSVR",
+    mmsi: "251000001",
+    lengthWidth: "210.0 x 33.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Dawn Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9200002",
+    callSign: "DWSP",
+    mmsi: "251000002",
+    lengthWidth: "240.0 x 35.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dolphin Wave",
+    shipType: "Tanker",
+    imo: "9200003",
+    callSign: "DLWV",
+    mmsi: "251000003",
+    lengthWidth: "190.0 x 28.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Delta Dawn",
+    shipType: "LNG Tanker",
+    imo: "9200004",
+    callSign: "DTDN",
+    mmsi: "251000004",
+    lengthWidth: "220.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dream Horizon",
+    shipType: "LPG Tanker",
+    imo: "9200005",
+    callSign: "DRHZ",
+    mmsi: "251000005",
+    lengthWidth: "190.0 x 30.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Deep Blue",
+    shipType: "Chemical Tanker",
+    imo: "9200006",
+    callSign: "DBLU",
+    mmsi: "251000006",
+    lengthWidth: "180.0 x 26.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dawn Crusader",
+    shipType: "Ro-Ro Cargo",
+    imo: "9200007",
+    callSign: "DNCR",
+    mmsi: "251000007",
+    lengthWidth: "210.0 x 34.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Drake's Pride",
+    shipType: "Icebreaker",
+    imo: "9200008",
+    callSign: "DRKP",
+    mmsi: "251000008",
+    lengthWidth: "95.0 x 20.0",
+    area: "Antarctic",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dover Explorer",
+    shipType: "Research Vessel",
+    imo: "9200009",
+    callSign: "DVEX",
+    mmsi: "251000009",
+    lengthWidth: "180.0 x 29.0",
+    area: "English Channel",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Dreamliner",
+    shipType: "Cruise Ship",
+    imo: "9200010",
+    callSign: "DRLN",
+    mmsi: "251000010",
+    lengthWidth: "280.0 x 40.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dawn Majesty",
+    shipType: "Passenger Ferry",
+    imo: "9200011",
+    callSign: "DNMJ",
+    mmsi: "251000011",
+    lengthWidth: "250.0 x 38.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Dune Princess",
+    shipType: "Vehicle Carrier",
+    imo: "9200012",
+    callSign: "DNPR",
+    mmsi: "251000012",
+    lengthWidth: "200.0 x 30.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dark Horizon",
+    shipType: "Oil Products Tanker",
+    imo: "9200013",
+    callSign: "DKHZ",
+    mmsi: "251000013",
+    lengthWidth: "220.0 x 40.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Dolphin Reef",
+    shipType: "General Cargo",
+    imo: "9200014",
+    callSign: "DLRF",
+    mmsi: "251000014",
+    lengthWidth: "250.0 x 45.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Desert Jewel",
+    shipType: "Heavy Load Carrier",
+    imo: "9200015",
+    callSign: "DSJW",
+    mmsi: "251000015",
+    lengthWidth: "300.0 x 50.0",
+    area: "Arabian Gulf",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Deep Spirit",
+    shipType: "Container Ship",
+    imo: "9200016",
+    callSign: "DSPR",
+    mmsi: "251000016",
+    lengthWidth: "190.0 x 32.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dawn Horizon",
+    shipType: "Bulk Carrier",
+    imo: "9200017",
+    callSign: "DNHZ",
+    mmsi: "251000017",
+    lengthWidth: "180.0 x 28.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Desert Breeze",
+    shipType: "Tanker",
+    imo: "9200018",
+    callSign: "DSBR",
+    mmsi: "251000018",
+    lengthWidth: "190.0 x 32.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Dawn Seeker",
+    shipType: "LNG Tanker",
+    imo: "9200019",
+    callSign: "DNSK",
+    mmsi: "251000019",
+    lengthWidth: "275.0 x 42.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Dawn Star",
+    shipType: "LPG Tanker",
+    imo: "9200020",
+    callSign: "DNSR",
+    mmsi: "251000020",
+    lengthWidth: "180.0 x 30.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-20.jpg"
+  }
+];
+// this is for creating "E" data set 
+     let eDataBase = [
+  {
+    class: "odd",
+    name: "Eagle Majesty",
+    shipType: "Container Ship",
+    imo: "9300001",
+    callSign: "EGMJ",
+    mmsi: "261000001",
+    lengthWidth: "200.0 x 34.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Elder Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9300002",
+    callSign: "ELSP",
+    mmsi: "261000002",
+    lengthWidth: "230.0 x 36.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Emerald Wave",
+    shipType: "Tanker",
+    imo: "9300003",
+    callSign: "EMWV",
+    mmsi: "261000003",
+    lengthWidth: "210.0 x 32.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Endeavor Horizon",
+    shipType: "LNG Tanker",
+    imo: "9300004",
+    callSign: "ENHZ",
+    mmsi: "261000004",
+    lengthWidth: "240.0 x 40.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Eagle Wind",
+    shipType: "LPG Tanker",
+    imo: "9300005",
+    callSign: "EGWN",
+    mmsi: "261000005",
+    lengthWidth: "220.0 x 38.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Eagle Spirit",
+    shipType: "Chemical Tanker",
+    imo: "9300006",
+    callSign: "EGSP",
+    mmsi: "261000006",
+    lengthWidth: "180.0 x 28.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Eden Voyager",
+    shipType: "Ro-Ro Cargo",
+    imo: "9300007",
+    callSign: "EDVO",
+    mmsi: "261000007",
+    lengthWidth: "200.0 x 32.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Eagle Explorer",
+    shipType: "Icebreaker",
+    imo: "9300008",
+    callSign: "EGEX",
+    mmsi: "261000008",
+    lengthWidth: "100.0 x 20.0",
+    area: "Antarctic",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Eclipse Commander",
+    shipType: "Research Vessel",
+    imo: "9300009",
+    callSign: "ECLM",
+    mmsi: "261000009",
+    lengthWidth: "230.0 x 35.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Eternal Majesty",
+    shipType: "Cruise Ship",
+    imo: "9300010",
+    callSign: "ETMJ",
+    mmsi: "261000010",
+    lengthWidth: "280.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Emerald Queen",
+    shipType: "Passenger Ferry",
+    imo: "9300011",
+    callSign: "EMQN",
+    mmsi: "261000011",
+    lengthWidth: "260.0 x 38.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Endless Horizon",
+    shipType: "Vehicle Carrier",
+    imo: "9300012",
+    callSign: "ENHZ",
+    mmsi: "261000012",
+    lengthWidth: "220.0 x 32.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Everlight Grace",
+    shipType: "Oil Products Tanker",
+    imo: "9300013",
+    callSign: "ELGR",
+    mmsi: "261000013",
+    lengthWidth: "250.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Eagle Breeze",
+    shipType: "General Cargo",
+    imo: "9300014",
+    callSign: "EGBZ",
+    mmsi: "261000014",
+    lengthWidth: "240.0 x 40.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Eureka Voyager",
+    shipType: "Heavy Load Carrier",
+    imo: "9300015",
+    callSign: "ERVY",
+    mmsi: "261000015",
+    lengthWidth: "310.0 x 50.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Endurance Spirit",
+    shipType: "Container Ship",
+    imo: "9300016",
+    callSign: "EDSP",
+    mmsi: "261000016",
+    lengthWidth: "220.0 x 35.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Eagle Rising",
+    shipType: "Bulk Carrier",
+    imo: "9300017",
+    callSign: "EGRS",
+    mmsi: "261000017",
+    lengthWidth: "230.0 x 36.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Endless Star",
+    shipType: "Tanker",
+    imo: "9300018",
+    callSign: "ENST",
+    mmsi: "261000018",
+    lengthWidth: "220.0 x 38.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Eclipse Star",
+    shipType: "LNG Tanker",
+    imo: "9300019",
+    callSign: "ECST",
+    mmsi: "261000019",
+    lengthWidth: "250.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Emerald Majesty",
+    shipType: "LPG Tanker",
+    imo: "9300020",
+    callSign: "EMJY",
+    mmsi: "261000020",
+    lengthWidth: "220.0 x 38.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-20.jpg"
+  }
+];
+// this is for creating "F" data set
+     let fDataBase = [
+  {
+    class: "odd",
+    name: "Falcon Breeze",
+    shipType: "Container Ship",
+    imo: "9400001",
+    callSign: "FLBN",
+    mmsi: "271000001",
+    lengthWidth: "210.0 x 36.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Flame Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9400002",
+    callSign: "FLSP",
+    mmsi: "271000002",
+    lengthWidth: "240.0 x 38.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Frost Horizon",
+    shipType: "Tanker",
+    imo: "9400003",
+    callSign: "FRHZ",
+    mmsi: "271000003",
+    lengthWidth: "250.0 x 42.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Fire Commander",
+    shipType: "LNG Tanker",
+    imo: "9400004",
+    callSign: "FRCM",
+    mmsi: "271000004",
+    lengthWidth: "230.0 x 38.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Fleet Majesty",
+    shipType: "LPG Tanker",
+    imo: "9400005",
+    callSign: "FLMJ",
+    mmsi: "271000005",
+    lengthWidth: "220.0 x 37.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Flare Wind",
+    shipType: "Chemical Tanker",
+    imo: "9400006",
+    callSign: "FLWN",
+    mmsi: "271000006",
+    lengthWidth: "210.0 x 35.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Frost Queen",
+    shipType: "Ro-Ro Cargo",
+    imo: "9400007",
+    callSign: "FRQT",
+    mmsi: "271000007",
+    lengthWidth: "180.0 x 30.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Fury Explorer",
+    shipType: "Icebreaker",
+    imo: "9400008",
+    callSign: "FRXL",
+    mmsi: "271000008",
+    lengthWidth: "100.0 x 20.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Furioso Majesty",
+    shipType: "Research Vessel",
+    imo: "9400009",
+    callSign: "FRMJ",
+    mmsi: "271000009",
+    lengthWidth: "230.0 x 38.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Flaming Star",
+    shipType: "Cruise Ship",
+    imo: "9400010",
+    callSign: "FLST",
+    mmsi: "271000010",
+    lengthWidth: "280.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Fleet Rising",
+    shipType: "Passenger Ferry",
+    imo: "9400011",
+    callSign: "FLRI",
+    mmsi: "271000011",
+    lengthWidth: "250.0 x 38.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Fiery Explorer",
+    shipType: "Vehicle Carrier",
+    imo: "9400012",
+    callSign: "FEXR",
+    mmsi: "271000012",
+    lengthWidth: "240.0 x 36.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Fallen Star",
+    shipType: "Oil Products Tanker",
+    imo: "9400013",
+    callSign: "FLST",
+    mmsi: "271000013",
+    lengthWidth: "230.0 x 36.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Frost Spirit",
+    shipType: "General Cargo",
+    imo: "9400014",
+    callSign: "FRSP",
+    mmsi: "271000014",
+    lengthWidth: "220.0 x 38.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Fierce Majesty",
+    shipType: "Heavy Load Carrier",
+    imo: "9400015",
+    callSign: "FIMJ",
+    mmsi: "271000015",
+    lengthWidth: "300.0 x 45.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Fable Horizon",
+    shipType: "Container Ship",
+    imo: "9400016",
+    callSign: "FAHZ",
+    mmsi: "271000016",
+    lengthWidth: "230.0 x 35.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Flaming Breeze",
+    shipType: "Bulk Carrier",
+    imo: "9400017",
+    callSign: "FLBN",
+    mmsi: "271000017",
+    lengthWidth: "240.0 x 40.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Frost Majesty",
+    shipType: "Tanker",
+    imo: "9400018",
+    callSign: "FRMJ",
+    mmsi: "271000018",
+    lengthWidth: "230.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Flare Majesty",
+    shipType: "LNG Tanker",
+    imo: "9400019",
+    callSign: "FLMJ",
+    mmsi: "271000019",
+    lengthWidth: "250.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Frost Star",
+    shipType: "LPG Tanker",
+    imo: "9400020",
+    callSign: "FRST",
+    mmsi: "271000020",
+    lengthWidth: "240.0 x 42.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-18.jpg"
+  }
+];
+// this is for creating "G" data set
+     let gDataBase = [
+  {
+    class: "odd",
+    name: "Galactic Horizon",
+    shipType: "Container Ship",
+    imo: "9500001",
+    callSign: "GLHR",
+    mmsi: "281000001",
+    lengthWidth: "220.0 x 38.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Glory Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9500002",
+    callSign: "GLSP",
+    mmsi: "281000002",
+    lengthWidth: "250.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Guardian Star",
+    shipType: "Tanker",
+    imo: "9500003",
+    callSign: "GDSR",
+    mmsi: "281000003",
+    lengthWidth: "240.0 x 42.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Grand Explorer",
+    shipType: "LNG Tanker",
+    imo: "9500004",
+    callSign: "GREX",
+    mmsi: "281000004",
+    lengthWidth: "230.0 x 38.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Great Majesty",
+    shipType: "LPG Tanker",
+    imo: "9500005",
+    callSign: "GRMJ",
+    mmsi: "281000005",
+    lengthWidth: "210.0 x 35.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Glorious Wind",
+    shipType: "Chemical Tanker",
+    imo: "9500006",
+    callSign: "GLWN",
+    mmsi: "281000006",
+    lengthWidth: "200.0 x 32.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Gulf Breeze",
+    shipType: "Ro-Ro Cargo",
+    imo: "9500007",
+    callSign: "GLBR",
+    mmsi: "281000007",
+    lengthWidth: "180.0 x 30.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Global Commander",
+    shipType: "Icebreaker",
+    imo: "9500008",
+    callSign: "GCMR",
+    mmsi: "281000008",
+    lengthWidth: "120.0 x 22.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Golden Explorer",
+    shipType: "Research Vessel",
+    imo: "9500009",
+    callSign: "GDEX",
+    mmsi: "281000009",
+    lengthWidth: "250.0 x 40.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Glacier Queen",
+    shipType: "Cruise Ship",
+    imo: "9500010",
+    callSign: "GLQN",
+    mmsi: "281000010",
+    lengthWidth: "290.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Gulf Majesty",
+    shipType: "Passenger Ferry",
+    imo: "9500011",
+    callSign: "GLMJ",
+    mmsi: "281000011",
+    lengthWidth: "220.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Glory Wave",
+    shipType: "Vehicle Carrier",
+    imo: "9500012",
+    callSign: "GLWV",
+    mmsi: "281000012",
+    lengthWidth: "240.0 x 38.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Gleaming Horizon",
+    shipType: "Oil Products Tanker",
+    imo: "9500013",
+    callSign: "GLHR",
+    mmsi: "281000013",
+    lengthWidth: "230.0 x 37.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Grand Spirit",
+    shipType: "General Cargo",
+    imo: "9500014",
+    callSign: "GRSP",
+    mmsi: "281000014",
+    lengthWidth: "220.0 x 35.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Gallant Majesty",
+    shipType: "Heavy Load Carrier",
+    imo: "9500015",
+    callSign: "GLMJ",
+    mmsi: "281000015",
+    lengthWidth: "280.0 x 44.0",
+    area: "Arabian Gulf",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Grand Breeze",
+    shipType: "Container Ship",
+    imo: "9500016",
+    callSign: "GRBR",
+    mmsi: "281000016",
+    lengthWidth: "210.0 x 36.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Gale Wave",
+    shipType: "Bulk Carrier",
+    imo: "9500017",
+    callSign: "GLWV",
+    mmsi: "281000017",
+    lengthWidth: "240.0 x 42.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Glimmer Spirit",
+    shipType: "Tanker",
+    imo: "9500018",
+    callSign: "GLSP",
+    mmsi: "281000018",
+    lengthWidth: "250.0 x 45.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Gallant Explorer",
+    shipType: "LNG Tanker",
+    imo: "9500019",
+    callSign: "GLXR",
+    mmsi: "281000019",
+    lengthWidth: "230.0 x 40.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Glistening Majesty",
+    shipType: "LPG Tanker",
+    imo: "9500020",
+    callSign: "GLMJ",
+    mmsi: "281000020",
+    lengthWidth: "220.0 x 39.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-11.jpg"
+  }
+];
+// This is for creatin "H" data set
+     let hDataBase = [
+  {
+    class: "odd",
+    name: "Horizon Grace",
+    shipType: "Container Ship",
+    imo: "9800001",
+    callSign: "HZGR",
+    mmsi: "302000001",
+    lengthWidth: "250.0 x 45.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbor Queen",
+    shipType: "Bulk Carrier",
+    imo: "9800002",
+    callSign: "HQEN",
+    mmsi: "302000002",
+    lengthWidth: "240.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Horizon Majesty",
+    shipType: "Tanker",
+    imo: "9800003",
+    callSign: "HZMJ",
+    mmsi: "302000003",
+    lengthWidth: "220.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbinger Spirit",
+    shipType: "LNG Tanker",
+    imo: "9800004",
+    callSign: "HBSR",
+    mmsi: "302000004",
+    lengthWidth: "230.0 x 42.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Hercules Breeze",
+    shipType: "LPG Tanker",
+    imo: "9800005",
+    callSign: "HRBR",
+    mmsi: "302000005",
+    lengthWidth: "240.0 x 44.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbor Wind",
+    shipType: "Chemical Tanker",
+    imo: "9800006",
+    callSign: "HBWD",
+    mmsi: "302000006",
+    lengthWidth: "210.0 x 38.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Horizon Explorer",
+    shipType: "Ro-Ro Cargo",
+    imo: "9800007",
+    callSign: "HZEX",
+    mmsi: "302000007",
+    lengthWidth: "220.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Harvard Spirit",
+    shipType: "Icebreaker",
+    imo: "9800008",
+    callSign: "HVSP",
+    mmsi: "302000008",
+    lengthWidth: "210.0 x 38.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Hercules Majesty",
+    shipType: "Research Vessel",
+    imo: "9800009",
+    callSign: "HRMJ",
+    mmsi: "302000009",
+    lengthWidth: "220.0 x 42.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbinger Queen",
+    shipType: "Cruise Ship",
+    imo: "9800010",
+    callSign: "HBQN",
+    mmsi: "302000010",
+    lengthWidth: "270.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Horizon Explorer",
+    shipType: "Passenger Ferry",
+    imo: "9800011",
+    callSign: "HZEX",
+    mmsi: "302000011",
+    lengthWidth: "240.0 x 40.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbor Majesty",
+    shipType: "Vehicle Carrier",
+    imo: "9800012",
+    callSign: "HBMJ",
+    mmsi: "302000012",
+    lengthWidth: "250.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Hercules Spirit",
+    shipType: "Oil Products Tanker",
+    imo: "9800013",
+    callSign: "HRSP",
+    mmsi: "302000013",
+    lengthWidth: "230.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Horizon Grace",
+    shipType: "General Cargo",
+    imo: "9800014",
+    callSign: "HZGR",
+    mmsi: "302000014",
+    lengthWidth: "240.0 x 42.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Harbinger Breeze",
+    shipType: "Heavy Load Carrier",
+    imo: "9800015",
+    callSign: "HBRB",
+    mmsi: "302000015",
+    lengthWidth: "280.0 x 46.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Horizon Queen",
+    shipType: "Container Ship",
+    imo: "9800016",
+    callSign: "HZQN",
+    mmsi: "302000016",
+    lengthWidth: "250.0 x 45.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Harbor Explorer",
+    shipType: "Bulk Carrier",
+    imo: "9800017",
+    callSign: "HBEX",
+    mmsi: "302000017",
+    lengthWidth: "240.0 x 42.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Horizon Queen",
+    shipType: "Tanker",
+    imo: "9800018",
+    callSign: "HZQN",
+    mmsi: "302000018",
+    lengthWidth: "230.0 x 40.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Harbor Explorer",
+    shipType: "LNG Tanker",
+    imo: "9800019",
+    callSign: "HBEX",
+    mmsi: "302000019",
+    lengthWidth: "220.0 x 40.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Harbinger Majesty",
+    shipType: "LPG Tanker",
+    imo: "9800020",
+    callSign: "HBMJ",
+    mmsi: "302000020",
+    lengthWidth: "240.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-1.png"
+  }
+];
+// this is for creating "I" data set
+     let iDataBase = [
+  {
+    class: "odd",
+    name: "Icarus Breeze",
+    shipType: "Container Ship",
+    imo: "9600001",
+    callSign: "ICBR",
+    mmsi: "291000001",
+    lengthWidth: "250.0 x 42.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Inca Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9600002",
+    callSign: "ICSP",
+    mmsi: "291000002",
+    lengthWidth: "240.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Imperial Majesty",
+    shipType: "Tanker",
+    imo: "9600003",
+    callSign: "IMMJ",
+    mmsi: "291000003",
+    lengthWidth: "230.0 x 38.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Island Queen",
+    shipType: "LNG Tanker",
+    imo: "9600004",
+    callSign: "ISQN",
+    mmsi: "291000004",
+    lengthWidth: "240.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ivy Wave",
+    shipType: "LPG Tanker",
+    imo: "9600005",
+    callSign: "IVWV",
+    mmsi: "291000005",
+    lengthWidth: "220.0 x 38.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Iron Horizon",
+    shipType: "Chemical Tanker",
+    imo: "9600006",
+    callSign: "IRHZ",
+    mmsi: "291000006",
+    lengthWidth: "210.0 x 35.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Ice Spirit",
+    shipType: "Ro-Ro Cargo",
+    imo: "9600007",
+    callSign: "ICSP",
+    mmsi: "291000007",
+    lengthWidth: "200.0 x 30.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Iris Majesty",
+    shipType: "Icebreaker",
+    imo: "9600008",
+    callSign: "IRMJ",
+    mmsi: "291000008",
+    lengthWidth: "180.0 x 28.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Indigo Explorer",
+    shipType: "Research Vessel",
+    imo: "9600009",
+    callSign: "INEX",
+    mmsi: "291000009",
+    lengthWidth: "210.0 x 33.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Ivory Queen",
+    shipType: "Cruise Ship",
+    imo: "9600010",
+    callSign: "IVQN",
+    mmsi: "291000010",
+    lengthWidth: "270.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Iberian Horizon",
+    shipType: "Passenger Ferry",
+    imo: "9600011",
+    callSign: "IBHR",
+    mmsi: "291000011",
+    lengthWidth: "240.0 x 38.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Independence Explorer",
+    shipType: "Vehicle Carrier",
+    imo: "9600012",
+    callSign: "INEX",
+    mmsi: "291000012",
+    lengthWidth: "260.0 x 40.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Imperial Grace",
+    shipType: "Oil Products Tanker",
+    imo: "9600013",
+    callSign: "IMGR",
+    mmsi: "291000013",
+    lengthWidth: "240.0 x 42.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Iron Spirit",
+    shipType: "General Cargo",
+    imo: "9600014",
+    callSign: "IRSP",
+    mmsi: "291000014",
+    lengthWidth: "230.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Icarus Wave",
+    shipType: "Heavy Load Carrier",
+    imo: "9600015",
+    callSign: "ICWV",
+    mmsi: "291000015",
+    lengthWidth: "280.0 x 45.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Infinity Majesty",
+    shipType: "Container Ship",
+    imo: "9600016",
+    callSign: "INMJ",
+    mmsi: "291000016",
+    lengthWidth: "260.0 x 40.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ivy Queen",
+    shipType: "Bulk Carrier",
+    imo: "9600017",
+    callSign: "IVQN",
+    mmsi: "291000017",
+    lengthWidth: "240.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Indigo Wave",
+    shipType: "Tanker",
+    imo: "9600018",
+    callSign: "INWV",
+    mmsi: "291000018",
+    lengthWidth: "230.0 x 40.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Iberian Majesty",
+    shipType: "LNG Tanker",
+    imo: "9600019",
+    callSign: "IBMJ",
+    mmsi: "291000019",
+    lengthWidth: "250.0 x 44.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Ivory Spirit",
+    shipType: "LPG Tanker",
+    imo: "9600020",
+    callSign: "IVSR",
+    mmsi: "291000020",
+    lengthWidth: "220.0 x 38.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-19.jpg"
+  }
+];
+// this is for creating "J" data set
+    let jDataBase = [
+  {
+    class: "odd",
+    name: "Jade Horizon",
+    shipType: "Container Ship",
+    imo: "9700001",
+    callSign: "JAHZ",
+    mmsi: "301000001",
+    lengthWidth: "250.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Jade Spirit",
+    shipType: "Bulk Carrier",
+    imo: "9700002",
+    callSign: "JSPT",
+    mmsi: "301000002",
+    lengthWidth: "240.0 x 42.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jupiter Majesty",
+    shipType: "Tanker",
+    imo: "9700003",
+    callSign: "JUMJ",
+    mmsi: "301000003",
+    lengthWidth: "220.0 x 40.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Jubilee Queen",
+    shipType: "LNG Tanker",
+    imo: "9700004",
+    callSign: "JUBQ",
+    mmsi: "301000004",
+    lengthWidth: "230.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jaguar Wave",
+    shipType: "LPG Tanker",
+    imo: "9700005",
+    callSign: "JGWV",
+    mmsi: "301000005",
+    lengthWidth: "220.0 x 38.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Juno Breeze",
+    shipType: "Chemical Tanker",
+    imo: "9700006",
+    callSign: "JUBR",
+    mmsi: "301000006",
+    lengthWidth: "210.0 x 35.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Journey Explorer",
+    shipType: "Ro-Ro Cargo",
+    imo: "9700007",
+    callSign: "JEXR",
+    mmsi: "301000007",
+    lengthWidth: "200.0 x 30.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Javelin Majesty",
+    shipType: "Icebreaker",
+    imo: "9700008",
+    callSign: "JAMJ",
+    mmsi: "301000008",
+    lengthWidth: "180.0 x 28.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jasmine Explorer",
+    shipType: "Research Vessel",
+    imo: "9700009",
+    callSign: "JEXL",
+    mmsi: "301000009",
+    lengthWidth: "210.0 x 33.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Jubilee Horizon",
+    shipType: "Cruise Ship",
+    imo: "9700010",
+    callSign: "JUHZ",
+    mmsi: "301000010",
+    lengthWidth: "270.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jovial Queen",
+    shipType: "Passenger Ferry",
+    imo: "9700011",
+    callSign: "JOVQ",
+    mmsi: "301000011",
+    lengthWidth: "240.0 x 40.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Jade Explorer",
+    shipType: "Vehicle Carrier",
+    imo: "9700012",
+    callSign: "JEXR",
+    mmsi: "301000012",
+    lengthWidth: "250.0 x 42.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Javelin Grace",
+    shipType: "Oil Products Tanker",
+    imo: "9700013",
+    callSign: "JAGR",
+    mmsi: "301000013",
+    lengthWidth: "230.0 x 38.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Jupiter Horizon",
+    shipType: "General Cargo",
+    imo: "9700014",
+    callSign: "JPHZ",
+    mmsi: "301000014",
+    lengthWidth: "240.0 x 40.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Journey Majesty",
+    shipType: "Heavy Load Carrier",
+    imo: "9700015",
+    callSign: "JOMJ",
+    mmsi: "301000015",
+    lengthWidth: "280.0 x 45.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Jasper Wave",
+    shipType: "Container Ship",
+    imo: "9700016",
+    callSign: "JAWV",
+    mmsi: "301000016",
+    lengthWidth: "260.0 x 42.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jade Wind",
+    shipType: "Bulk Carrier",
+    imo: "9700017",
+    callSign: "JAWD",
+    mmsi: "301000017",
+    lengthWidth: "240.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Jade Explorer",
+    shipType: "Tanker",
+    imo: "9700018",
+    callSign: "JEXR",
+    mmsi: "301000018",
+    lengthWidth: "230.0 x 40.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Jovial Breeze",
+    shipType: "LNG Tanker",
+    imo: "9700019",
+    callSign: "JOVB",
+    mmsi: "301000019",
+    lengthWidth: "250.0 x 44.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Jasper Queen",
+    shipType: "LPG Tanker",
+    imo: "9700020",
+    callSign: "JSPQ",
+    mmsi: "301000020",
+    lengthWidth: "220.0 x 38.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-1.png"
+  }
+];
+// this is for creating "K" data set
+     let kDataBase = [
+  {
+    class: "odd",
+    name: "Kaiser Spirit",
+    shipType: "Container Ship",
+    imo: "1100001",
+    callSign: "KASR",
+    mmsi: "402000001",
+    lengthWidth: "240.0 x 45.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Kirkland Breeze",
+    shipType: "Bulk Carrier",
+    imo: "1100002",
+    callSign: "KRBR",
+    mmsi: "402000002",
+    lengthWidth: "230.0 x 42.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kallisto Majesty",
+    shipType: "Tanker",
+    imo: "1100003",
+    callSign: "KLTM",
+    mmsi: "402000003",
+    lengthWidth: "220.0 x 40.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Kingsport Wind",
+    shipType: "LNG Tanker",
+    imo: "1100004",
+    callSign: "KSPW",
+    mmsi: "402000004",
+    lengthWidth: "250.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kremlin Explorer",
+    shipType: "LPG Tanker",
+    imo: "1100005",
+    callSign: "KREM",
+    mmsi: "402000005",
+    lengthWidth: "240.0 x 44.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Kingston Breeze",
+    shipType: "Chemical Tanker",
+    imo: "1100006",
+    callSign: "KGBZ",
+    mmsi: "402000006",
+    lengthWidth: "210.0 x 38.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Keto Wave",
+    shipType: "Ro-Ro Cargo",
+    imo: "1100007",
+    callSign: "KETW",
+    mmsi: "402000007",
+    lengthWidth: "220.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Kestrel Majesty",
+    shipType: "Icebreaker",
+    imo: "1100008",
+    callSign: "KSTM",
+    mmsi: "402000008",
+    lengthWidth: "210.0 x 38.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kavalan Explorer",
+    shipType: "Research Vessel",
+    imo: "1100009",
+    callSign: "KVEX",
+    mmsi: "402000009",
+    lengthWidth: "220.0 x 42.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Kaiser Queen",
+    shipType: "Cruise Ship",
+    imo: "1100010",
+    callSign: "KAQN",
+    mmsi: "402000010",
+    lengthWidth: "270.0 x 45.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kronos Explorer",
+    shipType: "Passenger Ferry",
+    imo: "1100011",
+    callSign: "KREN",
+    mmsi: "402000011",
+    lengthWidth: "240.0 x 40.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Kelsey Queen",
+    shipType: "Vehicle Carrier",
+    imo: "1100012",
+    callSign: "KLSQ",
+    mmsi: "402000012",
+    lengthWidth: "250.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kinetic Spirit",
+    shipType: "Oil Products Tanker",
+    imo: "1100013",
+    callSign: "KNSP",
+    mmsi: "402000013",
+    lengthWidth: "230.0 x 40.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Kona Grace",
+    shipType: "General Cargo",
+    imo: "1100014",
+    callSign: "KNGC",
+    mmsi: "402000014",
+    lengthWidth: "240.0 x 42.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kaiser Breeze",
+    shipType: "Heavy Load Carrier",
+    imo: "1100015",
+    callSign: "KBRZ",
+    mmsi: "402000015",
+    lengthWidth: "280.0 x 46.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Kavalan Majesty",
+    shipType: "Container Ship",
+    imo: "1100016",
+    callSign: "KVMT",
+    mmsi: "402000016",
+    lengthWidth: "250.0 x 45.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kestrel Spirit",
+    shipType: "Bulk Carrier",
+    imo: "1100017",
+    callSign: "KSTL",
+    mmsi: "402000017",
+    lengthWidth: "240.0 x 42.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Killer Whale",
+    shipType: "Tanker",
+    imo: "1100018",
+    callSign: "KLWL",
+    mmsi: "402000018",
+    lengthWidth: "230.0 x 40.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Kaiser Explorer",
+    shipType: "LNG Tanker",
+    imo: "1100019",
+    callSign: "KEXL",
+    mmsi: "402000019",
+    lengthWidth: "220.0 x 40.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Kinetic Majesty",
+    shipType: "LPG Tanker",
+    imo: "1100020",
+    callSign: "KNMJ",
+    mmsi: "402000020",
+    lengthWidth: "240.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  }
+];
+// this is for creating "L" data set
+    let lDataBase = [
+  {
+    class: "odd",
+    name: "Liberty Spirit",
+    shipType: "Container Ship",
+    imo: "1200001",
+    callSign: "LISP",
+    mmsi: "413000001",
+    lengthWidth: "260.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Lunar Breeze",
+    shipType: "Bulk Carrier",
+    imo: "1200002",
+    callSign: "LUBR",
+    mmsi: "413000002",
+    lengthWidth: "250.0 x 43.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lima Majesty",
+    shipType: "Tanker",
+    imo: "1200003",
+    callSign: "LIMJ",
+    mmsi: "413000003",
+    lengthWidth: "240.0 x 42.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Lunar Explorer",
+    shipType: "LNG Tanker",
+    imo: "1200004",
+    callSign: "LUEX",
+    mmsi: "413000004",
+    lengthWidth: "260.0 x 46.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Loyal Spirit",
+    shipType: "LPG Tanker",
+    imo: "1200005",
+    callSign: "LOSP",
+    mmsi: "413000005",
+    lengthWidth: "250.0 x 44.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Lima Spirit",
+    shipType: "Chemical Tanker",
+    imo: "1200006",
+    callSign: "LISP",
+    mmsi: "413000006",
+    lengthWidth: "220.0 x 40.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lynx Wave",
+    shipType: "Ro-Ro Cargo",
+    imo: "1200007",
+    callSign: "LYNW",
+    mmsi: "413000007",
+    lengthWidth: "230.0 x 41.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Lynx Majesty",
+    shipType: "Icebreaker",
+    imo: "1200008",
+    callSign: "LYMX",
+    mmsi: "413000008",
+    lengthWidth: "240.0 x 43.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lancelot Explorer",
+    shipType: "Research Vessel",
+    imo: "1200009",
+    callSign: "LANX",
+    mmsi: "413000009",
+    lengthWidth: "250.0 x 44.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Lunar Queen",
+    shipType: "Cruise Ship",
+    imo: "1200010",
+    callSign: "LUQN",
+    mmsi: "413000010",
+    lengthWidth: "280.0 x 47.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Liberty Explorer",
+    shipType: "Passenger Ferry",
+    imo: "1200011",
+    callSign: "LEXR",
+    mmsi: "413000011",
+    lengthWidth: "250.0 x 44.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Loyal Queen",
+    shipType: "Vehicle Carrier",
+    imo: "1200012",
+    callSign: "LOQN",
+    mmsi: "413000012",
+    lengthWidth: "240.0 x 42.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lynx Explorer",
+    shipType: "Oil Products Tanker",
+    imo: "1200013",
+    callSign: "LYEX",
+    mmsi: "413000013",
+    lengthWidth: "220.0 x 39.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Lancelot Spirit",
+    shipType: "General Cargo",
+    imo: "1200014",
+    callSign: "LNSP",
+    mmsi: "413000014",
+    lengthWidth: "260.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lynx Wind",
+    shipType: "Heavy Load Carrier",
+    imo: "1200015",
+    callSign: "LYNW",
+    mmsi: "413000015",
+    lengthWidth: "270.0 x 48.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Lunar Spirit",
+    shipType: "Container Ship",
+    imo: "1200016",
+    callSign: "LUSP",
+    mmsi: "413000016",
+    lengthWidth: "240.0 x 44.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Liberty Queen",
+    shipType: "Bulk Carrier",
+    imo: "1200017",
+    callSign: "LIQN",
+    mmsi: "413000017",
+    lengthWidth: "230.0 x 42.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Lancelot Majesty",
+    shipType: "Tanker",
+    imo: "1200018",
+    callSign: "LMTY",
+    mmsi: "413000018",
+    lengthWidth: "240.0 x 44.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Lunar Wave",
+    shipType: "LNG Tanker",
+    imo: "1200019",
+    callSign: "LUWV",
+    mmsi: "413000019",
+    lengthWidth: "250.0 x 45.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Lynx Queen",
+    shipType: "LPG Tanker",
+    imo: "1200020",
+    callSign: "LYQN",
+    mmsi: "413000020",
+    lengthWidth: "240.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-20.jpg"
+  }
+];
+// this is for creating "M" data set
+    let mDataBase = [
+  {
+    class: "odd",
+    name: "Mystic Voyager",
+    shipType: "Container Ship",
+    imo: "1300001",
+    callSign: "MYVO",
+    mmsi: "423000001",
+    lengthWidth: "270.0 x 48.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Mistral Breeze",
+    shipType: "Bulk Carrier",
+    imo: "1300002",
+    callSign: "MIBR",
+    mmsi: "423000002",
+    lengthWidth: "260.0 x 46.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Mighty Majesty",
+    shipType: "Tanker",
+    imo: "1300003",
+    callSign: "MIMJ",
+    mmsi: "423000003",
+    lengthWidth: "250.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Magma Explorer",
+    shipType: "LNG Tanker",
+    imo: "1300004",
+    callSign: "MGEX",
+    mmsi: "423000004",
+    lengthWidth: "270.0 x 47.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Magellan Spirit",
+    shipType: "LPG Tanker",
+    imo: "1300005",
+    callSign: "MGSP",
+    mmsi: "423000005",
+    lengthWidth: "260.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Mariner Queen",
+    shipType: "Chemical Tanker",
+    imo: "1300006",
+    callSign: "MAQN",
+    mmsi: "423000006",
+    lengthWidth: "230.0 x 42.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Midnight Horizon",
+    shipType: "Ro-Ro Cargo",
+    imo: "1300007",
+    callSign: "MIDH",
+    mmsi: "423000007",
+    lengthWidth: "240.0 x 44.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Mighty Wave",
+    shipType: "Icebreaker",
+    imo: "1300008",
+    callSign: "MIWB",
+    mmsi: "423000008",
+    lengthWidth: "250.0 x 45.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Monarch Explorer",
+    shipType: "Research Vessel",
+    imo: "1300009",
+    callSign: "MOEX",
+    mmsi: "423000009",
+    lengthWidth: "270.0 x 48.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Midship Majesty",
+    shipType: "Cruise Ship",
+    imo: "1300010",
+    callSign: "MISM",
+    mmsi: "423000010",
+    lengthWidth: "280.0 x 49.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Meteor Queen",
+    shipType: "Passenger Ferry",
+    imo: "1300011",
+    callSign: "MEQN",
+    mmsi: "423000011",
+    lengthWidth: "240.0 x 45.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Mistral Voyager",
+    shipType: "Vehicle Carrier",
+    imo: "1300012",
+    callSign: "MIVR",
+    mmsi: "423000012",
+    lengthWidth: "250.0 x 46.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Maritime Grace",
+    shipType: "Oil Products Tanker",
+    imo: "1300013",
+    callSign: "MOGR",
+    mmsi: "423000013",
+    lengthWidth: "230.0 x 42.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Majestic Wind",
+    shipType: "General Cargo",
+    imo: "1300014",
+    callSign: "MJWD",
+    mmsi: "423000014",
+    lengthWidth: "240.0 x 44.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Mystic Queen",
+    shipType: "Heavy Load Carrier",
+    imo: "1300015",
+    callSign: "MYHQ",
+    mmsi: "423000015",
+    lengthWidth: "270.0 x 48.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Magellan Explorer",
+    shipType: "Container Ship",
+    imo: "1300016",
+    callSign: "MGEX",
+    mmsi: "423000016",
+    lengthWidth: "250.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Mistral Queen",
+    shipType: "Bulk Carrier",
+    imo: "1300017",
+    callSign: "MIQN",
+    mmsi: "423000017",
+    lengthWidth: "230.0 x 42.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Midnight Spirit",
+    shipType: "Tanker",
+    imo: "1300018",
+    callSign: "MIDT",
+    mmsi: "423000018",
+    lengthWidth: "260.0 x 47.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Mighty Majesty",
+    shipType: "LNG Tanker",
+    imo: "1300019",
+    callSign: "MIMJ",
+    mmsi: "423000019",
+    lengthWidth: "270.0 x 48.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Magellan Queen",
+    shipType: "LPG Tanker",
+    imo: "1300020",
+    callSign: "MGQN",
+    mmsi: "423000020",
+    lengthWidth: "250.0 x 46.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  }
+];
+// this is for creayting "N" data set
+    let nDataBase = [
+  {
+    class: "odd",
+    name: "Nordic Voyager",
+    shipType: "Container Ship",
+    imo: "1400001",
+    callSign: "NDVO",
+    mmsi: "424000001",
+    lengthWidth: "270.0 x 48.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "North Star",
+    shipType: "Bulk Carrier",
+    imo: "1400002",
+    callSign: "NSTA",
+    mmsi: "424000002",
+    lengthWidth: "280.0 x 49.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Noble Spirit",
+    shipType: "Tanker",
+    imo: "1400003",
+    callSign: "NBSR",
+    mmsi: "424000003",
+    lengthWidth: "260.0 x 47.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Northern Winds",
+    shipType: "LNG Tanker",
+    imo: "1400004",
+    callSign: "NRWI",
+    mmsi: "424000004",
+    lengthWidth: "275.0 x 50.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Navigator Queen",
+    shipType: "LPG Tanker",
+    imo: "1400005",
+    callSign: "NVQN",
+    mmsi: "424000005",
+    lengthWidth: "255.0 x 46.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Noble Voyager",
+    shipType: "Chemical Tanker",
+    imo: "1400006",
+    callSign: "NVYR",
+    mmsi: "424000006",
+    lengthWidth: "230.0 x 43.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Night Wind",
+    shipType: "Ro-Ro Cargo",
+    imo: "1400007",
+    callSign: "NWND",
+    mmsi: "424000007",
+    lengthWidth: "240.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Nordic Majesty",
+    shipType: "Icebreaker",
+    imo: "1400008",
+    callSign: "NDMJ",
+    mmsi: "424000008",
+    lengthWidth: "250.0 x 47.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Northern Explorer",
+    shipType: "Research Vessel",
+    imo: "1400009",
+    callSign: "NEXR",
+    mmsi: "424000009",
+    lengthWidth: "270.0 x 50.0",
+    area: "Greenland Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Noble Horizon",
+    shipType: "Cruise Ship",
+    imo: "1400010",
+    callSign: "NHRZ",
+    mmsi: "424000010",
+    lengthWidth: "280.0 x 51.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Navigator Grace",
+    shipType: "Passenger Ferry",
+    imo: "1400011",
+    callSign: "NVGR",
+    mmsi: "424000011",
+    lengthWidth: "260.0 x 48.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Northern Majesty",
+    shipType: "Vehicle Carrier",
+    imo: "1400012",
+    callSign: "NVMJ",
+    mmsi: "424000012",
+    lengthWidth: "240.0 x 45.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Nightfall Explorer",
+    shipType: "Oil Products Tanker",
+    imo: "1400013",
+    callSign: "NFXR",
+    mmsi: "424000013",
+    lengthWidth: "250.0 x 46.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Nova Queen",
+    shipType: "General Cargo",
+    imo: "1400014",
+    callSign: "NVQN",
+    mmsi: "424000014",
+    lengthWidth: "230.0 x 44.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Nimbus Voyager",
+    shipType: "Heavy Load Carrier",
+    imo: "1400015",
+    callSign: "NVYR",
+    mmsi: "424000015",
+    lengthWidth: "260.0 x 47.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Nautical Breeze",
+    shipType: "Container Ship",
+    imo: "1400016",
+    callSign: "NBRZ",
+    mmsi: "424000016",
+    lengthWidth: "250.0 x 45.0",
+    area: "Atlantic Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Noble Spirit",
+    shipType: "Bulk Carrier",
+    imo: "1400017",
+    callSign: "NBSR",
+    mmsi: "424000017",
+    lengthWidth: "240.0 x 45.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "New Horizon",
+    shipType: "Tanker",
+    imo: "1400018",
+    callSign: "NEHR",
+    mmsi: "424000018",
+    lengthWidth: "270.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Noble Wave",
+    shipType: "LNG Tanker",
+    imo: "1400019",
+    callSign: "NWLW",
+    mmsi: "424000019",
+    lengthWidth: "260.0 x 48.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Nova Horizon",
+    shipType: "LPG Tanker",
+    imo: "1400020",
+    callSign: "NVHZ",
+    mmsi: "424000020",
+    lengthWidth: "250.0 x 45.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-1.png"
+  }
+];
+// this is for creating "O" data set
+    let oDataBase = [
+  {
+    class: "odd",
+    name: "Ocean Voyager",
+    shipType: "Container Ship",
+    imo: "1500001",
+    callSign: "OCVO",
+    mmsi: "433000001",
+    lengthWidth: "280.0 x 50.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Ocean Star",
+    shipType: "Bulk Carrier",
+    imo: "1500002",
+    callSign: "OCST",
+    mmsi: "433000002",
+    lengthWidth: "290.0 x 51.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Oceanic Horizon",
+    shipType: "Tanker",
+    imo: "1500003",
+    callSign: "OCHR",
+    mmsi: "433000003",
+    lengthWidth: "270.0 x 48.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Olympic Majesty",
+    shipType: "LNG Tanker",
+    imo: "1500004",
+    callSign: "OLMJ",
+    mmsi: "433000004",
+    lengthWidth: "260.0 x 47.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Oasis Spirit",
+    shipType: "LPG Tanker",
+    imo: "1500005",
+    callSign: "OASP",
+    mmsi: "433000005",
+    lengthWidth: "250.0 x 46.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Odyssey Voyager",
+    shipType: "Chemical Tanker",
+    imo: "1500006",
+    callSign: "ODVO",
+    mmsi: "433000006",
+    lengthWidth: "240.0 x 45.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ocean Breeze",
+    shipType: "Ro-Ro Cargo",
+    imo: "1500007",
+    callSign: "OCBR",
+    mmsi: "433000007",
+    lengthWidth: "230.0 x 43.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Oceana Majesty",
+    shipType: "Icebreaker",
+    imo: "1500008",
+    callSign: "OCMJ",
+    mmsi: "433000008",
+    lengthWidth: "240.0 x 44.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ocean Guardian",
+    shipType: "Research Vessel",
+    imo: "1500009",
+    callSign: "OCGR",
+    mmsi: "433000009",
+    lengthWidth: "260.0 x 47.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Oasis Queen",
+    shipType: "Cruise Ship",
+    imo: "1500010",
+    callSign: "OQEN",
+    mmsi: "433000010",
+    lengthWidth: "270.0 x 48.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ocean Breeze",
+    shipType: "Passenger Ferry",
+    imo: "1500011",
+    callSign: "OCBR",
+    mmsi: "433000011",
+    lengthWidth: "250.0 x 45.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Oceana Explorer",
+    shipType: "Vehicle Carrier",
+    imo: "1500012",
+    callSign: "OCEX",
+    mmsi: "433000012",
+    lengthWidth: "230.0 x 43.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Odyssey Grace",
+    shipType: "Oil Products Tanker",
+    imo: "1500013",
+    callSign: "ODGR",
+    mmsi: "433000013",
+    lengthWidth: "240.0 x 44.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Oceanic Spirit",
+    shipType: "General Cargo",
+    imo: "1500014",
+    callSign: "OCSP",
+    mmsi: "433000014",
+    lengthWidth: "250.0 x 45.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Oceana Queen",
+    shipType: "Heavy Load Carrier",
+    imo: "1500015",
+    callSign: "OCQN",
+    mmsi: "433000015",
+    lengthWidth: "270.0 x 49.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Oceanic Horizon",
+    shipType: "Container Ship",
+    imo: "1500016",
+    callSign: "OCHR",
+    mmsi: "433000016",
+    lengthWidth: "280.0 x 50.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Ocean Explorer",
+    shipType: "Bulk Carrier",
+    imo: "1500017",
+    callSign: "OEXR",
+    mmsi: "433000017",
+    lengthWidth: "290.0 x 51.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Odyssey Majesty",
+    shipType: "Tanker",
+    imo: "1500018",
+    callSign: "ODMJ",
+    mmsi: "433000018",
+    lengthWidth: "280.0 x 50.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Oasis Explorer",
+    shipType: "LNG Tanker",
+    imo: "1500019",
+    callSign: "OEXR",
+    mmsi: "433000019",
+    lengthWidth: "270.0 x 48.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Odyssey Horizon",
+    shipType: "LPG Tanker",
+    imo: "1500020",
+    callSign: "ODHR",
+    mmsi: "433000020",
+    lengthWidth: "260.0 x 47.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-19.jpg"
+  }
+];
+// this is for creating "P" data set
+    let pDataBase = [
+  {
+    class: "odd",
+    name: "Pacific Voyager",
+    shipType: "Container Ship",
+    imo: "1600001",
+    callSign: "PCVO",
+    mmsi: "444000001",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Pacific",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Pioneer Star",
+    shipType: "Bulk Carrier",
+    imo: "1600002",
+    callSign: "PSTP",
+    mmsi: "444000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pacific Horizon",
+    shipType: "Tanker",
+    imo: "1600003",
+    callSign: "PCHR",
+    mmsi: "444000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Polar Majesty",
+    shipType: "LNG Tanker",
+    imo: "1600004",
+    callSign: "PLMJ",
+    mmsi: "444000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pristine Spirit",
+    shipType: "LPG Tanker",
+    imo: "1600005",
+    callSign: "PRSP",
+    mmsi: "444000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Pride Voyager",
+    shipType: "Chemical Tanker",
+    imo: "1600006",
+    callSign: "PRVO",
+    mmsi: "444000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pioneer Breeze",
+    shipType: "Ro-Ro Cargo",
+    imo: "1600007",
+    callSign: "PIBR",
+    mmsi: "444000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Polar Queen",
+    shipType: "Icebreaker",
+    imo: "1600008",
+    callSign: "PLQN",
+    mmsi: "444000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Phantom Guardian",
+    shipType: "Research Vessel",
+    imo: "1600009",
+    callSign: "PHGR",
+    mmsi: "444000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Polar Majesty",
+    shipType: "Cruise Ship",
+    imo: "1600010",
+    callSign: "PLMJ",
+    mmsi: "444000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pinnacle Horizon",
+    shipType: "Passenger Ferry",
+    imo: "1600011",
+    callSign: "PNHR",
+    mmsi: "444000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Pride Spirit",
+    shipType: "Vehicle Carrier",
+    imo: "1600012",
+    callSign: "PRSP",
+    mmsi: "444000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pacific Majesty",
+    shipType: "Oil Products Tanker",
+    imo: "1600013",
+    callSign: "PCMJ",
+    mmsi: "444000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Pioneer Queen",
+    shipType: "General Cargo",
+    imo: "1600014",
+    callSign: "PIQN",
+    mmsi: "444000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Phantom Explorer",
+    shipType: "Heavy Load Carrier",
+    imo: "1600015",
+    callSign: "PHEX",
+    mmsi: "444000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Pinnacle Grace",
+    shipType: "Container Ship",
+    imo: "1600016",
+    callSign: "PNGR",
+    mmsi: "444000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pioneer Breeze",
+    shipType: "Bulk Carrier",
+    imo: "1600017",
+    callSign: "PIBR",
+    mmsi: "444000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Phantom Majesty",
+    shipType: "Tanker",
+    imo: "1600018",
+    callSign: "PHMJ",
+    mmsi: "444000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Pinnacle Explorer",
+    shipType: "LNG Tanker",
+    imo: "1600019",
+    callSign: "PNEX",
+    mmsi: "444000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Pioneer Horizon",
+    shipType: "LPG Tanker",
+    imo: "1600020",
+    callSign: "PIHR",
+    mmsi: "444000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-20.jpg"
+  }
+];
+// this is for creating "Q" data set
+    let qDataBase = [
+  {
+    class: "odd",
+    name: "Queen's Venture",
+    shipType: "Container Ship",
+    imo: "1700001",
+    callSign: "QVEN",
+    mmsi: "455000001",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Quantum Horizon",
+    shipType: "Bulk Carrier",
+    imo: "1700002",
+    callSign: "QHOR",
+    mmsi: "455000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quest Star",
+    shipType: "Tanker",
+    imo: "1700003",
+    callSign: "QSTP",
+    mmsi: "455000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Quaint Majesty",
+    shipType: "LNG Tanker",
+    imo: "1700004",
+    callSign: "QMAJ",
+    mmsi: "455000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quantum Breeze",
+    shipType: "LPG Tanker",
+    imo: "1700005",
+    callSign: "QBRZ",
+    mmsi: "455000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Quest Spirit",
+    shipType: "Chemical Tanker",
+    imo: "1700006",
+    callSign: "QSPT",
+    mmsi: "455000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Queen’s Pride",
+    shipType: "Ro-Ro Cargo",
+    imo: "1700007",
+    callSign: "QPRD",
+    mmsi: "455000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Quick Majesty",
+    shipType: "Icebreaker",
+    imo: "1700008",
+    callSign: "QMAJ",
+    mmsi: "455000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quicksilver Commander",
+    shipType: "Research Vessel",
+    imo: "1700009",
+    callSign: "QSRC",
+    mmsi: "455000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Quantum Queen",
+    shipType: "Cruise Ship",
+    imo: "1700010",
+    callSign: "QQUE",
+    mmsi: "455000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quest Explorer",
+    shipType: "Passenger Ferry",
+    imo: "1700011",
+    callSign: "QEXR",
+    mmsi: "455000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Quantum Grace",
+    shipType: "Vehicle Carrier",
+    imo: "1700012",
+    callSign: "QGRX",
+    mmsi: "455000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quintessential Explorer",
+    shipType: "Oil Products Tanker",
+    imo: "1700013",
+    callSign: "QEXR",
+    mmsi: "455000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Quantum Queen",
+    shipType: "General Cargo",
+    imo: "1700014",
+    callSign: "QGEN",
+    mmsi: "455000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quick Horizon",
+    shipType: "Heavy Load Carrier",
+    imo: "1700015",
+    callSign: "QHRC",
+    mmsi: "455000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Quest Majesty",
+    shipType: "Container Ship",
+    imo: "1700016",
+    callSign: "QMSC",
+    mmsi: "455000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quantum Voyager",
+    shipType: "Bulk Carrier",
+    imo: "1700017",
+    callSign: "QVOY",
+    mmsi: "455000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Quintessential Queen",
+    shipType: "Tanker",
+    imo: "1700018",
+    callSign: "QQNT",
+    mmsi: "455000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Quick Venture",
+    shipType: "LNG Tanker",
+    imo: "1700019",
+    callSign: "QVNT",
+    mmsi: "455000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Quantum Breeze",
+    shipType: "LPG Tanker",
+    imo: "1700020",
+    callSign: "QBRZ",
+    mmsi: "455000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-19.jpg"
+  }
+];
+// this is for creating "R" data set
+    let rDataBase = [
+  {
+    class: "odd",
+    name: "Rising Sun",
+    shipType: "Container Ship",
+    imo: "1800001",
+    callSign: "RSUN",
+    mmsi: "465000001",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Revolution Star",
+    shipType: "Bulk Carrier",
+    imo: "1800002",
+    callSign: "RVST",
+    mmsi: "465000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Raging Wave",
+    shipType: "Tanker",
+    imo: "1800003",
+    callSign: "RWAV",
+    mmsi: "465000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Radiant Majesty",
+    shipType: "LNG Tanker",
+    imo: "1800004",
+    callSign: "RMJM",
+    mmsi: "465000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Rogue Dawn",
+    shipType: "LPG Tanker",
+    imo: "1800005",
+    callSign: "RDWN",
+    mmsi: "465000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Rising Glory",
+    shipType: "Chemical Tanker",
+    imo: "1800006",
+    callSign: "RGLO",
+    mmsi: "465000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "River Breeze",
+    shipType: "Ro-Ro Cargo",
+    imo: "1800007",
+    callSign: "RBRC",
+    mmsi: "465000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Royal Phoenix",
+    shipType: "Icebreaker",
+    imo: "1800008",
+    callSign: "RPHX",
+    mmsi: "465000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Revelation Explorer",
+    shipType: "Research Vessel",
+    imo: "1800009",
+    callSign: "REVR",
+    mmsi: "465000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Rising Commander",
+    shipType: "Cruise Ship",
+    imo: "1800010",
+    callSign: "RCMD",
+    mmsi: "465000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "River Queen",
+    shipType: "Passenger Ferry",
+    imo: "1800011",
+    callSign: "RQEN",
+    mmsi: "465000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Radiant Voyage",
+    shipType: "Vehicle Carrier",
+    imo: "1800012",
+    callSign: "RVVC",
+    mmsi: "465000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Royal Destiny",
+    shipType: "Oil Products Tanker",
+    imo: "1800013",
+    callSign: "RDEST",
+    mmsi: "465000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Rising Horizon",
+    shipType: "General Cargo",
+    imo: "1800014",
+    callSign: "RHRC",
+    mmsi: "465000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Redemption Voyager",
+    shipType: "Heavy Load Carrier",
+    imo: "1800015",
+    callSign: "REVO",
+    mmsi: "465000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Rising Sun",
+    shipType: "Container Ship",
+    imo: "1800016",
+    callSign: "RSUN",
+    mmsi: "465000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Revolution Queen",
+    shipType: "Bulk Carrier",
+    imo: "1800017",
+    callSign: "RQUN",
+    mmsi: "465000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Royal Majestic",
+    shipType: "Tanker",
+    imo: "1800018",
+    callSign: "RMAJ",
+    mmsi: "465000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Revelation Queen",
+    shipType: "LNG Tanker",
+    imo: "1800019",
+    callSign: "RQNT",
+    mmsi: "465000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Rising Majesty",
+    shipType: "LPG Tanker",
+    imo: "1800020",
+    callSign: "RMAT",
+    mmsi: "465000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-19.jpg"
+  }
+];
+// this is for creating "S" data set
+    let sDataBase = [
+  {
+    class: "odd",
+    name: "Sunrise Horizon",
+    shipType: "Container Ship",
+    imo: "1900001",
+    callSign: "SNHR",
+    mmsi: "475000001",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Silver Wave",
+    shipType: "Bulk Carrier",
+    imo: "1900002",
+    callSign: "SVWV",
+    mmsi: "475000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Storm Rider",
+    shipType: "Tanker",
+    imo: "1900003",
+    callSign: "STRD",
+    mmsi: "475000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Sapphire Dream",
+    shipType: "LNG Tanker",
+    imo: "1900004",
+    callSign: "SPDR",
+    mmsi: "475000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Sea Glory",
+    shipType: "LPG Tanker",
+    imo: "1900005",
+    callSign: "SEGL",
+    mmsi: "475000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Seashell Majesty",
+    shipType: "Chemical Tanker",
+    imo: "1900006",
+    callSign: "SSMJ",
+    mmsi: "475000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Star Ocean",
+    shipType: "Ro-Ro Cargo",
+    imo: "1900007",
+    callSign: "STOC",
+    mmsi: "475000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Sands of Time",
+    shipType: "Icebreaker",
+    imo: "1900008",
+    callSign: "SOTI",
+    mmsi: "475000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Sailing Explorer",
+    shipType: "Research Vessel",
+    imo: "1900009",
+    callSign: "SEXR",
+    mmsi: "475000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Silver Empress",
+    shipType: "Cruise Ship",
+    imo: "1900010",
+    callSign: "SVEM",
+    mmsi: "475000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Starlight Queen",
+    shipType: "Passenger Ferry",
+    imo: "1900011",
+    callSign: "STQF",
+    mmsi: "475000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Sundown Voyager",
+    shipType: "Vehicle Carrier",
+    imo: "1900012",
+    callSign: "SDVN",
+    mmsi: "475000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "odd",
+    name: "Sea Breeze",
+    shipType: "Oil Products Tanker",
+    imo: "1900013",
+    callSign: "SEBR",
+    mmsi: "475000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Sapphire Voyager",
+    shipType: "General Cargo",
+    imo: "1900014",
+    callSign: "SPVO",
+    mmsi: "475000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Sailing Spirit",
+    shipType: "Heavy Load Carrier",
+    imo: "1900015",
+    callSign: "SSPC",
+    mmsi: "475000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Stellar Majesty",
+    shipType: "Container Ship",
+    imo: "1900016",
+    callSign: "STMJ",
+    mmsi: "475000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Silent Shadow",
+    shipType: "Bulk Carrier",
+    imo: "1900017",
+    callSign: "SLSH",
+    mmsi: "475000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Sea Breeze",
+    shipType: "Tanker",
+    imo: "1900018",
+    callSign: "SBRZ",
+    mmsi: "475000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Sailing Majesty",
+    shipType: "LNG Tanker",
+    imo: "1900019",
+    callSign: "SSMJ",
+    mmsi: "475000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Silent Explorer",
+    shipType: "LPG Tanker",
+    imo: "1900020",
+    callSign: "SLEX",
+    mmsi: "475000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-4.jpg"
+  }
+];
+// this is for creating "T" data set
+    let tDataBase = [
+  {
+    class: "odd",
+    name: "Titan Explorer",
+    shipType: "Container Ship",
+    imo: "2000001",
+    callSign: "TXPR",
+    mmsi: "485000001",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Tranquil Seas",
+    shipType: "Bulk Carrier",
+    imo: "2000002",
+    callSign: "TRQS",
+    mmsi: "485000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "Tide Runner",
+    shipType: "Tanker",
+    imo: "2000003",
+    callSign: "TDRN",
+    mmsi: "485000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Twilight Voyager",
+    shipType: "LNG Tanker",
+    imo: "2000004",
+    callSign: "TWLV",
+    mmsi: "485000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Tropic Queen",
+    shipType: "LPG Tanker",
+    imo: "2000005",
+    callSign: "TRPQ",
+    mmsi: "485000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Titanic Breeze",
+    shipType: "Chemical Tanker",
+    imo: "2000006",
+    callSign: "TTCB",
+    mmsi: "485000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Thunder Spirit",
+    shipType: "Ro-Ro Cargo",
+    imo: "2000007",
+    callSign: "THNS",
+    mmsi: "485000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "even",
+    name: "Turquoise Flame",
+    shipType: "Icebreaker",
+    imo: "2000008",
+    callSign: "TRFM",
+    mmsi: "485000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Antarctic Ocean",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Twister Wave",
+    shipType: "Research Vessel",
+    imo: "2000009",
+    callSign: "TWSW",
+    mmsi: "485000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Tundra Voyager",
+    shipType: "Cruise Ship",
+    imo: "2000010",
+    callSign: "TNDV",
+    mmsi: "485000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Trident Glory",
+    shipType: "Passenger Ferry",
+    imo: "2000011",
+    callSign: "TDGL",
+    mmsi: "485000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Tidal Force",
+    shipType: "Vehicle Carrier",
+    imo: "2000012",
+    callSign: "TDFC",
+    mmsi: "485000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Tropical Breeze",
+    shipType: "Oil Products Tanker",
+    imo: "2000013",
+    callSign: "TPBR",
+    mmsi: "485000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Titan Wave",
+    shipType: "General Cargo",
+    imo: "2000014",
+    callSign: "TTWV",
+    mmsi: "485000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Tornado Quest",
+    shipType: "Heavy Load Carrier",
+    imo: "2000015",
+    callSign: "TRNQ",
+    mmsi: "485000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Tropicana Star",
+    shipType: "Container Ship",
+    imo: "2000016",
+    callSign: "TRST",
+    mmsi: "485000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Talon Warrior",
+    shipType: "Bulk Carrier",
+    imo: "2000017",
+    callSign: "TLWR",
+    mmsi: "485000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Tide Dream",
+    shipType: "Tanker",
+    imo: "2000018",
+    callSign: "TDDM",
+    mmsi: "485000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Tempest Glory",
+    shipType: "LNG Tanker",
+    imo: "2000019",
+    callSign: "TPGL",
+    mmsi: "485000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Tidal Phantom",
+    shipType: "LPG Tanker",
+    imo: "2000020",
+    callSign: "TDPM",
+    mmsi: "485000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-3.jpg"
+  }
+];
+// this is for creating "U" data set
+    let uDataBase = [
+  {
+    class: "odd",
+    name: "Unity Voyager",
+    shipType: "Container Ship",
+    imo: "2100001",
+    callSign: "UNVY",
+    mmsi: "486000001",
+    lengthWidth: "310.0 x 54.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Ultraviolet Runner",
+    shipType: "Bulk Carrier",
+    imo: "2100002",
+    callSign: "ULVR",
+    mmsi: "486000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Ultimate Glory",
+    shipType: "Tanker",
+    imo: "2100003",
+    callSign: "ULGL",
+    mmsi: "486000003",
+    lengthWidth: "300.0 x 55.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Ursula Queen",
+    shipType: "LNG Tanker",
+    imo: "2100004",
+    callSign: "URQN",
+    mmsi: "486000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Utopia Dream",
+    shipType: "LPG Tanker",
+    imo: "2100005",
+    callSign: "UTDR",
+    mmsi: "486000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "Ulster Pride",
+    shipType: "Chemical Tanker",
+    imo: "2100006",
+    callSign: "ULPR",
+    mmsi: "486000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Unicorn Spirit",
+    shipType: "Ro-Ro Cargo",
+    imo: "2100007",
+    callSign: "UNCS",
+    mmsi: "486000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Undefeated Storm",
+    shipType: "Icebreaker",
+    imo: "2100008",
+    callSign: "UNSM",
+    mmsi: "486000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ultralight Phantom",
+    shipType: "Research Vessel",
+    imo: "2100009",
+    callSign: "ULPH",
+    mmsi: "486000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Uprising Star",
+    shipType: "Cruise Ship",
+    imo: "2100010",
+    callSign: "UPST",
+    mmsi: "486000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Undaunted Hero",
+    shipType: "Passenger Ferry",
+    imo: "2100011",
+    callSign: "UDHR",
+    mmsi: "486000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Universe Carrier",
+    shipType: "Vehicle Carrier",
+    imo: "2100012",
+    callSign: "UNCR",
+    mmsi: "486000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Ultramax Grace",
+    shipType: "Oil Products Tanker",
+    imo: "2100013",
+    callSign: "UMGR",
+    mmsi: "486000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "Norwegian Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Urban Legend",
+    shipType: "General Cargo",
+    imo: "2100014",
+    callSign: "URBL",
+    mmsi: "486000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "Bay of Bengal",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Uproar Titan",
+    shipType: "Heavy Load Carrier",
+    imo: "2100015",
+    callSign: "UPTT",
+    mmsi: "486000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Ulva Phoenix",
+    shipType: "Container Ship",
+    imo: "2100016",
+    callSign: "ULPX",
+    mmsi: "486000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Unity Crest",
+    shipType: "Bulk Carrier",
+    imo: "2100017",
+    callSign: "UNCR",
+    mmsi: "486000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Undefeated Falcon",
+    shipType: "Tanker",
+    imo: "2100018",
+    callSign: "UNFC",
+    mmsi: "486000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "odd",
+    name: "Urban Wave",
+    shipType: "LNG Tanker",
+    imo: "2100019",
+    callSign: "URWV",
+    mmsi: "486000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "Philippine Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Ursus Venture",
+    shipType: "LPG Tanker",
+    imo: "2100020",
+    callSign: "URVN",
+    mmsi: "486000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Coral Sea",
+    image: "./asserts/ship-image-9.jpg"
+  }
+];
+// this is for creating "V" data set
+    let vDataBase = [
+  {
+    class: "odd",
+    name: "Vanguard Titan",
+    shipType: "Container Ship",
+    imo: "2200001",
+    callSign: "VGTT",
+    mmsi: "487000001",
+    lengthWidth: "310.0 x 54.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Valiant Voyager",
+    shipType: "Bulk Carrier",
+    imo: "2200002",
+    callSign: "VLVY",
+    mmsi: "487000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Velvet Dawn",
+    shipType: "Tanker",
+    imo: "2200003",
+    callSign: "VVDW",
+    mmsi: "487000003",
+    lengthWidth: "300.0 x 55.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Victory Flame",
+    shipType: "LNG Tanker",
+    imo: "2200004",
+    callSign: "VCFL",
+    mmsi: "487000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Vortex Surge",
+    shipType: "LPG Tanker",
+    imo: "2200005",
+    callSign: "VTSG",
+    mmsi: "487000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Valencia Queen",
+    shipType: "Chemical Tanker",
+    imo: "2200006",
+    callSign: "VLQN",
+    mmsi: "487000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Venus Spark",
+    shipType: "Ro-Ro Cargo",
+    imo: "2200007",
+    callSign: "VNSP",
+    mmsi: "487000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Viper Knight",
+    shipType: "Icebreaker",
+    imo: "2200008",
+    callSign: "VPKN",
+    mmsi: "487000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Vista Horizon",
+    shipType: "Research Vessel",
+    imo: "2200009",
+    callSign: "VSHR",
+    mmsi: "487000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Valour Crest",
+    shipType: "Cruise Ship",
+    imo: "2200010",
+    callSign: "VLCR",
+    mmsi: "487000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Velocity Star",
+    shipType: "Passenger Ferry",
+    imo: "2200011",
+    callSign: "VLSR",
+    mmsi: "487000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Virtue Mariner",
+    shipType: "Vehicle Carrier",
+    imo: "2200012",
+    callSign: "VRMN",
+    mmsi: "487000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Philippine Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Vanguard Pearl",
+    shipType: "Oil Products Tanker",
+    imo: "2200013",
+    callSign: "VGPL",
+    mmsi: "487000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Volcanic Echo",
+    shipType: "General Cargo",
+    imo: "2200014",
+    callSign: "VLEC",
+    mmsi: "487000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "Bay of Bengal",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Vibrant Spirit",
+    shipType: "Heavy Load Carrier",
+    imo: "2200015",
+    callSign: "VBSP",
+    mmsi: "487000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Vela Navigator",
+    shipType: "Container Ship",
+    imo: "2200016",
+    callSign: "VLNV",
+    mmsi: "487000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Norwegian Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Vanguard Spirit",
+    shipType: "Bulk Carrier",
+    imo: "2200017",
+    callSign: "VGSP",
+    mmsi: "487000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Velvet Storm",
+    shipType: "Tanker",
+    imo: "2200018",
+    callSign: "VLST",
+    mmsi: "487000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Vision Radiant",
+    shipType: "LNG Tanker",
+    imo: "2200019",
+    callSign: "VSRD",
+    mmsi: "487000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Vortex Breeze",
+    shipType: "LPG Tanker",
+    imo: "2200020",
+    callSign: "VTBZ",
+    mmsi: "487000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Coral Sea",
+    image: "./asserts/ship-image-20.jpg"
+  }
+];
+// this is for creating "W" data set
+    let wDataBase = [
+  {
+    class: "odd",
+    name: "Wave Rider",
+    shipType: "Container Ship",
+    imo: "2300001",
+    callSign: "WVRD",
+    mmsi: "488000001",
+    lengthWidth: "310.0 x 54.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "even",
+    name: "Western Spirit",
+    shipType: "Bulk Carrier",
+    imo: "2300002",
+    callSign: "WNSP",
+    mmsi: "488000002",
+    lengthWidth: "320.0 x 56.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "White Horizon",
+    shipType: "Tanker",
+    imo: "2300003",
+    callSign: "WTHZ",
+    mmsi: "488000003",
+    lengthWidth: "300.0 x 55.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "even",
+    name: "Wind Crest",
+    shipType: "LNG Tanker",
+    imo: "2300004",
+    callSign: "WICR",
+    mmsi: "488000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Wave Venture",
+    shipType: "LPG Tanker",
+    imo: "2300005",
+    callSign: "WVVN",
+    mmsi: "488000005",
+    lengthWidth: "280.0 x 52.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Windy Voyager",
+    shipType: "Chemical Tanker",
+    imo: "2300006",
+    callSign: "WDVR",
+    mmsi: "488000006",
+    lengthWidth: "270.0 x 51.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Western Belle",
+    shipType: "Ro-Ro Cargo",
+    imo: "2300007",
+    callSign: "WSBL",
+    mmsi: "488000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Whispering Tide",
+    shipType: "Icebreaker",
+    imo: "2300008",
+    callSign: "WHTD",
+    mmsi: "488000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "odd",
+    name: "White Pearl",
+    shipType: "Research Vessel",
+    imo: "2300009",
+    callSign: "WHPL",
+    mmsi: "488000009",
+    lengthWidth: "270.0 x 51.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Windsor Dream",
+    shipType: "Cruise Ship",
+    imo: "2300010",
+    callSign: "WSDM",
+    mmsi: "488000010",
+    lengthWidth: "280.0 x 52.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "odd",
+    name: "Whale Majesty",
+    shipType: "Passenger Ferry",
+    imo: "2300011",
+    callSign: "WHMJ",
+    mmsi: "488000011",
+    lengthWidth: "290.0 x 53.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Wild Seeker",
+    shipType: "Vehicle Carrier",
+    imo: "2300012",
+    callSign: "WDSK",
+    mmsi: "488000012",
+    lengthWidth: "260.0 x 50.0",
+    area: "Philippine Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Westward Glory",
+    shipType: "Oil Products Tanker",
+    imo: "2300013",
+    callSign: "WSGL",
+    mmsi: "488000013",
+    lengthWidth: "250.0 x 49.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Wandering Star",
+    shipType: "General Cargo",
+    imo: "2300014",
+    callSign: "WDSR",
+    mmsi: "488000014",
+    lengthWidth: "270.0 x 51.0",
+    area: "Bay of Bengal",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "odd",
+    name: "Whirlwind Force",
+    shipType: "Heavy Load Carrier",
+    imo: "2300015",
+    callSign: "WHFC",
+    mmsi: "488000015",
+    lengthWidth: "280.0 x 52.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "even",
+    name: "White Falcon",
+    shipType: "Container Ship",
+    imo: "2300016",
+    callSign: "WHFL",
+    mmsi: "488000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Norwegian Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Waverly Knight",
+    shipType: "Bulk Carrier",
+    imo: "2300017",
+    callSign: "WVKN",
+    mmsi: "488000017",
+    lengthWidth: "300.0 x 54.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Westerly Mist",
+    shipType: "Tanker",
+    imo: "2300018",
+    callSign: "WSTM",
+    mmsi: "488000018",
+    lengthWidth: "290.0 x 52.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Wind Dancer",
+    shipType: "LNG Tanker",
+    imo: "2300019",
+    callSign: "WNDC",
+    mmsi: "488000019",
+    lengthWidth: "280.0 x 51.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "White Mirage",
+    shipType: "LPG Tanker",
+    imo: "2300020",
+    callSign: "WHMG",
+    mmsi: "488000020",
+    lengthWidth: "270.0 x 50.0",
+    area: "Coral Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  }
+];
+// this is for creating "X" datat set
+    let xDataBase = [
+  {
+    class: "odd",
+    name: "Xenon Star",
+    shipType: "Container Ship",
+    imo: "2400001",
+    callSign: "XNST",
+    mmsi: "489000001",
+    lengthWidth: "290.0 x 53.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Xplorer One",
+    shipType: "Research Vessel",
+    imo: "2400002",
+    callSign: "XPLR",
+    mmsi: "489000002",
+    lengthWidth: "270.0 x 51.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xenith Glory",
+    shipType: "Bulk Carrier",
+    imo: "2400003",
+    callSign: "XNGL",
+    mmsi: "489000003",
+    lengthWidth: "300.0 x 54.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Xtreme Horizon",
+    shipType: "Tanker",
+    imo: "2400004",
+    callSign: "XTHR",
+    mmsi: "489000004",
+    lengthWidth: "280.0 x 52.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xantos Venture",
+    shipType: "LNG Tanker",
+    imo: "2400005",
+    callSign: "XNTV",
+    mmsi: "489000005",
+    lengthWidth: "310.0 x 55.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "even",
+    name: "Xcalibur Dream",
+    shipType: "Cruise Ship",
+    imo: "2400006",
+    callSign: "XCDM",
+    mmsi: "489000006",
+    lengthWidth: "320.0 x 56.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xylon Mist",
+    shipType: "Chemical Tanker",
+    imo: "2400007",
+    callSign: "XYMS",
+    mmsi: "489000007",
+    lengthWidth: "260.0 x 50.0",
+    area: "Bay of Bengal",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "X-Ray Falcon",
+    shipType: "Heavy Load Carrier",
+    imo: "2400008",
+    callSign: "XRFN",
+    mmsi: "489000008",
+    lengthWidth: "250.0 x 49.0",
+    area: "Norwegian Sea",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xeno Wave",
+    shipType: "LPG Tanker",
+    imo: "2400009",
+    callSign: "XNWV",
+    mmsi: "489000009",
+    lengthWidth: "280.0 x 52.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Xavion Seeker",
+    shipType: "Icebreaker",
+    imo: "2400010",
+    callSign: "XVSK",
+    mmsi: "489000010",
+    lengthWidth: "270.0 x 51.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xenosa Pearl",
+    shipType: "Passenger Ferry",
+    imo: "2400011",
+    callSign: "XNPL",
+    mmsi: "489000011",
+    lengthWidth: "260.0 x 50.0",
+    area: "Philippine Sea",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "even",
+    name: "Xterra Majesty",
+    shipType: "Vehicle Carrier",
+    imo: "2400012",
+    callSign: "XTMJ",
+    mmsi: "489000012",
+    lengthWidth: "250.0 x 49.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xebec Runner",
+    shipType: "General Cargo",
+    imo: "2400013",
+    callSign: "XBCR",
+    mmsi: "489000013",
+    lengthWidth: "270.0 x 51.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Xileon Whisper",
+    shipType: "Oil Products Tanker",
+    imo: "2400014",
+    callSign: "XLWP",
+    mmsi: "489000014",
+    lengthWidth: "280.0 x 52.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xonian Knight",
+    shipType: "Container Ship",
+    imo: "2400015",
+    callSign: "XOKN",
+    mmsi: "489000015",
+    lengthWidth: "290.0 x 53.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Xtreme Voyager",
+    shipType: "Ro-Ro Cargo",
+    imo: "2400016",
+    callSign: "XTVY",
+    mmsi: "489000016",
+    lengthWidth: "300.0 x 54.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Xerxes Flame",
+    shipType: "Tanker",
+    imo: "2400017",
+    callSign: "XRFL",
+    mmsi: "489000017",
+    lengthWidth: "310.0 x 55.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Xeno Queen",
+    shipType: "Cruise Ship",
+    imo: "2400018",
+    callSign: "XNQN",
+    mmsi: "489000018",
+    lengthWidth: "320.0 x 56.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Xibelle Grace",
+    shipType: "Tug",
+    imo: "2400019",
+    callSign: "XIBG",
+    mmsi: "489000019",
+    lengthWidth: "200.0 x 40.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Xylara Force",
+    shipType: "Reefer",
+    imo: "2400020",
+    callSign: "XYFC",
+    mmsi: "489000020",
+    lengthWidth: "230.0 x 45.0",
+    area: "Coral Sea",
+    image: "./asserts/ship-image-19.jpg"
+  }
+];
+// this is for creating "Y" data set
+    let yDataBase = [
+  {
+    class: "odd",
+    name: "Yamato Voyager",
+    shipType: "Bulk Carrier",
+    imo: "2500001",
+    callSign: "YMVG",
+    mmsi: "490000001",
+    lengthWidth: "300.0 x 54.0",
+    area: "Sea of Japan",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Yukon Queen",
+    shipType: "Passenger Ferry",
+    imo: "2500002",
+    callSign: "YKNQ",
+    mmsi: "490000002",
+    lengthWidth: "260.0 x 50.0",
+    area: "Bering Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Yamuna Star",
+    shipType: "Container Ship",
+    imo: "2500003",
+    callSign: "YMST",
+    mmsi: "490000003",
+    lengthWidth: "290.0 x 53.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Ymir Titan",
+    shipType: "Heavy Load Carrier",
+    imo: "2500004",
+    callSign: "YMRT",
+    mmsi: "490000004",
+    lengthWidth: "280.0 x 52.0",
+    area: "Norwegian Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yalta Pride",
+    shipType: "Oil Products Tanker",
+    imo: "2500005",
+    callSign: "YLTP",
+    mmsi: "490000005",
+    lengthWidth: "270.0 x 51.0",
+    area: "Black Sea",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Yosemite Crest",
+    shipType: "General Cargo",
+    imo: "2500006",
+    callSign: "YSMC",
+    mmsi: "490000006",
+    lengthWidth: "250.0 x 49.0",
+    area: "Gulf of Mexico",
+    image: "./asserts/ship-image-17.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yggdrasil Spirit",
+    shipType: "Research Vessel",
+    imo: "2500007",
+    callSign: "YGDS",
+    mmsi: "490000007",
+    lengthWidth: "270.0 x 51.0",
+    area: "North Sea",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "even",
+    name: "Yarra Bay",
+    shipType: "Tanker",
+    imo: "2500008",
+    callSign: "YRRB",
+    mmsi: "490000008",
+    lengthWidth: "280.0 x 52.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yosef Knight",
+    shipType: "LNG Tanker",
+    imo: "2500009",
+    callSign: "YSFK",
+    mmsi: "490000009",
+    lengthWidth: "310.0 x 55.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Yavin Ranger",
+    shipType: "Icebreaker",
+    imo: "2500010",
+    callSign: "YVNR",
+    mmsi: "490000010",
+    lengthWidth: "270.0 x 51.0",
+    area: "Arctic Ocean",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yucatan Flame",
+    shipType: "Chemical Tanker",
+    imo: "2500011",
+    callSign: "YCTF",
+    mmsi: "490000011",
+    lengthWidth: "260.0 x 50.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "even",
+    name: "Yokohama Phoenix",
+    shipType: "Cruise Ship",
+    imo: "2500012",
+    callSign: "YOKP",
+    mmsi: "490000012",
+    lengthWidth: "320.0 x 56.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yemen Grace",
+    shipType: "Reefer",
+    imo: "2500013",
+    callSign: "YMNG",
+    mmsi: "490000013",
+    lengthWidth: "230.0 x 45.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "even",
+    name: "Yeti Seeker",
+    shipType: "Tug",
+    imo: "2500014",
+    callSign: "YTSK",
+    mmsi: "490000014",
+    lengthWidth: "200.0 x 40.0",
+    area: "Hudson Bay",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yardley Titan",
+    shipType: "Vehicle Carrier",
+    imo: "2500015",
+    callSign: "YDLT",
+    mmsi: "490000015",
+    lengthWidth: "250.0 x 49.0",
+    area: "South Atlantic",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Ymir Dawn",
+    shipType: "LPG Tanker",
+    imo: "2500016",
+    callSign: "YMRD",
+    mmsi: "490000016",
+    lengthWidth: "280.0 x 52.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "odd",
+    name: "Yosemite Liberty",
+    shipType: "Cruise Ship",
+    imo: "2500017",
+    callSign: "YSLB",
+    mmsi: "490000017",
+    lengthWidth: "320.0 x 56.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Yokai Explorer",
+    shipType: "Research Vessel",
+    imo: "2500018",
+    callSign: "YKEX",
+    mmsi: "490000018",
+    lengthWidth: "270.0 x 51.0",
+    area: "Philippine Sea",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Yara Monarch",
+    shipType: "Oil Products Tanker",
+    imo: "2500019",
+    callSign: "YRMN",
+    mmsi: "490000019",
+    lengthWidth: "280.0 x 52.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "even",
+    name: "Yggra Defender",
+    shipType: "Ro-Ro Cargo",
+    imo: "2500020",
+    callSign: "YGDF",
+    mmsi: "490000020",
+    lengthWidth: "300.0 x 54.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-4.jpg"
+  }
+];
+// this is for creating "Z" data set
+    let zDataBase = [
+  {
+    class: "odd",
+    name: "Zephyr Wind",
+    shipType: "Bulk Carrier",
+    imo: "2600001",
+    callSign: "ZPHW",
+    mmsi: "500000001",
+    lengthWidth: "300.0 x 54.0",
+    area: "North Atlantic",
+    image: "./asserts/ship-image-12.jpg"
+  },
+  {
+    class: "even",
+    name: "Zanzibar Trader",
+    shipType: "General Cargo",
+    imo: "2600002",
+    callSign: "ZNBT",
+    mmsi: "500000002",
+    lengthWidth: "240.0 x 48.0",
+    area: "Indian Ocean",
+    image: "./asserts/ship-image-1.png"
+  },
+  {
+    class: "odd",
+    name: "Zodiac Voyager",
+    shipType: "Cruise Ship",
+    imo: "2600003",
+    callSign: "ZDCV",
+    mmsi: "500000003",
+    lengthWidth: "320.0 x 56.0",
+    area: "Caribbean Sea",
+    image: "./asserts/ship-image-18.jpg"
+  },
+  {
+    class: "even",
+    name: "Zenith Horizon",
+    shipType: "Container Ship",
+    imo: "2600004",
+    callSign: "ZNTH",
+    mmsi: "500000004",
+    lengthWidth: "290.0 x 53.0",
+    area: "Mediterranean Sea",
+    image: "./asserts/ship-image-8.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zambezi Arrow",
+    shipType: "Oil Products Tanker",
+    imo: "2600005",
+    callSign: "ZMBA",
+    mmsi: "500000005",
+    lengthWidth: "270.0 x 51.0",
+    area: "Mozambique Channel",
+    image: "./asserts/ship-image-6.jpg"
+  },
+  {
+    class: "even",
+    name: "Zion Pioneer",
+    shipType: "LPG Tanker",
+    imo: "2600006",
+    callSign: "ZNPW",
+    mmsi: "500000006",
+    lengthWidth: "280.0 x 52.0",
+    area: "Red Sea",
+    image: "./asserts/ship-image-11.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zora Queen",
+    shipType: "Ro-Ro Cargo",
+    imo: "2600007",
+    callSign: "ZRQN",
+    mmsi: "500000007",
+    lengthWidth: "275.0 x 50.0",
+    area: "Baltic Sea",
+    image: "./asserts/ship-image-16.jpg"
+  },
+  {
+    class: "even",
+    name: "Zeta Spirit",
+    shipType: "Tanker",
+    imo: "2600008",
+    callSign: "ZTSP",
+    mmsi: "500000008",
+    lengthWidth: "265.0 x 49.0",
+    area: "Gulf of Mexico",
+    image: "./asserts/ship-image-9.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zircon Wave",
+    shipType: "Vehicle Carrier",
+    imo: "2600009",
+    callSign: "ZRCW",
+    mmsi: "500000009",
+    lengthWidth: "310.0 x 55.0",
+    area: "Pacific Ocean",
+    image: "./asserts/ship-image-5.jpg"
+  },
+  {
+    class: "even",
+    name: "Zion Discovery",
+    shipType: "Research Vessel",
+    imo: "2600010",
+    callSign: "ZDSC",
+    mmsi: "500000010",
+    lengthWidth: "260.0 x 50.0",
+    area: "South China Sea",
+    image: "./asserts/ship-image-14.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zahara Titan",
+    shipType: "Heavy Load Carrier",
+    imo: "2600011",
+    callSign: "ZHTT",
+    mmsi: "500000011",
+    lengthWidth: "280.0 x 52.0",
+    area: "Arabian Sea",
+    image: "./asserts/ship-image-13.jpg"
+  },
+  {
+    class: "even",
+    name: "Zodiac Empress",
+    shipType: "Cruise Ship",
+    imo: "2600012",
+    callSign: "ZCEM",
+    mmsi: "500000012",
+    lengthWidth: "320.0 x 56.0",
+    area: "Bay of Bengal",
+    image: "./asserts/ship-image-20.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zaren Star",
+    shipType: "Chemical Tanker",
+    imo: "2600013",
+    callSign: "ZRNS",
+    mmsi: "500000013",
+    lengthWidth: "255.0 x 48.0",
+    area: "East China Sea",
+    image: "./asserts/ship-image-2.jpg"
+  },
+  {
+    class: "even",
+    name: "Zilla Ranger",
+    shipType: "Tug",
+    imo: "2600014",
+    callSign: "ZLRA",
+    mmsi: "500000014",
+    lengthWidth: "210.0 x 42.0",
+    area: "Gulf of Aden",
+    image: "./asserts/ship-image-3.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zuma Liberty",
+    shipType: "Icebreaker",
+    imo: "2600015",
+    callSign: "ZMLB",
+    mmsi: "500000015",
+    lengthWidth: "270.0 x 51.0",
+    area: "Hudson Bay",
+    image: "./asserts/ship-image-4.jpg"
+  },
+  {
+    class: "even",
+    name: "Zirva Monarch",
+    shipType: "Container Ship",
+    imo: "2600016",
+    callSign: "ZRVM",
+    mmsi: "500000016",
+    lengthWidth: "290.0 x 53.0",
+    area: "Caspian Sea",
+    image: "./asserts/ship-image-7.jpeg"
+  },
+  {
+    class: "odd",
+    name: "Zelenka Grace",
+    shipType: "Reefer",
+    imo: "2600017",
+    callSign: "ZLNG",
+    mmsi: "500000017",
+    lengthWidth: "230.0 x 45.0",
+    area: "Barents Sea",
+    image: "./asserts/ship-image-10.jpg"
+  },
+  {
+    class: "even",
+    name: "Zinger Pride",
+    shipType: "Passenger Ferry",
+    imo: "2600018",
+    callSign: "ZNPR",
+    mmsi: "500000018",
+    lengthWidth: "250.0 x 49.0",
+    area: "Sea of Okhotsk",
+    image: "./asserts/ship-image-15.jpg"
+  },
+  {
+    class: "odd",
+    name: "Zaffre Knight",
+    shipType: "LNG Tanker",
+    imo: "2600019",
+    callSign: "ZFRK",
+    mmsi: "500000019",
+    lengthWidth: "310.0 x 55.0",
+    area: "South Pacific",
+    image: "./asserts/ship-image-19.jpg"
+  },
+  {
+    class: "even",
+    name: "Zara Explorer",
+    shipType: "Research Vessel",
+    imo: "2600020",
+    callSign: "ZRXP",
+    mmsi: "500000020",
+    lengthWidth: "270.0 x 51.0",
+    area: "Tasman Sea",
+    image: "./asserts/ship-image-17.jpg"
+  }
+];
+// intialy desibeld the  previous button
+let back=document.getElementById("backword");
+ back.disabled = true ;
+ back.id="disabeled";
+// this is for creating when ever click the particuler letter then heighlets the color and remove the color from previous leter 
+function setActive(clickedLi) {
+  const allItems = document.querySelectorAll(".leter-pagination li");
+  
+  // Remove 'active' class from all items
+  allItems.forEach(item => item.classList.remove("active"));
+
+  // Add 'active' to the clicked one
+  clickedLi.classList.add("active");
+}
+let shipsDetails =[...aDataBase];
+let subPart=[...aDataBase.slice(0,10)]
+// this is for creating Rendering function to show the all ship details 
+function renderingDetails(arr) {
+  let detailsBlock=document.getElementById("ships-block");
+  detailsBlock.innerHTML="";
+  arr.forEach((item) => {
+    detailsBlock.innerHTML +=`<div class="row ${item.class} m-0">
+                        <div class="d-none d-md-block col-md-1 col-lg-1 p-0 ship">
+                            <a href="#" class="ship-link"><img src="${item.image}" alt="ss-1-image" class="ship-image"></a>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2 p-0 ship named-block"> 
+                            <a href="#" class="ship-name">${item.name}</a>
+                        <span class="ship-type">${item.shipType}</span>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-1 col-lg-1 p-0 ship IMO-block">
+                            <span class="imo-number">${item.imo}</span>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-1 col-lg-1 p-0 ship callsign-block">
+                            <span class="callsign-text">${item.callSign}</span>
+                        </div>
+                        <div class="d-none d-md-block  col-md-2 col-lg-2 p-0 ship MMSI-block">
+                            <span class="mmsi-number">${item.mmsi}</span>
+                        </div>
+                        <div class="d-none d-md-block col-md-2 col-lg-2 p-0 ship len-wdth-block">
+                            <span class="len-wdth">${item.lengthWidth}</span>
+                        </div>
+                        <div class="d-none d-md-block col-md-1 col-lg-1 p-0 ship ship-area-block">
+                            <span class="ship-area">${item.area}</span>
+                        </div>
+                        <div class="d-none d-md-block col-md-2 col-lg-2 p-0 ship ship-track-date">
+                            <span class="ship-date"> ${new Date().toLocaleDateString()} </span>
+                        </div>
+                    </div>`;
+  })
+}
+renderingDetails(subPart);
+// console.log(shipsDetails.slice(10,20));
+// this is for creating move-next
+let forword=document.getElementById("forword");
+function   moveForword(){
+  subPart.length=0;
+  subPart=[...shipsDetails.slice(10,20)];
+  back.disabled = false;
+  back.removeAttribute("anabeled");
+  back.removeAttribute("disabeled");
+  back.id="anabeled";
+  forword.disabled = true;
+  forword.removeAttribute("anabeled");
+  forword.removeAttribute("disabeled");
+  forword.id="disabeled";
+ renderingDetails(subPart);
+}
+// this is for buttons converting anbel and desabled
+function btnDisable(){
+  forword.disabled = false;
+  forword.removeAttribute("anabeled");
+  forword.removeAttribute("disabeled");
+  forword.id="anabeled";
+  back.disabled = true;
+  back.removeAttribute("anabeled");
+  back.removeAttribute("disabeled");
+  back.id="disabeled";
+}
+// this for creating move-backword
+function  moveBackword() {
+  console.log("siva");
+  
+  subPart.length=0;
+  subPart=[...shipsDetails.slice(0,10)];
+   forword.disabled = false;
+   forword.removeAttribute("anabeled");
+  forword.removeAttribute("disabeled");
+  forword.id="anabeled";
+  back.disabled = true;
+  back.removeAttribute("anabeled");
+  back.removeAttribute("disabeled");
+  back.id="disabeled";
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "A"
+function showAshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...aDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "B"
+function showBshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...bDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "C"
+function showCshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...cDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "D"
+function showDshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...dDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "E"
+function showEshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...eDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "F"
+function showFshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...fDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "G"
+function showGshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...gDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "H"
+function showHshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...hDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+// this is for showing ship names strats with "I"
+function showIshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...iDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "J"
+function showJshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...jDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "K"
+function showKshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...kDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "L"
+function showLshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...lDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "M"
+function showMshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...mDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "N"
+function showNshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...nDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "O"
+function showOshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...oDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "P"
+function showPshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...pDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "Q"
+function showQshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...qDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "R"
+function showRshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...rDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "S"
+function showSshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...sDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "T"
+function showTshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...tDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "U"
+function showUshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...uDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "V"
+function showVshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...vDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "W"
+function showWshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...wDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "X"
+function showXshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...xDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "Y"
+function showYshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...yDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+//this is for showing ship names strats with "Z"
+function showZshipDetails() {
+  btnDisable();
+  shipsDetails.length= 0;
+  subPart.length=0;
+  shipsDetails =[...zDataBase];
+  subPart=[...shipsDetails.slice(0,10)];
+  renderingDetails(subPart);
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

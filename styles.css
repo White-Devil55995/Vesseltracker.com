@@ -1,0 +1,1649 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+ body{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+ }
+ .hero-page{
+    width:100%;
+    min-height: 100vh;
+ }
+ /* this is nav-bar creation for desktop screens in 1024px to inifinity.. */
+ .navbar-desktop{
+    padding: 0 2% 0 2%;
+    position:fixed;
+
+ }
+ .desktop-version{
+    width:100%;
+    height: 80px;
+    background-color: rgba(26, 54 ,75 ,0.8);
+    /* background-color: rgb(13,41,62); */
+    border: 1px solid;
+    display: flex;
+ }
+ .item-1{
+    width:21%;
+    height: 100%;
+    padding-right:4%;
+    background-color:#F48131;
+ }
+ .sub-item1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap:8%;
+    align-items: center;
+    padding: 0 10% 0 10%;
+ }
+ .logo-text{
+    padding-top:7%;
+    color: #fff;
+    font-size: 16px;
+ }
+ .logo-sub-text{
+    font-size: 10px;
+    position:absolute;
+    color:#fff;
+ } 
+ .item1-link{
+    text-decoration: none;
+ }
+ .item-2{
+      width:10%;
+      height: 100%;
+ }
+ .item1-link1{
+    text-decoration: none;
+    width:10%;
+    height: 100%;
+ }
+ .sub-item2{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .logo-text-1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+ }
+ .item-3{
+    width: 8%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .item-4 , .item-5{
+    width: 7%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .item-6{
+    width:9%;
+    height: 100%;
+    text-decoration: none;
+    position: relative;
+ }
+ .btn-one{
+    width:100%;
+    height: 100%;
+    background-color: transparent;
+ }
+ .about-dropdown{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+ }
+ .one{
+    height: 80px;
+    background-color:rgba(26, 54 ,75 ,0.9) ;
+    padding-top:12px;
+ }
+ .drp-item-one{
+    width: 100%;
+    height: 80%;
+ }
+ .about-dropdown:focus,
+.about-dropdown:active,
+.about-dropdown.show{
+  box-shadow: none !important;
+}
+.btn.dropdown-toggle {
+   color: white !important;
+ }
+ .drp-item-one{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:55px;
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+ }
+ .drp-item-one:hover , .countries-item:hover{
+   background-color: #F48131 !important;
+   color: white !important;
+ }
+ .btn-one,.countries-block {
+   position: relative;
+ }
+ 
+ .btn-one:hover .one{
+   display: block;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   margin-top: 0;
+ }
+ .item-7{
+   width:10%;
+   height: 100%;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   font-weight: bold;
+   color: #fff;
+ }
+ .transition{
+   transform: width 2s;
+ }
+ .transition:hover{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(244, 129, 49);
+ }
+ .item-2:hover,.item-3:hover,.item-4:hover,.item-5:hover,.item-6:hover,.item-7:hover{
+   background-color: #F48131;
+   color: #fff;
+   transition:0.2s ease-in;
+ }
+ .search-block{
+   width:10%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   padding-right: 1%;
+   cursor: pointer;
+ }
+ .search-block:hover{
+   #search-icon{
+      color: #fff;
+   }
+ }
+ .vertical-line{
+   height: 100%;
+   border: 1px solid rgb(245, 241, 241);
+ }
+ #search-icon{
+   font-size:16px;
+   color: darkgray;
+ }
+ .search-side-block{
+   width: 18%;
+   height: 100%;
+   display: flex;
+ }
+ .search-realated-block{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #fff;
+   display: none;
+ }
+ .input-text{
+   width: 90%;
+   height:50%;
+   outline: none;
+   border: none;
+   box-shadow: 0 0 15px rgb(110, 163, 233);
+ }
+ .input-text::placeholder{
+   padding-left:8%;
+ }
+ .login-root{
+   display:flex;
+   width:35%;
+   height:100%;
+   text-decoration: none;
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+   align-items: center;
+   justify-content: center;
+ }
+ .login-root:hover{
+   color: #fff;
+ }
+ .countries-box{
+   width: 30%;
+   height: 100%;
+   background-color: transparent;
+ }
+ .countries-item{
+   height:50px ;
+   width: 100%;
+   border-radius: 5px;
+   display: flex;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: bolder;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+ }
+ .flag-icon{
+   width: 30px;
+   height:25px;
+ }
+ .countries-box{
+   position: relative;
+   display: inline-block;
+ }
+ .cfirst{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   cursor: pointer;
+ }
+ #carent-icon{
+   color: #fff;
+ }
+ .csecond{
+   position: absolute;
+   width:130px;
+   height:104px;
+   border-radius: 5px;
+   display: none;
+   margin-top:1px;
+   right:1px;
+   background-color: rgba(26, 54 ,75 ,0.9) ;
+ }
+ .countries-box:hover .csecond {
+   display: block;
+ }
+ .glob-block{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   width: 35%;
+   height: 100%;
+   background-color:rgba(240, 244, 252, 0.137) ;
+ }
+ #globe-icon{
+   font-size:30px;
+   color:#F48131;
+ }
+ .glob-block:hover{
+   background-color: #F48131;
+   #globe-icon{
+      color: #fff;
+   }
+ }
+ .three-in-one{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   /* display: none; */
+ }
+ /* this is only for nav-bar responsive in 1250px to infinity */
+ @media (min-width:1250px){
+    .navbar-desktop{
+        width: 100%;
+        top:6%;
+        padding: 0 9% 0 9%;
+    }
+    .item-1{
+        padding: 0 3% 0 0;
+    }
+    .logo-text{
+        font-size:17px;
+    }
+    .logo-sub-text{
+        padding:48px 0 0 4.2%;
+    }
+    .small-screens-navbar{
+      display: none;
+    }
+    .video-block{
+      height: 100vh;
+    }
+    .hero-text-block{
+      top:35%;
+      padding: 1%  0 1% 10%;
+    }
+    .hertext{
+      font-size:75px;
+      width: 72%;
+    }
+    .tph-first{
+      padding:0 3% 0 10%;
+    }
+    .fph-heading{
+      padding-top:5% !important;
+    }
+    .fph-child{
+      padding: 0 9% 4% 9% !important;
+    }
+    .fph-sub-heading-1,.fph-sub-heading-2{
+      width:90% !important;
+    }
+    .fph-main-block{
+      gap:20px;
+    }
+    .fph-card-1,.fph-card-2,.fph-card-3,.fph-card-4{
+      width: calc(25% - 20px);
+      height: 360px !important;
+    }
+    .fph-link-1{
+      height: 360px !important;
+    }
+    .fph-learn-more-1{
+      top:325px !important ;
+    }
+    .fph-heading-1{
+      padding-top:4%;
+    }
+    .fph-heading{
+      padding-top: 2% !important;
+      padding-bottom:2% !important;
+    }
+    .six-heading{
+      padding: 3% 5% 2% 5% !important;
+    }
+    .six-part-hero{
+      padding: 4% 0% 6% 0% !important;
+    }
+    .sixpart-cards-block{
+      gap: 15px;
+      padding: 2% 8.5% 0 10%;
+    }
+    .six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+      width: calc(33.33% - 15px);
+    }
+    .six-image-block{
+      padding-top: 10% !important;
+    }
+    .six-sub-heading{
+      padding: 0 4% 0 4%;
+    }
+    .eghith-part-hero{
+      padding-bottom: 3%;
+      background-color: #fff;
+    }
+    .eghith-link-1{
+      width: 50%  !important;
+    }
+    .eghith-main-part{
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+    .eghith-first-part,.eghith-second-part{
+      min-height:200px !important;
+    }
+    .foot-log-block{
+      padding-bottom: 3%;
+    }
+    .footer-cards-block{
+      padding: 0 10% 0 10%;
+      }
+      .footer-card-1,.footer-card-2,.footer-card-3,.footer-card-4{
+        padding: 0 2% 0 2% !important;
+      }
+ }
+ /* this is only  for responsive in 1024px to 1249px */
+ @media (min-width:1024px) and (max-width: 1249px){
+    .logo-sub-text{
+        padding:48px 0 0 5%;
+    }
+    .navbar-desktop{
+      width: 100%;
+      top:5%;
+    }
+    .logo-text{
+        font-size: 16px;
+    }
+    .droup-box{
+        top:13%;
+        left:52.8%;
+        width: 9%;
+    }
+    .small-screens-navbar{
+      display: none;
+    }
+    .hero-section-text{
+      color: #fff;
+      position: absolute;
+      top:10%;
+      padding-top:6%;
+      font-size:55px;
+      font-weight: bold;
+      width:80%;
+      padding-left:10%;
+    }
+    .video-block{
+      height:70vh;
+    }
+    .hero-text-block{
+      top:35%;
+      padding: 1%  0 1%  2%;
+    }
+    .hertext{
+      width: 80%;
+      font-size:65px;
+    }
+    .tph-first{
+      padding: 0 3% 0 4%;
+    }
+    .fph-child{
+      padding: 0 3% 4% 4% !important;
+    }
+    .fph-sub-heading-1,.fph-sub-heading-2{
+      width:80% !important;
+    }
+    .fph-main-block{
+      gap: 15px;
+    }
+    .fph-card-1,.fph-card-2,.fph-card-3,.fph-card-4{
+      width: calc(25% - 15px);
+    }
+    .six-heading{
+      padding: 5% 5% 2% 5% !important;
+    }
+    .six-part-hero{
+      padding: 4% 0% 5% 0% !important;
+    }
+    .sixpart-cards-block{
+      gap: 15px;
+      padding: 2% 2.5% 0 4%;
+    }
+    .six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+      width: calc(33.33% - 15px);
+    }
+    .six-image-block{
+      padding-top: 14% !important;
+    }
+    .eghith-part-hero{
+      padding-bottom: 3%;
+      background-color: #fff;
+    }
+    .eghith-link-1{
+      width: 55%  !important;
+    }
+    .eghith-main-part{
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+    .eghith-first-part,.eghith-second-part{
+      min-height:180px !important;
+    }
+    .foot-log-block{
+      padding-bottom: 3%;
+    }
+    .footer-cards-block{
+      padding: 0 2% 0 2%;
+      }
+      .footer-card-1,.footer-card-2,.footer-card-3,.footer-card-4{
+        padding: 0 2% 0 2% !important;
+      }
+ }
+ /* this is only for nav-bar creation purpose */
+@media (min-width:992px) and (max-width:1023px){
+  .navbar-desktop{
+    display: none;
+  }
+  .hero-page{
+    padding: 0;
+  }
+  #ssn-water-wave{
+    font-size: 25px;
+  }
+  .rss-eghit{
+    padding: 0 5% 3% 4% ;
+  }
+  .video-block{
+    height:65vh;
+  }
+  .hero-text-block{
+    top: 33%;
+    padding: 1%  0 1% 5%;
+  }
+  .hertext{
+    width: 80%;
+    font-size:55px;
+  }
+  .tph-first{
+    padding: 0 3% 0 4%;
+  }
+  .fph-child{
+    padding: 0 3% 4% 4% !important;
+  }
+  .fph-sub-heading-1,.fph-sub-heading-2{
+    width:80% !important;
+  }
+  .fph-main-block{
+    gap: 15px;
+  }
+  .fph-card-1,.fph-card-2,.fph-card-3,.fph-card-4{
+    width: calc(25% - 15px);
+  }
+  .six-heading{
+    padding: 3% 6% 2% 6% ;
+  }
+  .six-part-hero{
+    padding: 4% 0% 5% 0% !important;
+  }
+  .sixpart-cards-block{
+    gap: 15px;
+    padding: 2% 2.5% 0 4%;
+  }
+  .six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+    width: calc(33.33% - 15px);
+  }
+  .six-image-block{
+    padding-top: 14% !important;
+  }
+  .eghith-part-hero{
+    padding-bottom: 4%;
+    background-color: #fff;
+  }
+  .eghith-link-1{
+    width: 55%  !important;
+  }
+  .eghith-main-part{
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  .eghith-sub{
+    position: relative;
+    top: -20px;
+  }
+  .foot-log-block{
+    padding-bottom: 3%;
+  }
+  .footer-cards-block{
+    padding: 0 3% 0 3%;
+    }
+    .footer-card-1,.footer-card-2,.footer-card-3,.footer-card-4{
+      padding: 0 2% 0 2% !important;
+    }
+}
+ .logo-text-1{
+    margin:0px;
+ }
+/* this is the nav-bar creation for 375px to 1023px */
+.small-screens-navbar{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+}
+.hand-burger-toggeler{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+}
+.taggoler-block{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left:20%;
+}
+.right-slider-block{
+  position: absolute;
+  width: 70%;
+  min-height:500px;
+  top: -0.1px;
+}
+#waves-handburger{
+  font-size: 25px;
+  color: #F48131;
+}
+.rs-first-part{
+  width: 100%;
+  height:100px;
+  background-color: #53caf5;
+  padding: 4% 3% 1% 3%;
+  color: #fff;
+}
+.rs-subtext{
+  color: #fff;
+}
+.rs-second-part{
+  width: 100%;
+  height: 400px;
+  border: 1px solid;
+  background-color:#031116;
+}
+.rss-first{
+  width: 100%;
+  height:65px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8% 0 4%;
+}
+#rss-search-icon{
+  color: #fff;
+}
+.rss-seach-input{
+  width: 80%;
+  height: 40px;
+  border: 1px solid #fff;
+  outline: #fff;
+  background-color: transparent;
+}
+.rss-second , .rss-three,.rss-four,.rss-five,.rss-six,.rss-seven{
+  width: 100%;
+  height:45PX;
+  display: flex;
+  align-items: center;
+  padding-left: 4%;
+}
+.rss-products-link,.rss-vessels-link,.rss-ports-link,.rss-news-link,.rss-community-link{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.rss-six{
+  padding: 0;
+  position: relative;
+}
+.rss-about-text{
+  margin: 0;
+}
+.rss-about-block{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 4%;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.rss-about-droupdown{
+  position: absolute;
+  width:60%;
+  height:45px;
+  display: flex;
+  align-items: center;
+  top:100%;
+  left:2%;
+  border-radius: 5px;
+  background-color:rgba(26, 54 ,75 ,0.9) ;
+  border: 1px solid;
+  display: none;
+}
+.rss-about-drp-item{
+  width:100%;
+  display: flex;
+  height:35px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.rss-about-drp-item:hover{
+  background-color:#F48131;
+}
+.rss-eghit{
+  width: 100%;
+  height:65px ;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  /* padding: 0 5% 6% 4%; */
+}
+.rss-login-link,.rss-ende-link{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.rss-first,.rss-second,.rss-three,.rss-four,.rss-five,.rss-six,.rss-seven{
+  border-bottom: 1px solid #fff;
+}
+.ssn-elements{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3% 0 3%;
+}
+#ssn-water-wave{
+  color: #fff;
+  font-size: 20px;
+}
+.landing-page{
+  width: 100%;
+  min-height:40vh ;
+}
+.video-block{
+  width: 100%;
+  position: relative; /* Add this to contain absolutely positioned video */
+  overflow: hidden;   /* Optional: prevents scrollbars if video exceeds bounds */
+}
+.baground-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.hero-text-block{
+  width:100%;
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  /* top: 20%; */
+}
+.learn-more-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    width:100px;
+    height:40px;
+    color: #ffffff;
+    background-color: #b0a790;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* ............................................................................................................................................. */
+/* this is used for creating second part of the hero-page/ home page  and it is only visibel for mobile screens only(max-width:576px)*/
+.second-part-hero{
+  width: 100%;
+  background-color: #2ab7e7;
+  padding: 10px 5%;
+  display: block;
+  color: #fff;
+  align-items: center;
+  min-height:10vh;
+  font-size: 13.2px;
+}
+/* sph-second-part of hero-page or home page */
+.sph-link{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #fff;
+}
+/* ............................................................................................................................................. */
+/* This is for thired-part of hero-page / home-page  */
+.thired-part-hero{
+  width: 100%;
+  min-height:600px;
+}
+
+.height{
+  height: max-content;
+  align-items: stretch;
+}
+/* this is for second part of the thired part */
+.tph-second{
+  padding: 0;
+  margin: 0
+}
+.tph-headlin-1{
+  font-size:34px;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  padding-top:8%;
+}
+/* this is used for separating headline and remaing lines of text */
+.tph-separator-line{
+  width: 100%;
+  margin: 20px 0;
+  height: 4px;
+}
+.tph-progress-block{
+  width: 70px;
+  height: 4px;
+  background-color:#2ab7e7 ;
+}
+
+.tph-subline-1,.tph-subline-2,.tph-subline-3,.tph-subline-4{
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+}
+.tph-subline-2,.tph-subline-3,.tph-subline-4{
+  padding-bottom:1%;
+}
+.tph-headline-3,.tph-headline-4 , .tph-headline-2{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom:1%;
+  color: #fff;
+  font-weight: 700;
+}
+.tph-second{
+  background-image: url(./asserts/second-part-image-2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+/* ................................................................................................................................ */
+/* this is for creating 4th-part */
+.fourth-part-hero{
+  width: 100%;
+  min-height: 20vh;
+  background-color: #000626;
+  padding: 0;
+  text-align: center;
+}
+.fph-child{
+  width: 100%;
+  min-height:310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10% 2% 10%;
+}
+.fph-card-1,.fph-card-2,.fph-card-3,.fph-card-4{
+  position:relative;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.fph-card-1{
+  background-image: url(./asserts/fph-card-1.jpg);
+  margin: 0;
+  padding: 0;
+}
+.fph-card-2{
+  background-image: url(./asserts/fph-card-2);
+}
+.fph-card-3{
+  background-image: url(./asserts/fph-card-2);
+}
+.fph-card-4{
+  background-image: url(./asserts/fph-card-4)
+}
+.fph-card-1::before{
+  background-image: url('./asserts/fph-card-1.jpg');
+}
+.fph-card-2::before{
+  background-image: url('./asserts/fph-card-2');
+}
+.fph-card-3::before{
+  background-image: url(./asserts/fph-card-3);
+}
+.fph-card-4::before{
+  background-image: url(./asserts/fph-card-4);
+}
+.fph-card-1::before ,.fph-card-2::before,.fph-card-3::before,.fph-card-4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  z-index: 0;
+}
+/* Overlay color + scale effect on hover */
+.fph-card-1:hover::before,.fph-card-2:hover::before , .fph-card-3:hover::before,.fph-card-4:hover::before{
+  transform: scale(1.1); 
+  background-color:#F48131; 
+  background-blend-mode: multiply; /* blends the dark color with image */
+}
+/* Ensure your content sits above the pseudo-element */
+.fph-card-1 > *, .fph-card-2 > * ,.fph-card-3 > * ,.fph-card-4 > *{
+  position: relative;
+  z-index: 1;
+}
+.fph-link-1{
+  position: absolute;
+  display:flex;
+  width:101.5%;
+  top: -3px;
+  left: -4px;
+  height: 300px;
+}
+.fph-learn-more-1{
+  display:flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #b0a790;
+  top:255px;
+  width:120px;
+  height: 45px;
+}
+.fph-heading-1{
+  color: #2ab7e7;
+  font-size: 14px;
+  font-weight: 700;
+  justify-self: center;
+}
+.fph-sub-heading-1,.fph-sub-heading-2{
+  box-sizing: border-box;
+  /* padding: 0 10% 0 25%; */
+  justify-self: center;
+  white-space: normal;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  width:60%;
+}
+/* this is the heading for 4th0-part */
+.fph-heading{
+  background-image: url(./asserts/langar-pic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-weight: 700;
+  color: #fff;
+  min-height: 80px;
+  font-size: 20px;
+  padding-top:4%;
+  padding-bottom: 5%;
+}
+.fph-heading small{
+ font-size: 65%;
+ color: #2ab7e7;
+ font-weight: 700;
+}
+/* .......................................................................................................................................... */
+/* this is for creating 5th part of the hero-page or home-page   in this way i am taking the bg-image  in various manner that means based on the screen size it will chenge*/
+.fifth-part-hero{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height:40px;
+  margin: 0;
+}
+/* this is for applying styles for content of the fifth-part */
+.fiph-content-block{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  justify-self: center;
+  color: #fff;
+  margin: 0;
+}
+.fiph-content-block small{
+  font-size: 14px;
+  font-weight: 700;
+}
+/* this is for  creating learn-more button */
+.fiph-link-1{
+  width:120px;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin: auto;
+  background-color: #b0a790;
+}
+/* .............................................................................................................................................. */
+/* this is for  creating 6th-part in hero or home-page */
+.six-part-hero{
+  width: 100%;
+  min-height: 40px;
+  background-image: url(./asserts/six-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10px;
+}
+.six-heading{
+  text-align: center;
+  font-weight: 700;
+    min-height: 80px;
+    font-size:24px;
+    color: #fff;
+    background-image: url(./asserts/langar-pic.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.six-heading small{
+  font-size: 65%;
+    color: #2ab7e7;
+    margin-top: 20px;
+}
+.six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+  border: 1px solid #2ab7e7;
+  min-height: 170px;
+  margin: 0;
+  padding-bottom: 4%;
+  position: relative;
+}
+.six-link1{
+  position: absolute;
+  display:flex;
+  width: 100%;
+  left: -0px;
+  min-height: 170px;
+}
+.six-card-1{
+  width: 28px;
+  height:28px;
+}
+.six-card-1:hover{
+  transition: 0.5s ease-in;
+  transform: scale(1.1);
+}
+.six-card-1:hover .six-sub-heading{
+    color: greenyellow;
+}
+.six-image-block{
+  padding-top:25%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+.six-sub-heading{
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+}
+/* ......................................................................................................................................... */
+/* this is for creating 7th-part of home or hero-page */
+.seventh-part-hero{
+  width: 100%;
+  min-height: 40px;
+  background-color:  #031116 !important;
+  border-bottom: 6px solid #2ab7e7;
+}
+.sph-heading{
+  text-align: center;
+  min-height: 80px;
+  font-weight: 700;
+  background-image: url(./asserts/langar-pic.png);
+  color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sph-heading small{
+  color: #2ab7e7;
+  font-size:65%;
+  font-weight: 700;
+}
+/* .............................................................................................................................................. */
+/* this is for creating 8th part of home or hero-page */
+.eghith-part-hero{
+  width: 100%;
+  min-height: 40px;
+  border-bottom: 3px solid #2ab7e7;
+}
+.eghith-first-part,.eghith-second-part{
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.eghith-second-part{
+  background-image: url(./asserts/eghith-image-2.jpg);
+}
+.eghith-first-part{
+  background-image: url(./asserts/eghith-image-1.jpg);
+}
+.eghith-first-part::before{
+  background-image: url(./asserts/eghith-image-1.jpg);
+}
+.eghith-second-part::before{
+  background-image: url(./asserts/eghith-image-2.jpg);
+}
+.eghith-first-part::before, .eghith-second-part::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+  z-index: 0;
+}
+.eghith-first-part:hover::before,.eghith-second-part:hover::before{
+  transform: scale(1.1); 
+  background-color:#F48131; 
+  background-blend-mode: multiply;
+}
+.eghith-first-part >*, .eghith-second-part >*{
+  position: relative;
+  z-index: 1;
+}
+.eghith-link-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size:14px ;
+  width: 70%;
+  height: 45px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #F48131;
+}
+.eghith-first-part,.eghith-second-part{
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.eghith-link-1:hover{
+  color: #181716;
+}
+/* ................................................................................................................................................ */
+/* this is for creating footer-part of hero or home-page */
+.footer-part-hero{
+  width: 100%;
+  min-height: 200px;
+  background-color: #081C2B;
+}
+.foot-log-block{
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-log-image{
+  width: 25%;
+  height: 15%;
+}
+.footer-card-1{
+
+  min-height: 40px;
+  color: #ffffff;
+  font-weight: 600;
+    font-size: 12px;
+}
+/* fcardf- footer-card-first-heading */
+.fcardf-heading,.fcs-2-heading ,.fct-3-heading,.ffc-4-heading{
+  font-size: 14px;
+  color: #2ab7e7;
+  font-weight: 700;
+}
+.fcf-1-one , .fcf-1-link-one{
+  color: #b0a790;
+  font-weight: 600;
+  font-size: 12px;
+}
+.fcf-1-link-one{
+  text-decoration: none;
+}
+.fcs-2-link,.fct-3-link,.ffc-link{
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.socia-media{
+  display: flex;
+  gap: 10px;
+}
+.fficon{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  text-decoration: none;
+  border-radius: 50%;
+  align-items: center;
+  background-color: #b0a790;
+  color: #fff;
+  justify-content: center;
+}
+.youtube:hover{
+  background-color:red;
+}
+.facebook:hover{
+  background-color: rgb(8, 98, 216);
+}
+.linkedin:hover{
+  background-color: rgb(33, 96, 179);
+}
+.twitter:hover{
+  background-color: rgb(80, 147, 235);
+}
+/* .fct-3 */
+/* this is this responsive for mobile */
+@media (max-width:575px){
+  /* in this hide the desktop nav-bar in mobile screen */
+  .navbar-desktop{
+    display: none;
+  }
+  .hero-page{
+    padding: 0;
+  }
+  .rss-eghit{
+    padding:0 5% 6% 4% ;
+  }
+  .small-screens-navbar{
+    height: 50px;
+  }
+  .video-block{
+    height:48vh;
+  }
+  .baground-video{
+    height:100%;
+  }
+  .hero-text-block{
+    top: 23%;
+    padding: 0  0 2% 5%;
+  }
+  .hertext{
+    width: 80%;
+    font-size:30px;
+  }
+  .learn-more-button{
+     font-size: 12px;
+  }
+  .tph-first{
+    background-image: linear-gradient(63deg, #0a266a 0%, #78c4e0 100%);
+    padding-bottom: 20px;
+    padding-left: 5%;
+  }
+  .fph-main-block{
+    flex-direction: column;
+  }
+  .fph-main-block{
+    gap: 15px;
+    padding-top: 5%;
+  }
+  .fifth-part-hero{
+    background-image: url(./asserts/fifth-part-image-1.jpg);
+    margin: 0;
+    padding: 10% 5% 0% 5%;
+  }
+  .fiph-content-block{
+    padding: 0;
+    margin: 0;
+    line-height:38px;
+    /* width:100%; */
+  }
+  .fph-child{
+    padding-bottom:8%;
+  }
+  .six-part-hero{
+    background-color: #031116 !important;
+    background-image: none;
+    padding: 0% 3% 3% 5%;
+  }
+  .six-heading{
+    padding-top: 10%;
+    font-size: 18px;
+    padding-bottom: 3%;
+  }
+  .sixpart-cards-block{
+    gap: 10px;
+  }
+  .six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+    width: calc(50% - 10px);
+  }
+  .six-sub-heading{
+    font-size: 12px !important;
+  }
+  .seventh-part-hero{
+    padding: 6% 0 4% 0;
+  }
+  .sph-heading{
+    padding: 4% 4% 0 4%;
+    font-size:20px;
+  }
+  .footer-part-hero{
+    padding: 3% 0  4% 0;
+  }
+  .footer-log-image{
+    width: 100%;
+    padding: 0 5% 0 5%;
+  }
+  .fcardf-heading ,.fcs-2-heading{
+    padding: 0 0 4% 0;
+  }
+  .fcs-2-heading,.fct-3-heading{
+    padding: 8% 0 4% 0;
+  }
+  .footer-cards-block{
+    padding-left: 5%;
+  }
+  .foot-log-block{
+    padding-bottom: 10%;
+  }
+  .fct-3-heading,.ffc-4-heading{
+    padding: 10% 0 8% 0;
+  }
+  
+
+}
+@media (min-width:576px) and (max-width:767px){
+  /* in this way hide the desk-top nav-bar in sm-devices */
+  .navbar-desktop{
+    display: none;
+  }
+  .hero-page{
+    padding: 0;
+  }
+  #ssn-water-wave{
+    font-size: 22px;
+  }
+  .rss-eghit{
+    padding:0 5% 3% 4% ;
+  }
+  .video-block{
+    height:58vh;
+  }
+  .hero-text-block{
+    top:28%;
+    padding: 1%  0 1% 3%;
+  }
+  .hertext{
+    width:70%;
+    font-size:35px;
+  }
+  .learn-more-button{
+    font-size:14px;
+    width: 110px;
+ }
+ /* in this way hide the second-part of the hero-page becuse it is only visible for mobile-screens(max-width:576px) */
+ .second-part-hero{
+  display: none;
+ }
+ .tph-first{
+  background-image: url(./asserts/second-part-image-1.jpg);
+  background-repeat: no-repeat;
+  padding-left: 3%;
+  padding-right: 3%;
+ }
+ .fph-main-block{
+  gap: 10px;
+  
+}
+.fph-card-1, .fph-card-2,.fph-card-3,.fph-card-4{
+  width: calc(50% - 10px) !important;
+}
+.fifth-part-hero{
+  background-image: url(./asserts/fifth-part-image-1.jpg);
+  margin: 0;
+  padding: 9% 8% 0% 8%;
+}
+.fiph-content-block{
+  line-height: 40px;
+  padding-bottom: 2%;
+}
+.six-image-block{
+  padding-top:18% !important;
+}
+.six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+  min-height: 190px;
+  width: calc(50% - 10px);
+}
+.six-link1{
+  min-height: 190px;
+}
+.six-sub-heading{
+  font-size: 14px;
+}
+.six-heading{
+  padding: 0 3% 0 3%;
+}
+.six-part-hero{
+  background-image: none;
+  background-color: #031116 !important;
+}
+.sixpart-cards-block{
+  padding: 0 4% 2% 5.5%;
+  gap: 10px;
+}
+.six-heading{
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.seventh-part-hero{
+  padding: 6% 0 5% 0 ;
+}
+.sph-heading{
+  padding-top: 3%;
+  line-height: 22px;
+}
+.eghith-link-1{
+  width: 35%;
+}
+.footer-log-image{
+  width: 40%;
+  vertical-align: middle;
+}
+.footer-part-hero{
+  padding: 2% 0  4% 0;
+}
+.foot-log-block{
+  padding-bottom: 4%;
+}
+.footer-cards-block{
+  padding: 0 3% 0 3%;
+  }
+  .socia-media{
+    padding-top: 2%;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+  /* in this way hide the desk-top nav-bar in sm-devices */
+  .navbar-desktop{
+    display: none;
+  }
+  .hero-page{
+    padding: 0;
+  }
+  #ssn-water-wave{
+    font-size: 23px;
+  }
+  .rss-eghit{
+    padding:0 5% 2% 4% ;
+  }
+  .video-block{
+    height:60vh;
+  }
+  .hero-text-block{
+    top:29%;
+    padding: 1%  0 1% 4%;
+  }
+  .hertext{
+    font-size:45px ;
+    width: 70%;
+  }
+  .learn-more-button{
+    font-size:14px;
+    width: 115px;
+    height: 50px;
+ }
+ /* in this way hide the second-part of the hero-page becuse it is only visible for mobile-screens(max-width:576px) */
+ .second-part-hero{
+  display: none;
+ }
+ .tph-first{
+  background-image: url(./asserts/second-part-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 4%;
+  padding-right: 3%;
+ }
+ .fph-child{
+  padding: 0 4% 3% 4%;
+ }
+ .fph-sub-heading-1,.fph-sub-heading-2{
+  width:90%;
+ }
+ .fph-heading{
+  padding-top: 5%;
+ }
+ .fph-main-block{
+  gap: 10px;
+ }
+ .fph-card-1,.fph-card-2,.fph-card-3,.fph-card-3,.fph-card-4{
+  width: calc(25% - 10px);
+ }
+ .fifth-part-hero{
+  background-image: url(./asserts/fifth-part-image-1.jpg);
+  margin: 0;
+  padding: 6% 6% 0% 6%;
+}
+.fiph-content-block{
+  justify-self: normal !important;
+  line-height: 38px;
+  width: 100% !important;
+  padding-bottom: 2%;
+}
+.six-heading{
+  padding: 5% 6% 2% 6% ;
+  font-size: 24px;
+}
+.six-part-hero{
+  padding: 3% 0% 6% 0%;
+}
+.sixpart-cards-block{
+  gap: 15px;
+  padding: 2% 2.5% 0 4%;
+}
+.six-one, .six-two, .six-three, .six-four,.six-five, .six-sss{
+  width: calc(33.33% - 15px);
+}
+.six-image-block{
+  padding-top: 17%;
+}
+.sixpart-cards-block{
+  padding: 0 4% 2% 5.5%;
+  gap: 10px;
+}
+.six-heading{
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+.seventh-part-hero{
+  padding: 5% 0 5% 0 !important;
+  /* border-bottom: 6px solid  #2ab7e7; */
+}
+.sph-heading{
+  padding-top: 2%;
+  line-height: 25px;
+}
+.eghith-part-hero{
+  padding-bottom: 4%;
+  background-color: #fff;
+}
+.eghith-link-1{
+  width: 80%;
+}
+.eghith-main-part{
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.eghith-sub{
+  position: relative;
+  top: -20px;
+}
+.footer-log-image{
+  width: 45%;
+  vertical-align: middle;
+}
+.footer-part-hero{
+  padding: 1.5% 0  4% 0;
+}
+.foot-log-block{
+  padding-bottom: 3%;
+}
+.footer-cards-block{
+  padding: 0 3% 0 3%;
+  }
+  .footer-card-1,.footer-card-2,.footer-card-3,.footer-card-4{
+    padding: 0 2% 0 2% !important;
+  }
+}
+@media (min-width:992px){
+  .learn-more-button{
+    font-size:15px;
+    width: 120px;
+    height: 50px;
+ }
+ /* in this way hide the second-part of the hero-page becuse it is only visible for mobile-screens(max-width:576px) */
+ .second-part-hero{
+  display: none;
+ }
+ .tph-first{
+  background-image: url(./asserts/second-part-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: fit-content;
+ }
+ .fifth-part-hero{
+  background-image: url(./asserts/fifth-part-image.jpg);
+  margin: 0;
+  padding: 5% 9% 0% 9%;
+}
+.fiph-content-block{
+  justify-self: normal !important;
+  line-height: 39px;
+  width: 100% !important;
+  padding-bottom: 2%;
+}
+.seventh-part-hero{
+  padding: 5% 0 5% 0 ;
+}
+.sph-heading{
+  padding-top: 1%;
+  line-height: 26px;
+}
+.eghith-sub{
+  position: relative;
+  top: -20px;
+}
+.footer-log-image{
+  width: 30%;
+  vertical-align: middle;
+}
+.footer-part-hero{
+  padding: 1% 0  4% 0;
+}
+}
+  

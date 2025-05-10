@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/7120e9a3de.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles1.css">
+    <title>Products</title>
+</head>
+<body>
+    <div class="hero-page" id="hero-page">
+        <div class="landing-page">
+          <!-- This is for creating desk-top nav-bar -->
+          <div class="navbar-desktop" id="navbar-desktop">
+             <nav class="desktop-version" id="desktop-version">
+                 <div class="item-1">
+                    <a href="#" class="item1-link">
+                     <div class="sub-item1">
+                         <img src="./asserts/dragon.pic" alt="dragon-pic">
+                     <p class="logo-text">Vesseltracker.com</p>
+                     <p class="logo-sub-text">A Wood Mackenze Business</p>
+                     </div>
+                    </a>
+                 </div>
+                 <div class="item-2">
+                     <a href="#" class="item1-link1">
+                         <div class="sub-item2">
+                             <p class="logo-text-1">PRODUCTS</p>
+                         </div>
+                     </a>
+                 </div>
+                <a href="#" class="item-3">
+                 <p class="logo-text-1">VESSELS</p>
+                </a>
+                <a href="#" class="item-4">
+                 <p class="logo-text-1">PORTS</p>
+                </a>
+                <a href="#" class="item-5">
+                 <p class="logo-text-1">NEWS</p>
+                </a>
+                <div class="item-6">
+                 <!-- Example single danger button -->
+               <div class="btn-group btn-one">
+               <button type="button" class="btn  dropdown-toggle  about-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                ABOUT
+               </button>
+               <ul class="dropdown-menu one">
+               <li><a class="dropdown-item drp-item-one" href="#">ABOUT</a></li>
+               </ul>
+               </div>
+                </div>
+                <a href="#" class="item-7">
+                 COMMUNITY
+                </a>
+                
+                <div class="search-block" id="search-block">
+                 <i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>
+             </div>
+                <div class="vertical-line"></div>
+                <div class="search-side-block">
+                 <div class="search-realated-block" id="search-realated-block">
+                     <input type="text" placeholder="IMO,MMSI,NAME..." class="input-text">
+                 </div>
+                 <div class="three-in-one" id="three-in-one">
+                     <a href="#" class="login-root">LOG IN</a>
+                 <!-- this is for creating countries droup-down -->
+                     <div class="countries-box">
+                         <div class="cfirst">
+                             <img src="./asserts/indianflag.png" alt="flag-icon" class="flag-icon" id="flag-icon">
+                             <i class="ri-arrow-down-s-fill" id="carent-icon"></i>
+                         </div>
+                         <div class="csecond">
+                             <a href="#" class="countries-item" onclick="indianFlag()">TELUGU</a>
+                             <a href="#" class="countries-item"  onclick="usaFlag()">ENGLISH</a>
+                         </div>
+                     </div>
+                     <!-- this is creating globe--icon  -->
+                     <a href="#" class="glob-block">
+                         <i class="ri-earth-fill" id="globe-icon"></i>
+                     </a>
+                 </div>
+                 </a>
+                </div>
+             </nav>
+         </div>
+         <!-- This is for creating small screens nav-bar -->
+         <div class="small-navbar">
+             <nav class="small-screens-navbar" id="small-screens-navbar">
+                 <div class="hand-burger-toggeler" id="hand-burger-toggeler">
+                  <div class="taggoler-block">
+                      <i class="ri-menu-3-line" id="waves-handburger" onclick="hiddeRightSlider()"></i>
+                  </div>
+                  <div class="right-slider-block end-0">
+                      <div class="rs-first-part">
+                          <p>Learn more about our technology and shipping tools <a href="#" class="rs-subtext">start your free trial now</a></p>
+                      </div>
+                      <div class="rs-second-part">
+                          <div class="rss-first">
+                              <input type="text" placeholder="Search" class="rss-seach-input">
+                              <i class="fa-solid fa-magnifying-glass" id="rss-search-icon"></i>
+                          </div>
+                          <div class="rss-second">
+                              <a href="#" class="rss-products-link">PRODUCTS</a>
+                          </div>
+                          <div class="rss-three">
+                              <a href="#" class="rss-vessels-link">VESSELS</a>
+                          </div>
+                          <div class="rss-four">
+                              <a href="#" class="rss-ports-link">PORTS</a>
+                          </div>
+                          <div class="rss-five">
+                              <a href="#" class="rss-news-link">NEWS</a>
+                          </div>
+                          <div class="rss-six">
+                              <div class="rss-about-block" id="rss-about-block">
+                                  <p class="rss-about-text">ABOUT</p>
+                                  <i class="fa-solid fa-caret-down" class="rss-about-carent"></i>
+                              </div>
+                              <div class="rss-about-droupdown" id="rss-about-droupdown">
+                                  <a href="#" class="rss-about-drp-item">ABOUT</a>
+                              </div>
+                          </div>
+                          <div class="rss-seven">
+                              <a href="#" class="rss-community-link">COMMUNITY</a>
+                          </div>
+                          <div class="rss-eghit">
+                              <a href="#" class="rss-login-link">LOG IN</a>
+                              <a href="#" class="rss-ende-link">EN/DE</a>
+                          </div>
+                      </div>
+                  </div>
+                 </div>
+                 <!-- ssn: small-screen-navbar -->
+                 <div class="ssn-elements" id="ssn-elements">
+                  <img src="./asserts/chota-dragon.png" alt="dragon-pic" class="chota-dragan">
+                  <i class="ri-menu-3-line" id="ssn-water-wave" onclick="showLeftSlider()"></i>
+                 </div>
+               </nav>
+         </div>
+        </div>
+        <!-- This is for creating footer-part of hero-page -->
+        <div class="footer-part-hero">
+                 <div class="foot-log-block">
+                     <img src="./asserts/footer-log.svg" alt="footer-log" class="footer-log-image">
+                 </div>
+                 <div class="row m-0 footer-cards-block">
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-1 p-0">
+                         <h4 class="fcardf-heading">LOCATION + CONTACT</h4>
+                         <p></p>
+                         <div class="fcf-1-one">Vesseltracker.com GmbH</div>
+                         Rödingsmarkt 20,<br>
+                         20459 Hamburg, Germany <br><br>
+                         +49-(0)40-970786-10 <br>
+                         <a href="#" class="fcf-1-link-one">info@vesseltracker.com</a>
+                         <p></p>
+                     </div>
+                     <div class="col-12 col-sm-6 col-md-3 col-lg-3 footer-card-2 p-0">
+                         <h4 class="fcs-2-heading">ABOUT</h4>
+                         <p></p>
+                         <a href="#" class="fcs-2-link">PRIVACY NOTICE</a><br>
+                         <a href="#" class="fcs-2-link">GENERAL TERMS AND CONDITIONS</a><br>
+                         <a href="#" class="fcs-2-link"> TERMS OF USE</a><br>
+                         <a href="#" class="fcs-2-link">IMPRINT</a><br>
+                         <a href="#" class="fcs-2-link">CONTACT</a>
+                         <p></p>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-3 p-0">
+                         <h4 class="fct-3-heading">EXPLORE</h4>
+                         <p></p>
+                          <a href="#" class="fct-3-link">PRODUCTS</a><br>
+                          <a href="#" class="fct-3-link">VESSELS</a><br>
+                          <a href="#" class="fct-3-link">PORTS</a><br>
+                          <a href="#" class="fct-3-link">NEWS</a><br>
+                          <a href="#" class="fct-3-link">ABOUT</a><br>
+                          <a href="#" class="fct-3-link">COMMUNITY</a>
+                          <P></P>
+                     </div>
+                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 footer-card-4 p-0">
+                         <h4 class="ffc-4-heading">SOCIAL</h4>
+                         <p></p>
+                         <div class="socia-media">
+                             <a href="#" class="fficon twitter"><i class="ri-twitter-fill"></i></a>
+                             <a href="#" class="fficon linkedin"><i class="ri-linkedin-fill"></i></a>
+                             <a href="#" class="fficon facebook"><i class="ri-facebook-fill"></i></a>
+                             <a href="#" class="fficon youtube"><i class="ri-youtube-fill"></i></a>
+                         </div><br>
+                         <a href="#" class="ffc-link">© vesseltracker <script type="text/javascript">document.write(new Date().getFullYear());</script></a>
+                     </div>
+                 </div>
+        </div>
+     </div>
+     <script>
+        // ...........this is for chenging the ountries logos when ever we can cleck that particuler country name............
+        let countryFlag=document.getElementById("flag-icon"); //point out to the country image tag
+        function indianFlag() {
+            countryFlag.src="./asserts/indianflag.png";
+        }
+        function usaFlag() {
+            countryFlag.src="./asserts/usa.png";
+        }
+      //....................completed the image replication by clicking the country name......................... 
+
+      //.........In  this case we can perform when wher click the search icon in desk-top mode then open another block with the place of lodin and countrys droupdown and glob icon...............
+        let searchBlock=document.getElementById("search-block"); //in this way we are targeting search-block becuse when ever click the search icon the  replace the search icon as into-symbol
+        let searchRelatedBlock=document.getElementById("search-realated-block"); //in this way targeting the search related block,becuse when ever click the seaech icon then immediatly show this black based on the logics.
+        let threeInOne=document.getElementById("three-in-one"); //in this way targeting the three-in-one block after search-related block shows parellely shows into icon show when ever click that icon the show three-in-one block.
+        function displaySearchRelatedBlock() {
+            threeInOne.style.display="none";
+            searchRelatedBlock.style.display="flex";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML= `<i class="ri-close-line" onclick="displayThreeInOneBlock()" id="crossIcon"></i>`;
+            document.getElementById("crossIcon").style.color="rgb(244, 129, 49)";
+        }
+        function displayThreeInOneBlock(){
+            threeInOne.style.display="flex";
+            searchRelatedBlock.style.display="none";
+            searchBlock.innerHTML="";
+            searchBlock.innerHTML=`<i class="ri-search-line" id="search-icon" onclick="displaySearchRelatedBlock()"></i>`;
+        }
+    //  this for mobile screen slider-bar droup-down affect for "aout" element
+    let aboutDroupDown=document.getElementById("rss-about-block");
+    let rssValid=true; //this is for using toggeler effect of the rss-about-droupdown like on/off manner
+    aboutDroupDown.addEventListener("click", ()=>{
+        let rssAboutDroupDown=document.getElementById("rss-about-droupdown");
+            if(rssValid){
+                rssAboutDroupDown.style.display="flex";
+                rssValid=false;
+            }
+            else{
+                rssAboutDroupDown.style.display="none";
+                rssValid=true;
+            }
+    });
+
+    // in this way we can build the logic ,  when ever click the water-wave icon then show the right-slider
+      function showLeftSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="none";
+        hanburgerToggeler.style.display="block";
+      }
+    //   this for closing right-slider 
+    function hiddeRightSlider(){
+        let ssnElements=document.getElementById("ssn-elements");  //in this way targeting ssn-elements-block
+        let hanburgerToggeler=document.getElementById("hand-burger-toggeler"); //in this target the hand-burger-toggeler-block becuse in this container have rightSlider code
+        ssnElements.style.display="flex";
+        hanburgerToggeler.style.display="none";
+    }
+    // this is for desktop nav-bar with scrolling effect that means when ever scrolle the scroll-bar then nav-bar move top of the page
+    window.addEventListener("scroll",(e)=>{
+        const scrollPosition = window.scrollY;
+        let desktopNavbar=document.getElementById("navbar-desktop");
+        let dskNavbar=document.getElementById("desktop-version");
+        if(scrollPosition > 80){
+            desktopNavbar.style.top="0";
+            desktopNavbar.style.zIndex="10"
+            dskNavbar.style.backgroundColor="#0F2C42";
+        }
+        else{
+            desktopNavbar.style.top="8%";
+            desktopNavbar.style.zIndex="0"
+            dskNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)"
+        }
+        let smallScreenNavbar=document.getElementById("small-screens-navbar");    
+        if(scrollPosition > 15){
+            smallScreenNavbar.style.backgroundColor="rgba(26, 54 ,75 ,0.8)";
+        }
+        else{
+            smallScreenNavbar.style.backgroundColor="transparent";
+        }
+    })
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
