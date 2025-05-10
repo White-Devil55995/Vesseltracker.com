@@ -791,11 +791,11 @@
 .second-part-hero{
   width: 100%;
   background-color: #2ab7e7;
-  padding: 10px 5%;
+  padding: 10px 5% 5px 5%;
   display: block;
   color: #fff;
   align-items: center;
-  min-height:10vh;
+  min-height:9vh;
   font-size: 13.2px;
 }
 /* sph-second-part of hero-page or home page */
